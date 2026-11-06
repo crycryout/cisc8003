@@ -1,0 +1,34 @@
+# Private machine access and credentials
+/.local/
+**/inventory.local.*
+**/ssh_config.local
+**/.env
+**/.env.*
+**/*.pem
+**/id_ed25519*
+**/id_rsa*
+
+# Runtime and generated cluster configuration
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+homework1/generated-*/
+homework1/results/lab-*/
+homework1/results/e2e-*/
+homework1/results/medium_by_suffix/
+homework1/results/medium_all_users_top10.txt
+homework1/results/shakespeare_expected_wordcounts.txt
+
+# Fetch raw datasets on the lab hosts, not into public Git
+homework1/data/*
+!homework1/data/README.md
+!homework1/data/figure_numeric.txt
+!homework1/data/hadoop_regression.txt
+!homework1/data/shakespeare_prepared/
+homework1/data/shakespeare_prepared/*
+!homework1/data/shakespeare_prepared/manifest.json
+
+# Large runtime files and screenshot staging
+*.partial
+*.tmp
+screenshots-private/

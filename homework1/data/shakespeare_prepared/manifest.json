@@ -1,0 +1,1182 @@
+{
+  "files": [
+    {
+      "source": "play-12night.txt",
+      "copy": "000000.txt",
+      "normalized_bytes": 141248,
+      "sha256": "08bb5104f8c67c79d821f072d48758788051913dfbe67d9276081d33b12ef64b"
+    },
+    {
+      "source": "play-allswell.txt",
+      "copy": "000001.txt",
+      "normalized_bytes": 164154,
+      "sha256": "06d84093382b267461da7f8de47fc6e94721a93c94571f4945382df042994369"
+    },
+    {
+      "source": "play-antonycleo.txt",
+      "copy": "000002.txt",
+      "normalized_bytes": 193944,
+      "sha256": "7f906a7a821f5606ca52669c2659b3c10921eeb8fdd6b0ebc360fccb9121f5ee"
+    },
+    {
+      "source": "play-asyoulikeit.txt",
+      "copy": "000003.txt",
+      "normalized_bytes": 149978,
+      "sha256": "985e3af34608babb40060e87846a50c5bdb8268f0c2ac7d169ad1e0857c3928d"
+    },
+    {
+      "source": "play-comedyerrors.txt",
+      "copy": "000004.txt",
+      "normalized_bytes": 106757,
+      "sha256": "7b9e226889f4a4d96965aa8691f393fe35c9f4d36dc6cdf38eb2f9bc1d2503c7"
+    },
+    {
+      "source": "play-coriolanus.txt",
+      "copy": "000005.txt",
+      "normalized_bytes": 207491,
+      "sha256": "e8b9ef2cca6ac86f70b7da1e1fc01164df7b518e596b714d8fa7b4893c14766c"
+    },
+    {
+      "source": "play-cymbeline.txt",
+      "copy": "000006.txt",
+      "normalized_bytes": 199342,
+      "sha256": "a31ee8c2df9cd7be30e2d811a6603641a31356f7eebc0dc258a122f82b6a0268"
+    },
+    {
+      "source": "play-hamlet.txt",
+      "copy": "000007.txt",
+      "normalized_bytes": 216160,
+      "sha256": "e2ca5f785c87dd262acf2386adc0280d72913b1e27c1fbafc83c8d0648d3f70a"
+    },
+    {
+      "source": "play-henry4p1.txt",
+      "copy": "000008.txt",
+      "normalized_bytes": 173445,
+      "sha256": "5aecf44c9011bd49d36559e41a8075fdcca71f343b7296221fe125e1fcf47497"
+    },
+    {
+      "source": "play-henry4p2.txt",
+      "copy": "000009.txt",
+      "normalized_bytes": 183449,
+      "sha256": "8dcb2b49150357f34009900a1a70f0ea64e0039ffe34d5f0a01dc860b333de46"
+    },
+    {
+      "source": "play-henry5.txt",
+      "copy": "000010.txt",
+      "normalized_bytes": 187193,
+      "sha256": "cf2a2f792b329f3fddaa36acfe45c8db03e12740b387d083b3b50063af8adad2"
+    },
+    {
+      "source": "play-henry6p1.txt",
+      "copy": "000011.txt",
+      "normalized_bytes": 167137,
+      "sha256": "8f480425cedb4df73991d531fb01614869b44c2a8210c2170808d123f11ce3a8"
+    },
+    {
+      "source": "play-henry6p2.txt",
+      "copy": "000012.txt",
+      "normalized_bytes": 187263,
+      "sha256": "1d93eba08bdf971f4a904252325aa739dc12c876f65e8fa8d64ae3cfadee1685"
+    },
+    {
+      "source": "play-henry6p3.txt",
+      "copy": "000013.txt",
+      "normalized_bytes": 184858,
+      "sha256": "572e98203cd00bb29290630342bcfd4b6def8ffe09ae710537d2f58482b2d98d"
+    },
+    {
+      "source": "play-henry8.txt",
+      "copy": "000014.txt",
+      "normalized_bytes": 177991,
+      "sha256": "873e5d85e6708ab45653169df35f1adc9350935af0a8f5bdb7fda85f3b742cff"
+    },
+    {
+      "source": "play-juliuscaesar.txt",
+      "copy": "000015.txt",
+      "normalized_bytes": 141425,
+      "sha256": "99aee249f0fe5aa1575279a555b9d9c67db29a1bd20196800242e77e5296eeec"
+    },
+    {
+      "source": "play-kingjohn.txt",
+      "copy": "000016.txt",
+      "normalized_bytes": 147219,
+      "sha256": "e1d22ad6866b104b264fa9cb68be9e6a578c286037083305b66bdca581051b3a"
+    },
+    {
+      "source": "play-kinglear.txt",
+      "copy": "000017.txt",
+      "normalized_bytes": 191623,
+      "sha256": "38d7f69dfd5ebc31f8c9b15edd9c6df69daae8628fefc63f2a9c505e4fbb3f7a"
+    },
+    {
+      "source": "play-loveslabours.txt",
+      "copy": "000018.txt",
+      "normalized_bytes": 154825,
+      "sha256": "920734eea5d2d287a07ccaa6a13e478687ba07b4e75b1dc1ad839202e3d0e499"
+    },
+    {
+      "source": "play-macbeth.txt",
+      "copy": "000019.txt",
+      "normalized_bytes": 130106,
+      "sha256": "90844f08c8fcac897da0649220d99e1b3c613e3fed27fb1e560b8e38cef5a315"
+    },
+    {
+      "source": "play-measure.txt",
+      "copy": "000020.txt",
+      "normalized_bytes": 154966,
+      "sha256": "50366e775e0f6d9412ac5ac4372803d5fd43d74ad06877a0b50d8898bab8e9d1"
+    },
+    {
+      "source": "play-merchantvenice.txt",
+      "copy": "000021.txt",
+      "normalized_bytes": 147513,
+      "sha256": "3b89606a38632a7de82f8800789d1d19624c2bbfa407e0f88f150d182e2c51be"
+    },
+    {
+      "source": "play-merrywives.txt",
+      "copy": "000022.txt",
+      "normalized_bytes": 158544,
+      "sha256": "088d1c805309ad0b1d065b6bff177ac84ebc61081453349183c837d3fc8b7388"
+    },
+    {
+      "source": "play-midsummer.txt",
+      "copy": "000023.txt",
+      "normalized_bytes": 114608,
+      "sha256": "a53399d36347dadbd46c0f550cd446abf4bb65566e8c5a0e7f8a856c97d91991"
+    },
+    {
+      "source": "play-muchado.txt",
+      "copy": "000024.txt",
+      "normalized_bytes": 147403,
+      "sha256": "b1c890c0d20698e5e2c25fa3ec48fffd3a054cf2e6afcf81e2dce9656adbc28d"
+    },
+    {
+      "source": "play-othello.txt",
+      "copy": "000025.txt",
+      "normalized_bytes": 186767,
+      "sha256": "2a77fca13bd24ae2b4421d622ee79f4a1b06d0fd827b6842120fc398e6cf96d5"
+    },
+    {
+      "source": "play-pericles.txt",
+      "copy": "000026.txt",
+      "normalized_bytes": 136300,
+      "sha256": "c9e8e4bc952fff4d44dd1fe8dd39c0d9898c58c499256f3ee7ad1d6c82f8bf63"
+    },
+    {
+      "source": "play-richard2.txt",
+      "copy": "000027.txt",
+      "normalized_bytes": 160070,
+      "sha256": "baae2605bb780aa69ae54f5646a2025fcef6c591dd60419af2b598e3dce7e132"
+    },
+    {
+      "source": "play-richard3.txt",
+      "copy": "000028.txt",
+      "normalized_bytes": 219560,
+      "sha256": "26b7f872c99daed85c4b1e49d11ec094c7031808b77796221371921cbdf3a4ec"
+    },
+    {
+      "source": "play-romeojuliet.txt",
+      "copy": "000029.txt",
+      "normalized_bytes": 174008,
+      "sha256": "f26aca229e2ba42025b7eedd0754c87c2d21dc0201baf8cb74ed67eb94e26ef1"
+    },
+    {
+      "source": "play-tamingshrew.txt",
+      "copy": "000030.txt",
+      "normalized_bytes": 148077,
+      "sha256": "c9ce00f84bec074e13e1cb4d8621b95c26f4b39f5a284f7619dd727f3cd9efba"
+    },
+    {
+      "source": "play-tempest.txt",
+      "copy": "000031.txt",
+      "normalized_bytes": 118761,
+      "sha256": "715be1e9643bbcbe9127fbc60b95f4427bdda18f89d5ad9e8115743ddb05f94a"
+    },
+    {
+      "source": "play-timonathens.txt",
+      "copy": "000032.txt",
+      "normalized_bytes": 134102,
+      "sha256": "075f64dd2a788b29491b9e046533699e0b0d026bb7548a179744679113182472"
+    },
+    {
+      "source": "play-titus.txt",
+      "copy": "000033.txt",
+      "normalized_bytes": 146589,
+      "sha256": "5717ffdf7c01faafd057f2a73ee89b7f49358ea25cfb2d53da38d521084e0e46"
+    },
+    {
+      "source": "play-troilus.txt",
+      "copy": "000034.txt",
+      "normalized_bytes": 191516,
+      "sha256": "1cd9dc16a05e324344e28548a79c3b933370f5a7f34ed15b094835332bdf8767"
+    },
+    {
+      "source": "play-twogents.txt",
+      "copy": "000035.txt",
+      "normalized_bytes": 124318,
+      "sha256": "ec0035f3d01ddfa0b9b4afff603dbd10d2e16635f3b556ab9f6c7151e1c4fcf5"
+    },
+    {
+      "source": "play-winterstale.txt",
+      "copy": "000036.txt",
+      "normalized_bytes": 173741,
+      "sha256": "a43993b20829dd39f254797215d111748e21b3dae220b12fe1596bab45eb3d01"
+    },
+    {
+      "source": "poem-loverscomplaint.txt",
+      "copy": "000037.txt",
+      "normalized_bytes": 20404,
+      "sha256": "4dacd5e763987077578acbf3291563e4e165a3463a1439e6562eadac4b6029e5"
+    },
+    {
+      "source": "poem-passionatepilgrim.txt",
+      "copy": "000038.txt",
+      "normalized_bytes": 27336,
+      "sha256": "0df4124c408e0dd2d9fa2f1fab4edae44b515a889e0ef299f70f0835f47db84b"
+    },
+    {
+      "source": "poem-phoenixturtle.txt",
+      "copy": "000039.txt",
+      "normalized_bytes": 3956,
+      "sha256": "8a3d7ee60735421dc6669a969c5330a63d6bcecb5fc9a639b9c96b65a7a3a43c"
+    },
+    {
+      "source": "poem-rapelucrece.txt",
+      "copy": "000040.txt",
+      "normalized_bytes": 117684,
+      "sha256": "d1b42a185f7ad076e1710055ab7c195e942004602f253b78a7d59e93b1014f6d"
+    },
+    {
+      "source": "poem-venusadonis.txt",
+      "copy": "000041.txt",
+      "normalized_bytes": 75338,
+      "sha256": "6fbbc4b24b157dd6d2a164cd4f4647a19c07d7533ab665f1b54d84690ed9740b"
+    },
+    {
+      "source": "sonnet-1.txt",
+      "copy": "000042.txt",
+      "normalized_bytes": 1122,
+      "sha256": "568547b76d2bdea47164e86b3e4ba02664fec2ef814489752567d8aa9ae55e74"
+    },
+    {
+      "source": "sonnet-10.txt",
+      "copy": "000043.txt",
+      "normalized_bytes": 1128,
+      "sha256": "225cf2e59d950f179426a62d98904f8d8aae7abf5b5dac611e6db970ad127d7e"
+    },
+    {
+      "source": "sonnet-100.txt",
+      "copy": "000044.txt",
+      "normalized_bytes": 1128,
+      "sha256": "2e79699b4703f6b7b6cffda9069e5bcdc4e1c4bdf9bd6bd87342b7e936d1a45b"
+    },
+    {
+      "source": "sonnet-101.txt",
+      "copy": "000045.txt",
+      "normalized_bytes": 1112,
+      "sha256": "a81bc50edc47291085c8dcb36158297f25fec0b503d95c85e8077756edcb0ca5"
+    },
+    {
+      "source": "sonnet-102.txt",
+      "copy": "000046.txt",
+      "normalized_bytes": 1135,
+      "sha256": "c62797883b6645b8583252b2565cb095cb1285225863f222e3f55c77ca3c2456"
+    },
+    {
+      "source": "sonnet-103.txt",
+      "copy": "000047.txt",
+      "normalized_bytes": 1115,
+      "sha256": "b38033b53c01675bd969818c0a790ff239710ec8f3a51d09cffa5235520e23b9"
+    },
+    {
+      "source": "sonnet-104.txt",
+      "copy": "000048.txt",
+      "normalized_bytes": 1139,
+      "sha256": "88f359f8292aac06c76b81dc03c85741bc19ff906a7526b24ba3053303834434"
+    },
+    {
+      "source": "sonnet-105.txt",
+      "copy": "000049.txt",
+      "normalized_bytes": 1116,
+      "sha256": "5ef10d63d7688c91b8064617a4f9d489ee39b021960f819a27416f5a952fe003"
+    },
+    {
+      "source": "sonnet-106.txt",
+      "copy": "000050.txt",
+      "normalized_bytes": 1116,
+      "sha256": "5b43fae6b705a31777d052ba92ef2b2276959a7a20b9e717fb396cc181950a2e"
+    },
+    {
+      "source": "sonnet-107.txt",
+      "copy": "000051.txt",
+      "normalized_bytes": 1133,
+      "sha256": "07c586dbced9a6f800fba2b58e7368dafa24dc176926daf3febc94baef2ad4ba"
+    },
+    {
+      "source": "sonnet-108.txt",
+      "copy": "000052.txt",
+      "normalized_bytes": 1124,
+      "sha256": "3eff0f93c247122b25ff672294b0e4bd57817207deadaf40cb324b33cea2ae4a"
+    },
+    {
+      "source": "sonnet-109.txt",
+      "copy": "000053.txt",
+      "normalized_bytes": 1114,
+      "sha256": "d4c4a7f46c65db976e7a82fd705b7599d6d2e186eb170a88440c3d283f6849a0"
+    },
+    {
+      "source": "sonnet-11.txt",
+      "copy": "000054.txt",
+      "normalized_bytes": 1153,
+      "sha256": "3dd9808de63c32606fae197f314fa0d467c751a7829bc190ac0b68f89b0cf530"
+    },
+    {
+      "source": "sonnet-110.txt",
+      "copy": "000055.txt",
+      "normalized_bytes": 1121,
+      "sha256": "33fe0f1325d5ede46fcf3b4f203d98f608279afa8bc7fba24c48242014b92fcd"
+    },
+    {
+      "source": "sonnet-111.txt",
+      "copy": "000056.txt",
+      "normalized_bytes": 1115,
+      "sha256": "e2b48931f54d9ae2b3935edc3762a56d0a1f2f2c19e269421db06e4852d35013"
+    },
+    {
+      "source": "sonnet-112.txt",
+      "copy": "000057.txt",
+      "normalized_bytes": 1117,
+      "sha256": "28a90b190fd11b32590e68d3e92ccb87455e72de75ee21af0295397f8bd95190"
+    },
+    {
+      "source": "sonnet-113.txt",
+      "copy": "000058.txt",
+      "normalized_bytes": 1123,
+      "sha256": "b56ac7bcceed8186a73560b07a91c3b4d81ae4f1f13124d840db6d89ad489035"
+    },
+    {
+      "source": "sonnet-114.txt",
+      "copy": "000059.txt",
+      "normalized_bytes": 1125,
+      "sha256": "5b39ced43f014c5b4981fe7a9649c67e4f4fcf835c233ba1ba65cc9b4d220831"
+    },
+    {
+      "source": "sonnet-115.txt",
+      "copy": "000060.txt",
+      "normalized_bytes": 1138,
+      "sha256": "610b89a8b31080ef44f962a4d3461337cb2425fe75ae93137cbc0b2b4952a4e9"
+    },
+    {
+      "source": "sonnet-116.txt",
+      "copy": "000061.txt",
+      "normalized_bytes": 1109,
+      "sha256": "c4fa6dca80b540a2b6a5e28feeb474447336643b86f15c306b3cc3574b6c51d1"
+    },
+    {
+      "source": "sonnet-117.txt",
+      "copy": "000062.txt",
+      "normalized_bytes": 1116,
+      "sha256": "c2e8e3c6a8265979c29cb0bd4007119b42230d40f27a5c19e97bbcfe352a860a"
+    },
+    {
+      "source": "sonnet-118.txt",
+      "copy": "000063.txt",
+      "normalized_bytes": 1127,
+      "sha256": "f4b28ee51b71cec8f6c5517b2bf27d0c27df109684924889d03cbd4f7dd660b8"
+    },
+    {
+      "source": "sonnet-119.txt",
+      "copy": "000064.txt",
+      "normalized_bytes": 1126,
+      "sha256": "5bfdd2e38a43fa57750f55b669b883201c3987b73192863919fed4f2febceeb2"
+    },
+    {
+      "source": "sonnet-12.txt",
+      "copy": "000065.txt",
+      "normalized_bytes": 1130,
+      "sha256": "6c4979a9afffcca6aabad3ba4a12295ef42fc8639708de2b1a123f4b6bc8d481"
+    },
+    {
+      "source": "sonnet-120.txt",
+      "copy": "000066.txt",
+      "normalized_bytes": 1124,
+      "sha256": "b396814c00f4567ae25672c3bead604f34aa06551b28869fdd8280aec4c76578"
+    },
+    {
+      "source": "sonnet-121.txt",
+      "copy": "000067.txt",
+      "normalized_bytes": 1126,
+      "sha256": "1a60e267897f22cefa955f430035757c19a67bedcf5fd9cbb61b0f1c37882e55"
+    },
+    {
+      "source": "sonnet-122.txt",
+      "copy": "000068.txt",
+      "normalized_bytes": 1103,
+      "sha256": "ff387740c7013cdaac8fd2f3f4ac662d9e6c40d32d673a6431431580d5ab6d6e"
+    },
+    {
+      "source": "sonnet-123.txt",
+      "copy": "000069.txt",
+      "normalized_bytes": 1119,
+      "sha256": "1f6fcdfa6c2426f6cc6e79f3248376b421b7e19a57e22790af8899436abfbff3"
+    },
+    {
+      "source": "sonnet-124.txt",
+      "copy": "000070.txt",
+      "normalized_bytes": 1127,
+      "sha256": "47116901d44aa257d3e7eff68f1af9a1870224b8095c7149073d071a1a0e4245"
+    },
+    {
+      "source": "sonnet-125.txt",
+      "copy": "000071.txt",
+      "normalized_bytes": 1112,
+      "sha256": "0dfa6cb474db3ef890dda01f447874817950db05c6b1451436511f33eef98c87"
+    },
+    {
+      "source": "sonnet-126.txt",
+      "copy": "000072.txt",
+      "normalized_bytes": 1097,
+      "sha256": "0c27fe4dfe727800507a4a157148a1c05fc7c63e340d6fc7fca830292dcf8ed4"
+    },
+    {
+      "source": "sonnet-127.txt",
+      "copy": "000073.txt",
+      "normalized_bytes": 1128,
+      "sha256": "74e4a90dcf62498197bb59b794759d34c00b874c0e7e28b91852db545a3d40d5"
+    },
+    {
+      "source": "sonnet-128.txt",
+      "copy": "000074.txt",
+      "normalized_bytes": 1129,
+      "sha256": "ea38262ef15dd2937d42f5b0d882e1cb8efd00546fffc13fa65eaa3caa72d8f6"
+    },
+    {
+      "source": "sonnet-129.txt",
+      "copy": "000075.txt",
+      "normalized_bytes": 1115,
+      "sha256": "f6cbd2d9d68db150c9463ccc13dc8bf14a8f6db9ceeb13b4c49bd1a30b28f635"
+    },
+    {
+      "source": "sonnet-13.txt",
+      "copy": "000076.txt",
+      "normalized_bytes": 1120,
+      "sha256": "dba2666f1b5bb607f20886253fe097f9977fc733947a5573a11d40d56948c423"
+    },
+    {
+      "source": "sonnet-130.txt",
+      "copy": "000077.txt",
+      "normalized_bytes": 1124,
+      "sha256": "7ba7cdaf63ace0da08413c90251844f45dc6c49192a09ce173663770513f98fb"
+    },
+    {
+      "source": "sonnet-131.txt",
+      "copy": "000078.txt",
+      "normalized_bytes": 1126,
+      "sha256": "c4bbbc258609fbaa7664556351d38124ee712758ede4893064e8834bacb39b34"
+    },
+    {
+      "source": "sonnet-132.txt",
+      "copy": "000079.txt",
+      "normalized_bytes": 1118,
+      "sha256": "bede18f04da63a6acc1a7b5b12a96a66dd0b0e6ad82ef9c7c01c546edf548047"
+    },
+    {
+      "source": "sonnet-133.txt",
+      "copy": "000080.txt",
+      "normalized_bytes": 1131,
+      "sha256": "8557acdbc31ef3a0601d2ee961d8a2bd0058e4a35203375b251cb2ea65c4ce6e"
+    },
+    {
+      "source": "sonnet-134.txt",
+      "copy": "000081.txt",
+      "normalized_bytes": 1114,
+      "sha256": "d1207b7c3afb3039e2414cafe2fa8c76758a8c4e8542c055ead05fefe5142e01"
+    },
+    {
+      "source": "sonnet-135.txt",
+      "copy": "000082.txt",
+      "normalized_bytes": 1123,
+      "sha256": "fcd8b285cea1efe4405a49cee8c692bd704f2347dc405efc5f8fdb709eb0bfe9"
+    },
+    {
+      "source": "sonnet-136.txt",
+      "copy": "000083.txt",
+      "normalized_bytes": 1133,
+      "sha256": "f65f08cfe08a67993e97be35d0a5a4a1cd2effbb0da29e5d3a853a0a2f545c69"
+    },
+    {
+      "source": "sonnet-137.txt",
+      "copy": "000084.txt",
+      "normalized_bytes": 1138,
+      "sha256": "6f0ac029d0dc36e469a19d35f601390415f9b9cc1802c7a3e8df95f993e0e252"
+    },
+    {
+      "source": "sonnet-138.txt",
+      "copy": "000085.txt",
+      "normalized_bytes": 1130,
+      "sha256": "9445d5b7c83533d5708fd7bed1d6a429f4a4ac9a624aa2bda81d228e33b6e2ce"
+    },
+    {
+      "source": "sonnet-139.txt",
+      "copy": "000086.txt",
+      "normalized_bytes": 1135,
+      "sha256": "7933d9b49d4dfe24870c5d2e988e971139e80fcdd76216f5fd2a28676e3b8dc6"
+    },
+    {
+      "source": "sonnet-14.txt",
+      "copy": "000087.txt",
+      "normalized_bytes": 1112,
+      "sha256": "126aa4f58f4a86518d2b50200d4b6a3357f6e02f6028bff84b6a7670b9a36dab"
+    },
+    {
+      "source": "sonnet-140.txt",
+      "copy": "000088.txt",
+      "normalized_bytes": 1128,
+      "sha256": "745ad0556bcd2a154ff7f5087ba6af0805965d4907aa0dc1d7b738599a271f03"
+    },
+    {
+      "source": "sonnet-141.txt",
+      "copy": "000089.txt",
+      "normalized_bytes": 1126,
+      "sha256": "ad414cce1544975c99571f7bb86298e04b8df0693f0b5a3682951ead9bf52b91"
+    },
+    {
+      "source": "sonnet-142.txt",
+      "copy": "000090.txt",
+      "normalized_bytes": 1122,
+      "sha256": "7d5778a286739dc8c004b8602a143722fe475e68c9dec75ecc572dee9301c2ee"
+    },
+    {
+      "source": "sonnet-143.txt",
+      "copy": "000091.txt",
+      "normalized_bytes": 1134,
+      "sha256": "715c1a8daf0700b310beaad51a9a6ada5a2e0f603886ce5730f090e349b354b1"
+    },
+    {
+      "source": "sonnet-144.txt",
+      "copy": "000092.txt",
+      "normalized_bytes": 1105,
+      "sha256": "491f00f88d206268b6d7b51b46c3cc278f621d6001c42c1b017d1aec01c1cc5c"
+    },
+    {
+      "source": "sonnet-145.txt",
+      "copy": "000093.txt",
+      "normalized_bytes": 1073,
+      "sha256": "8e122fad8ba38b27dcb801af19322339c890b71ef91a2e25af5ff42d54c60702"
+    },
+    {
+      "source": "sonnet-146.txt",
+      "copy": "000094.txt",
+      "normalized_bytes": 1132,
+      "sha256": "838152385f489b0fbe40c1703b272912ffe1cc2ca76453a8d3b23a0cb51c883c"
+    },
+    {
+      "source": "sonnet-147.txt",
+      "copy": "000095.txt",
+      "normalized_bytes": 1116,
+      "sha256": "36f31a4c194b6a5eb03878246acc56bd6b6b6d4d8c9653318bf11e75082878df"
+    },
+    {
+      "source": "sonnet-148.txt",
+      "copy": "000096.txt",
+      "normalized_bytes": 1135,
+      "sha256": "594f2336e91d1471555d7f67791d17d1b6b353e95ed8098488518fea16576073"
+    },
+    {
+      "source": "sonnet-149.txt",
+      "copy": "000097.txt",
+      "normalized_bytes": 1108,
+      "sha256": "fb429407b263fd0b355cf0be3d3897f7ef30e643589ece5f957ef56413c47e17"
+    },
+    {
+      "source": "sonnet-15.txt",
+      "copy": "000098.txt",
+      "normalized_bytes": 1126,
+      "sha256": "b01c2ae614e04ef454fa5edc065a1d2df58feddd2bee4ff8df1adbe4701b2c07"
+    },
+    {
+      "source": "sonnet-150.txt",
+      "copy": "000099.txt",
+      "normalized_bytes": 1121,
+      "sha256": "d146550056e9fbf2de549877f7229b37a2f0f9715244a17acfc0479a61f975c1"
+    },
+    {
+      "source": "sonnet-151.txt",
+      "copy": "000100.txt",
+      "normalized_bytes": 1121,
+      "sha256": "6c45cd396666ffdd70806fef4073d8c01534444dc3577dbed4a22e7ca615ea78"
+    },
+    {
+      "source": "sonnet-152.txt",
+      "copy": "000101.txt",
+      "normalized_bytes": 1134,
+      "sha256": "a453d8f49c6224a8b1ac86eb7c72bfd996ca0c539ce5075b6c3e07449018e4f8"
+    },
+    {
+      "source": "sonnet-153.txt",
+      "copy": "000102.txt",
+      "normalized_bytes": 1125,
+      "sha256": "786b24580092428f6ea8cdde577fba0224e21a9f989e52d80b67c83764f03f30"
+    },
+    {
+      "source": "sonnet-154.txt",
+      "copy": "000103.txt",
+      "normalized_bytes": 1116,
+      "sha256": "1e79998aee3f7a0d1c79c0bba32c3823bdd0227b46b3ad23f8bda0995091b760"
+    },
+    {
+      "source": "sonnet-16.txt",
+      "copy": "000104.txt",
+      "normalized_bytes": 1118,
+      "sha256": "70662e36fd83a05eb4ee846a70a1a981fdc053ee01c833dfe9d5586235c9a6b0"
+    },
+    {
+      "source": "sonnet-17.txt",
+      "copy": "000105.txt",
+      "normalized_bytes": 1140,
+      "sha256": "a8460a58fed02a24a48c9fe798dd47c86028d18f836e93d47d2b7be79fd60908"
+    },
+    {
+      "source": "sonnet-18.txt",
+      "copy": "000106.txt",
+      "normalized_bytes": 1130,
+      "sha256": "f4271befca6e5414f8d7601946e7746fd1f0e95b65c8e6dcd1117a56ecac4170"
+    },
+    {
+      "source": "sonnet-19.txt",
+      "copy": "000107.txt",
+      "normalized_bytes": 1134,
+      "sha256": "2a719688b07fe30f214cabbfc110cf9fd00b1f3ba8482d5a569ac84de8ab67fc"
+    },
+    {
+      "source": "sonnet-2.txt",
+      "copy": "000108.txt",
+      "normalized_bytes": 1133,
+      "sha256": "896087459b030b7062764c817b2510057f97c651b0769b0c55f0b9c7ad1e5d54"
+    },
+    {
+      "source": "sonnet-20.txt",
+      "copy": "000109.txt",
+      "normalized_bytes": 1143,
+      "sha256": "ff17897e6e74a418d366acb45157ef1e0e67fde96ccb0602dd7a2b77501e8ab2"
+    },
+    {
+      "source": "sonnet-21.txt",
+      "copy": "000110.txt",
+      "normalized_bytes": 1123,
+      "sha256": "fd03c64eb6adf0e7c5365b2ad2e731b7a6c3f82c7a2764d4da28173c219fe351"
+    },
+    {
+      "source": "sonnet-22.txt",
+      "copy": "000111.txt",
+      "normalized_bytes": 1117,
+      "sha256": "0ed437d80b00bbe8d2daf7f8b1de4cd693f87e005c2612b984eb3de30a8c5ef2"
+    },
+    {
+      "source": "sonnet-23.txt",
+      "copy": "000112.txt",
+      "normalized_bytes": 1126,
+      "sha256": "22c698bf22d4830de956cd03ce39c676121f5be53246ff0c35c0a35cbcbd13f7"
+    },
+    {
+      "source": "sonnet-24.txt",
+      "copy": "000113.txt",
+      "normalized_bytes": 1139,
+      "sha256": "7bcf3aaf5a45050c32162be7d70a7e76f218c3fa1cc9486a48687d978373d4af"
+    },
+    {
+      "source": "sonnet-25.txt",
+      "copy": "000114.txt",
+      "normalized_bytes": 1111,
+      "sha256": "5b70704d181c19fefeb746d2500c93e612fa1c20b11d297a840609039247956a"
+    },
+    {
+      "source": "sonnet-26.txt",
+      "copy": "000115.txt",
+      "normalized_bytes": 1118,
+      "sha256": "840ab96b1b17b123564bb7fee7e826145345dd3933ebda9042215b4a4a1ea7b7"
+    },
+    {
+      "source": "sonnet-27.txt",
+      "copy": "000116.txt",
+      "normalized_bytes": 1113,
+      "sha256": "0e3a445eeb3f01362766be7947e98955797aa7ebff0b207a8ba66738e21e292b"
+    },
+    {
+      "source": "sonnet-28.txt",
+      "copy": "000117.txt",
+      "normalized_bytes": 1137,
+      "sha256": "75bc34c902ec3b60bce8f218f1ac0cc91a6eb7a93cf27ca35a475b408a4e2e68"
+    },
+    {
+      "source": "sonnet-29.txt",
+      "copy": "000118.txt",
+      "normalized_bytes": 1133,
+      "sha256": "0c5b7c009ce3a929863800d55b4411455e3b1034bc07a5b26f05153c6d912ba9"
+    },
+    {
+      "source": "sonnet-3.txt",
+      "copy": "000119.txt",
+      "normalized_bytes": 1123,
+      "sha256": "68f36b5e8328d32e6eaf891afe8a0f585be6d3289680139c5011bae77dacef86"
+    },
+    {
+      "source": "sonnet-30.txt",
+      "copy": "000120.txt",
+      "normalized_bytes": 1123,
+      "sha256": "403be6f41bd379009659f805a71d244bfd79885ebbef274d5aaa301af23fd8f7"
+    },
+    {
+      "source": "sonnet-31.txt",
+      "copy": "000121.txt",
+      "normalized_bytes": 1117,
+      "sha256": "f8ad22aedcd9542e3a9623919052807886dc01737419808b487ae20826c6dcde"
+    },
+    {
+      "source": "sonnet-32.txt",
+      "copy": "000122.txt",
+      "normalized_bytes": 1135,
+      "sha256": "de2a01d931425ea4e943feddbd73b889a6bdec0e4d8efa076e135184f8ed2cfd"
+    },
+    {
+      "source": "sonnet-33.txt",
+      "copy": "000123.txt",
+      "normalized_bytes": 1127,
+      "sha256": "384a1d874c76c51be040690856fa64eead41bab0d3c910594617205573592b63"
+    },
+    {
+      "source": "sonnet-34.txt",
+      "copy": "000124.txt",
+      "normalized_bytes": 1135,
+      "sha256": "ee782e3f94ad940452932ccbb61553d1051ac4f5ad3e6c8a97de53c3ee20f955"
+    },
+    {
+      "source": "sonnet-35.txt",
+      "copy": "000125.txt",
+      "normalized_bytes": 1112,
+      "sha256": "0c5059aea5ef363f37edfbe2eed5c08ae35d0c4f06519fb41625339d8e5d03b7"
+    },
+    {
+      "source": "sonnet-36.txt",
+      "copy": "000126.txt",
+      "normalized_bytes": 1117,
+      "sha256": "a24d6a0827f064b56b4ec058f0bdfb323ff1d22cf3af39911f17c4893888832c"
+    },
+    {
+      "source": "sonnet-37.txt",
+      "copy": "000127.txt",
+      "normalized_bytes": 1113,
+      "sha256": "795d4ce44a778756d72e045bb273ed5c56665ab006138a739c74495a1368652a"
+    },
+    {
+      "source": "sonnet-38.txt",
+      "copy": "000128.txt",
+      "normalized_bytes": 1129,
+      "sha256": "abf6fefd840f80e566c36ab6f81c60b58f7a5e4c84985aa500c62fe56a448264"
+    },
+    {
+      "source": "sonnet-39.txt",
+      "copy": "000129.txt",
+      "normalized_bytes": 1125,
+      "sha256": "a925a22d3c9f3e7061a678cb39f2bd45af9ab18785663909ab27b4a9777ac59d"
+    },
+    {
+      "source": "sonnet-4.txt",
+      "copy": "000130.txt",
+      "normalized_bytes": 1113,
+      "sha256": "135fef7aa143b4760037a57abda087f8f12ac2832c73bb85b393af6e0d920c9f"
+    },
+    {
+      "source": "sonnet-40.txt",
+      "copy": "000131.txt",
+      "normalized_bytes": 1136,
+      "sha256": "3ceebcf0fdb5b5f6a1a5874f3eac7515d8521c00e3ff009b340d81fad088233b"
+    },
+    {
+      "source": "sonnet-41.txt",
+      "copy": "000132.txt",
+      "normalized_bytes": 1120,
+      "sha256": "55794a6da0fd11aee916737ef791e911117da30f077d5df48569d046ab936fb1"
+    },
+    {
+      "source": "sonnet-42.txt",
+      "copy": "000133.txt",
+      "normalized_bytes": 1133,
+      "sha256": "aa2de19dd05b2e49c958dea06c6383723041430253f47397b3914e4ce4cc12f2"
+    },
+    {
+      "source": "sonnet-43.txt",
+      "copy": "000134.txt",
+      "normalized_bytes": 1140,
+      "sha256": "953f78f6740e25abed46b487800cdd52f9a48656d499a7508b3d63fff56d5762"
+    },
+    {
+      "source": "sonnet-44.txt",
+      "copy": "000135.txt",
+      "normalized_bytes": 1132,
+      "sha256": "f5ca100b55283c25cbcb9cfe8567b01ec5f262e78aabbfc3355bb6c6143959d7"
+    },
+    {
+      "source": "sonnet-45.txt",
+      "copy": "000136.txt",
+      "normalized_bytes": 1115,
+      "sha256": "190d8715f6a4b4275535811c91839775934db799994f5e6cf5cc9af31d754706"
+    },
+    {
+      "source": "sonnet-46.txt",
+      "copy": "000137.txt",
+      "normalized_bytes": 1121,
+      "sha256": "4f6c1641e07d4c380325e944c7c9d28b58b2ae4387b1e4d791d63a029e53b452"
+    },
+    {
+      "source": "sonnet-47.txt",
+      "copy": "000138.txt",
+      "normalized_bytes": 1130,
+      "sha256": "4e46195905c2ef1fedb85b6aaadaeb45904264e66c007265f2046719c5a15fff"
+    },
+    {
+      "source": "sonnet-48.txt",
+      "copy": "000139.txt",
+      "normalized_bytes": 1124,
+      "sha256": "588814bd9b8f585a55673475c5ba7da509fba22e05c508ccdf3704f91e7e7254"
+    },
+    {
+      "source": "sonnet-49.txt",
+      "copy": "000140.txt",
+      "normalized_bytes": 1121,
+      "sha256": "8a4cbafb0ac41746a975cad7bd5a5f112db323a2ea56702fb933d2e0b7f7b693"
+    },
+    {
+      "source": "sonnet-5.txt",
+      "copy": "000141.txt",
+      "normalized_bytes": 1127,
+      "sha256": "dc18770ba55590c4b0c40ca057ced23b375ed69d30da35dfdccfe8c1ed545cc7"
+    },
+    {
+      "source": "sonnet-50.txt",
+      "copy": "000142.txt",
+      "normalized_bytes": 1117,
+      "sha256": "63fe1a5171c173c8a457e4ba36300ab926c73a7c3d0bfd5b7a3dfeb036602f7f"
+    },
+    {
+      "source": "sonnet-51.txt",
+      "copy": "000143.txt",
+      "normalized_bytes": 1130,
+      "sha256": "c3e9ba9f8e459a9c899a31e80b2334507ce915405f6950e97e177f0ba7f0157e"
+    },
+    {
+      "source": "sonnet-52.txt",
+      "copy": "000144.txt",
+      "normalized_bytes": 1121,
+      "sha256": "b0392f3ee4d0241a676b0a7a7913af51bd1aeaf0f3a23242a63bce7c136587ff"
+    },
+    {
+      "source": "sonnet-53.txt",
+      "copy": "000145.txt",
+      "normalized_bytes": 1112,
+      "sha256": "c56654bccce67793adc1b541092add416065adb8bc54c43bdf666c3a7d91889f"
+    },
+    {
+      "source": "sonnet-54.txt",
+      "copy": "000146.txt",
+      "normalized_bytes": 1127,
+      "sha256": "facaf93bd8ee9bb959b4690c80c7c9b69be5878e6a060709cb369364e06f1e63"
+    },
+    {
+      "source": "sonnet-55.txt",
+      "copy": "000147.txt",
+      "normalized_bytes": 1124,
+      "sha256": "9a0832c9f7d6ac3884e80bf6cc212d4b2d33e359c8ce9312b6b77ceae1043d1b"
+    },
+    {
+      "source": "sonnet-56.txt",
+      "copy": "000148.txt",
+      "normalized_bytes": 1129,
+      "sha256": "0bd0d6a123cdfdb7e963fb34e260fc0f1dc28fb2824bcef66e75ee8a1935e997"
+    },
+    {
+      "source": "sonnet-57.txt",
+      "copy": "000149.txt",
+      "normalized_bytes": 1124,
+      "sha256": "34cb7449601796f7436457502d93880fceb934563dd6a0148091ff1777dc5340"
+    },
+    {
+      "source": "sonnet-58.txt",
+      "copy": "000150.txt",
+      "normalized_bytes": 1123,
+      "sha256": "e2efc0eee9fe3ac9ddcea51713225fbc488fcdcd4bef1ce6d439a579fe1c185c"
+    },
+    {
+      "source": "sonnet-59.txt",
+      "copy": "000151.txt",
+      "normalized_bytes": 1111,
+      "sha256": "fdc5089ef1670cc987259dc70cf849e484a90585eaceccde44361e35ea49831c"
+    },
+    {
+      "source": "sonnet-6.txt",
+      "copy": "000152.txt",
+      "normalized_bytes": 1122,
+      "sha256": "47a505600805124e0a2d4efaab4a3a7f46d3546e5154295828c52bbd7c176a49"
+    },
+    {
+      "source": "sonnet-60.txt",
+      "copy": "000153.txt",
+      "normalized_bytes": 1124,
+      "sha256": "7cffb8be8a2230e3b1e21d0f05bc5c8ecf503dbb390dd312660f01f07e1cadc2"
+    },
+    {
+      "source": "sonnet-61.txt",
+      "copy": "000154.txt",
+      "normalized_bytes": 1117,
+      "sha256": "3c9d15a7052248ab5986c792963a435cdfa7d409cfb5af5d1c05951dbae8b397"
+    },
+    {
+      "source": "sonnet-62.txt",
+      "copy": "000155.txt",
+      "normalized_bytes": 1102,
+      "sha256": "4f26c61d90cddbc89acc761c157da15596b6310cf00bbac75475479b94282eb5"
+    },
+    {
+      "source": "sonnet-63.txt",
+      "copy": "000156.txt",
+      "normalized_bytes": 1126,
+      "sha256": "b81a5faa1c1895691274471c85c75278d445b6068c207612e185e527eb6ae011"
+    },
+    {
+      "source": "sonnet-64.txt",
+      "copy": "000157.txt",
+      "normalized_bytes": 1118,
+      "sha256": "6fa4fbb2760763a43ddf90a5a7d20b99655bbb1f9d62aa98cdd04b3f3370f91c"
+    },
+    {
+      "source": "sonnet-65.txt",
+      "copy": "000158.txt",
+      "normalized_bytes": 1133,
+      "sha256": "77138b2caa6d193d8d9c99b2a2d69a3ac8305cc0c3a023177920199d41719f86"
+    },
+    {
+      "source": "sonnet-66.txt",
+      "copy": "000159.txt",
+      "normalized_bytes": 1103,
+      "sha256": "853c2a71dd66708d138393acab7fcf494466a5c983dee0320ab158e12308fb8a"
+    },
+    {
+      "source": "sonnet-67.txt",
+      "copy": "000160.txt",
+      "normalized_bytes": 1113,
+      "sha256": "b17dcc7da94e09499f9dd91fc6f9c61527da646f9c08dcace0d3b731119ff18b"
+    },
+    {
+      "source": "sonnet-68.txt",
+      "copy": "000161.txt",
+      "normalized_bytes": 1107,
+      "sha256": "f9927a43cd43ce9d0202c4be25ff6ee55d75d3039aef0139f0ab1972677d3ed1"
+    },
+    {
+      "source": "sonnet-69.txt",
+      "copy": "000162.txt",
+      "normalized_bytes": 1152,
+      "sha256": "4c21ec87079b34e266a7603c42c7348470a148b36efed65c6b9bed3ebff53037"
+    },
+    {
+      "source": "sonnet-7.txt",
+      "copy": "000163.txt",
+      "normalized_bytes": 1110,
+      "sha256": "c5c759d2de04380512dae105ada1725fc653ad7cd5e56c127611f0d7e1f013ac"
+    },
+    {
+      "source": "sonnet-70.txt",
+      "copy": "000164.txt",
+      "normalized_bytes": 1123,
+      "sha256": "a7bdcfae785cbab0bc335151c9979e6b8efabad23023046f7d2f9c8a8c28f236"
+    },
+    {
+      "source": "sonnet-71.txt",
+      "copy": "000165.txt",
+      "normalized_bytes": 1114,
+      "sha256": "e52f08caf120146d4411a55fbee6e167e261d6e49ee3e4f8315c45f37dacc11e"
+    },
+    {
+      "source": "sonnet-72.txt",
+      "copy": "000166.txt",
+      "normalized_bytes": 1119,
+      "sha256": "dd58def626a4b0da012a506ed8c5bf18c00ec3df1d7686349e960067bba392cd"
+    },
+    {
+      "source": "sonnet-73.txt",
+      "copy": "000167.txt",
+      "normalized_bytes": 1139,
+      "sha256": "28865137a280910b78204d7c21152d55bb180dfdbbabe58bef97ee3e9292fa90"
+    },
+    {
+      "source": "sonnet-74.txt",
+      "copy": "000168.txt",
+      "normalized_bytes": 1114,
+      "sha256": "0279e0e7710a8cf74fcfd9976bfac8d9c770a6e493d52a8b367014e04cb136ef"
+    },
+    {
+      "source": "sonnet-75.txt",
+      "copy": "000169.txt",
+      "normalized_bytes": 1114,
+      "sha256": "901c10db2904c760a414e50bea816028ebdd0fa41e840794bb9cf26e23c16c91"
+    },
+    {
+      "source": "sonnet-76.txt",
+      "copy": "000170.txt",
+      "normalized_bytes": 1109,
+      "sha256": "62856936c1ce3ee98f7a64e9d62eee0ddead1a48e629f38e861bb2ef08809de9"
+    },
+    {
+      "source": "sonnet-77.txt",
+      "copy": "000171.txt",
+      "normalized_bytes": 1128,
+      "sha256": "a9186e2b59b8186ac5d1a6bc016a7c8536cff6cac8ec404b0fd78fb9d6c68bfb"
+    },
+    {
+      "source": "sonnet-78.txt",
+      "copy": "000172.txt",
+      "normalized_bytes": 1103,
+      "sha256": "98c7c98bd9ba6f0b3214290485536ba4801e9b01c59b149109f2c39673e80c63"
+    },
+    {
+      "source": "sonnet-79.txt",
+      "copy": "000173.txt",
+      "normalized_bytes": 1113,
+      "sha256": "6231910bd75af7f5bf4e5a33e30d980444d7c96bfe16f40e9cd9bb90c3d0b187"
+    },
+    {
+      "source": "sonnet-8.txt",
+      "copy": "000174.txt",
+      "normalized_bytes": 1141,
+      "sha256": "46889a94cdaf8b876648e711bdc22f542a03cc494bf007264bf5978edde02548"
+    },
+    {
+      "source": "sonnet-80.txt",
+      "copy": "000175.txt",
+      "normalized_bytes": 1115,
+      "sha256": "9643f04a552cc7f22b45b9a27f8e38a83281c7271b8625dd13b1437190d1a07c"
+    },
+    {
+      "source": "sonnet-81.txt",
+      "copy": "000176.txt",
+      "normalized_bytes": 1133,
+      "sha256": "178bd23fb0669a6cd87af679d760e1db1a429fc13a5740f5816c1d4ef10f984d"
+    },
+    {
+      "source": "sonnet-82.txt",
+      "copy": "000177.txt",
+      "normalized_bytes": 1122,
+      "sha256": "7ec1a2ddad034e75437c41b9738e6aa1ce5998930bd584e076e95914686e0c3f"
+    },
+    {
+      "source": "sonnet-83.txt",
+      "copy": "000178.txt",
+      "normalized_bytes": 1121,
+      "sha256": "78eea233216843f9b5850e97e6d6fdfbbd850af4bdf1d408637c6d92ef0c5de3"
+    },
+    {
+      "source": "sonnet-84.txt",
+      "copy": "000179.txt",
+      "normalized_bytes": 1124,
+      "sha256": "9a41da94937cf722544d8711031d74b0ce668ea81b5e750235132f2e6626b4b8"
+    },
+    {
+      "source": "sonnet-85.txt",
+      "copy": "000180.txt",
+      "normalized_bytes": 1138,
+      "sha256": "fe1f9a34ae25f55ffc3811c9e9d0b44cef3b6ef57f003b3a74168c2bb2e4f769"
+    },
+    {
+      "source": "sonnet-86.txt",
+      "copy": "000181.txt",
+      "normalized_bytes": 1121,
+      "sha256": "fd5ae7c2bbc5d00c57a0c295a6d629845de1886f7185c50bb466aa31095213aa"
+    },
+    {
+      "source": "sonnet-87.txt",
+      "copy": "000182.txt",
+      "normalized_bytes": 1134,
+      "sha256": "76b15a0f015f6489951f3c3e7672eeebf37907db9def9587a4bbc80100ace9aa"
+    },
+    {
+      "source": "sonnet-88.txt",
+      "copy": "000183.txt",
+      "normalized_bytes": 1115,
+      "sha256": "3c273c6bd4ba0bfa199f611be220eac9373d5fac66617475c6b10acad103bfdd"
+    },
+    {
+      "source": "sonnet-89.txt",
+      "copy": "000184.txt",
+      "normalized_bytes": 1121,
+      "sha256": "7ed9f7aec21e9734c75c2f1ea780b3e08dc8c5d3cd2d65ee24c587111729418f"
+    },
+    {
+      "source": "sonnet-9.txt",
+      "copy": "000185.txt",
+      "normalized_bytes": 1127,
+      "sha256": "7944ac6a5a9f269c49d256af8db56b9c5c70bb5b62767a4f2a151fd616bd073b"
+    },
+    {
+      "source": "sonnet-90.txt",
+      "copy": "000186.txt",
+      "normalized_bytes": 1123,
+      "sha256": "d3dfaf6863250d234b0e1ec14e5e4fd3faf765d1f2ed5b2e09849bf06a788417"
+    },
+    {
+      "source": "sonnet-91.txt",
+      "copy": "000187.txt",
+      "normalized_bytes": 1133,
+      "sha256": "363542dbaf6315c6510232c016d3106f84325f5075f73d9ac2c84f2ba09784d9"
+    },
+    {
+      "source": "sonnet-92.txt",
+      "copy": "000188.txt",
+      "normalized_bytes": 1110,
+      "sha256": "77d61653ddb194708dc4bca2386ff5be932f3ca7516226a9402f377afd032540"
+    },
+    {
+      "source": "sonnet-93.txt",
+      "copy": "000189.txt",
+      "normalized_bytes": 1133,
+      "sha256": "01479778cdba342e2df797657e62126d35f015d2b3b4a1ac711bc52baaad7589"
+    },
+    {
+      "source": "sonnet-94.txt",
+      "copy": "000190.txt",
+      "normalized_bytes": 1123,
+      "sha256": "8c75cd7ee651ad31f6c1b239e7103a9df77fdeeafa23e3bdabb999f8781d459b"
+    },
+    {
+      "source": "sonnet-95.txt",
+      "copy": "000191.txt",
+      "normalized_bytes": 1125,
+      "sha256": "a45ef85746f10575c639818f7ee99766d815d1c66dc1b3d44cce18aed4acb9ec"
+    },
+    {
+      "source": "sonnet-96.txt",
+      "copy": "000192.txt",
+      "normalized_bytes": 1131,
+      "sha256": "65139a02a250b5e280eba43741f71884c07e99fec4353d0fd9f4a48f07156ce1"
+    },
+    {
+      "source": "sonnet-97.txt",
+      "copy": "000193.txt",
+      "normalized_bytes": 1124,
+      "sha256": "239214385a3efad53909a6803a51ee7c94682317fa420af5d6ba42ff8ee45333"
+    },
+    {
+      "source": "sonnet-98.txt",
+      "copy": "000194.txt",
+      "normalized_bytes": 1126,
+      "sha256": "515dcc295933e27190ddeb483f94564024614913689a4b50413a4395bc6423e6"
+    },
+    {
+      "source": "sonnet-99.txt",
+      "copy": "000195.txt",
+      "normalized_bytes": 1188,
+      "sha256": "ac858d4c49bc6755d86d24ed9dc0bd87b081c9f3cd2f6d66a9be74f36c3528b1"
+    }
+  ],
+  "total_bytes": 6460189,
+  "normalization": "Every nonempty file ends in newline; small and merged contain identical token streams."
+}

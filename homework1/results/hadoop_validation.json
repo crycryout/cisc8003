@@ -1,0 +1,31 @@
+{
+  "hadoop_version": "3.3.6",
+  "java_version": "11",
+  "framework": "Hadoop LocalJobRunner",
+  "filesystem": "local file://",
+  "cloud_vms": 0,
+  "figure_jobs_succeeded": 6,
+  "figure_result_matches_independent_oracle": true,
+  "medium_completed": true,
+  "additional_regression_jobs_succeeded": 6,
+  "additional_regression_matches_oracle": true,
+  "additional_regression_includes": [
+    "duplicate edges",
+    "zero similarity",
+    "leading zeros",
+    "IDs beyond 64 bits",
+    "numeric ties"
+  ],
+  "built_in_wordcount_smoke_passed": true,
+  "medium_jobs_succeeded": 6,
+  "medium_all_user_output_rows": 81306,
+  "medium_sampled_exact_checks": 1000,
+  "medium_mismatches": 0,
+  "medium_suffix_files": 1000,
+  "figure_block_size": 2,
+  "figure_reducers_per_nonuniverse_job": 3,
+  "medium_block_size": 512,
+  "medium_reducers_per_nonuniverse_job": 6,
+  "medium_local_parallel_map_limit": 2,
+  "medium_local_parallel_reduce_limit": 2
+}

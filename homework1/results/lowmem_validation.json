@@ -1,0 +1,9 @@
+{
+  "profile": "lowmem",
+  "hadoop_version": "3.3.6",
+  "framework": "LocalJobRunner",
+  "heap_cap_for_local_test_mib": 512,
+  "stages_succeeded": 6,
+  "matches_independent_oracle": true,
+  "cloud_4gib_nodes_tested": false
+}

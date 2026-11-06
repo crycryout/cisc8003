@@ -1,0 +1,19 @@
+{
+  "framework": "Hadoop 3.3.6 LocalJobRunner; correctness only, not four-VM benchmark",
+  "files": 196,
+  "merged_bytes": 6460189,
+  "equivalent_wordcounts": true,
+  "distinct_tokens": 72379,
+  "canonical_output_sha256": "b9524c8e2c10b2b16d2e5334f34dc3384cb7c46b47f2a770c023d54cae877d31",
+  "conditions": [
+    {
+      "setting": "small",
+      "actual_maps": 196
+    },
+    {
+      "setting": "merged",
+      "actual_maps": 1
+    }
+  ],
+  "timing_claim": "None. Other validation jobs were running concurrently."
+}

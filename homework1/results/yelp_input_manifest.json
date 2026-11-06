@@ -1,0 +1,8 @@
+{
+  "source_url": "https://business.yelp.com/external-assets/files/Yelp-JSON.zip",
+  "source_zip_bytes": 4345335132,
+  "input_file": "yelp_academic_dataset_review.json",
+  "input_bytes": 5341868833,
+  "sha256": "a4edc050d14eec25373a75e7ee211d42f49f14f47230837d8c7849eb9c5f2f96",
+  "cloud_runs_completed": false
+}

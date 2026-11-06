@@ -1,0 +1,27 @@
+{
+  "artifacts": [
+    {
+      "path": "artifacts/medium_all_users_top10.txt.gz",
+      "bytes": 2892946,
+      "sha256": "fc3c07d447df4679942538ef897072eb91a3028c2a3cc7ccfd34aa1f855da6d3",
+      "uncompressed_bytes": 7239582,
+      "uncompressed_sha256": "1d86de53417447e7a124c0cb9983b2761c834125e9e4620802c9d65a1b655ed9",
+      "origin": "Hadoop 3.3.6 LocalJobRunner on 2026-11-03; not lab-cluster evidence"
+    },
+    {
+      "path": "artifacts/shakespeare_expected_wordcounts.txt.gz",
+      "bytes": 253050,
+      "sha256": "ec0015a2d16dc2d75a6ec437f4674c57378d270f0de7cb5b4b4cc4e14003c887",
+      "uncompressed_bytes": 835072,
+      "uncompressed_sha256": "b9524c8e2c10b2b16d2e5334f34dc3384cb7c46b47f2a770c023d54cae877d31",
+      "origin": "Hadoop 3.3.6 LocalJobRunner on 2026-11-03; not lab-cluster evidence"
+    },
+    {
+      "path": "artifacts/local_hadoop_logs_2026-11-03.tar.gz",
+      "bytes": 358450,
+      "sha256": "5f25af668b7ee12c3dc58a9afd54b8f39917607f6df8ca9b8bb257fb2f7c25a3",
+      "log_files": 28,
+      "origin": "Unmodified historical LocalJobRunner logs; not lab-cluster evidence"
+    }
+  ]
+}

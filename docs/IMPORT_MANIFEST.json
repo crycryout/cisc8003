@@ -1,0 +1,321 @@
+{
+  "snapshot": "2026-11-06 H800 Codex handoff import",
+  "scope": "Repository bytes, not cluster execution evidence",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 824,
+      "sha256": "63f269311375fb4821884ed48b0ed548dff2e8e8c78aec7e7e5f9721514b3ede"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3591,
+      "sha256": "f8292143610367c041c540ffba923c01833d1ba04208f8c48ee39297f595a0fa"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2464,
+      "sha256": "7cd447827abbc6c8a760c70262387f184f16a8a99a7ad6466cf3f4758a2f0e7d"
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "bytes": 2295,
+      "sha256": "ecd7684c4bd555f61eae58de7ffc1da37697f27d22d10e3e0d9ce5e4b1954149"
+    },
+    {
+      "path": "docs/ASSIGNMENT_REQUIREMENTS.md",
+      "bytes": 1820,
+      "sha256": "7bb4dbe42e04f66bf32f4eec6d8512ea77f5e5807f0235aa4350b91656f5f94f"
+    },
+    {
+      "path": "docs/EVIDENCE_INDEX.md",
+      "bytes": 3330,
+      "sha256": "2ada929cca5cf0deddd2a9446e42b4307fc98a08dc7e319abc137395500d6726"
+    },
+    {
+      "path": "docs/H800_CODEX_HANDOFF.md",
+      "bytes": 10886,
+      "sha256": "dab5067b35caf2b5ef49ac22b33eba196577fb77f5fd9153041ce7ef1d7490fc"
+    },
+    {
+      "path": "docs/NEXT_CODEX_PROMPT.md",
+      "bytes": 2003,
+      "sha256": "e3f156d8e1900940559935237eade0db77d3660ee9bacb3ea2f0b15a302b0364"
+    },
+    {
+      "path": "docs/WORK_LOG.md",
+      "bytes": 4110,
+      "sha256": "694e375349dc276e1eb27c23ba39a0d769f172f738e8ad6aab7272a140eac955"
+    },
+    {
+      "path": "docs/history/ORIGINAL_PACKAGE_README_2026-11-06.md",
+      "bytes": 11280,
+      "sha256": "5d32bfb02c76ead9cd586b13ccb8d2556ccfa0d28b225ea5d3e9dcd72eff15c5"
+    },
+    {
+      "path": "homework1/README.md",
+      "bytes": 2849,
+      "sha256": "9a33ef1b3a328ee3bf1193156e947c294947146b101d7e9b9467a13e970b190a"
+    },
+    {
+      "path": "homework1/artifacts/local_hadoop_logs_2026-11-03.tar.gz",
+      "bytes": 358450,
+      "sha256": "5f25af668b7ee12c3dc58a9afd54b8f39917607f6df8ca9b8bb257fb2f7c25a3"
+    },
+    {
+      "path": "homework1/artifacts/manifest.json",
+      "bytes": 1119,
+      "sha256": "fc89068df9ae77fe996b0955f6f2dfb8589da698286379e1a6d2f9c1b47cac6b"
+    },
+    {
+      "path": "homework1/artifacts/medium_all_users_top10.txt.gz",
+      "bytes": 2892946,
+      "sha256": "fc3c07d447df4679942538ef897072eb91a3028c2a3cc7ccfd34aa1f855da6d3"
+    },
+    {
+      "path": "homework1/artifacts/shakespeare_expected_wordcounts.txt.gz",
+      "bytes": 253050,
+      "sha256": "ec0015a2d16dc2d75a6ec437f4674c57378d270f0de7cb5b4b4cc4e14003c887"
+    },
+    {
+      "path": "homework1/cluster/DEPLOYMENT.md",
+      "bytes": 6642,
+      "sha256": "67409506a77df625a433ef13f0f2ffed76b404dfefc77c88dd515b13b0af97f0"
+    },
+    {
+      "path": "homework1/cluster/LAB_E2E.md",
+      "bytes": 9263,
+      "sha256": "3e8137c28dd4341c6e34f6c2d34c7ef37684b4f4610721d6611679c8cfbed8ad"
+    },
+    {
+      "path": "homework1/cluster/TENCENT_E2E.md",
+      "bytes": 3854,
+      "sha256": "1f4d28cb469bb13188fd30ada831d4865b79ea8b01bded8fe39e8b8e9b6532a6"
+    },
+    {
+      "path": "homework1/cluster/bootstrap_node.sh",
+      "bytes": 3458,
+      "sha256": "2e00b60f656faf99b6f2c7b83ced75990cec640efe139792b09eb6cdcb9f81b0"
+    },
+    {
+      "path": "homework1/cluster/collect_community_metrics.py",
+      "bytes": 1216,
+      "sha256": "c2545cca62cff9cc7408d62d84da56b6dbff79548b6b4859c61ce9b0dadd0cd0"
+    },
+    {
+      "path": "homework1/cluster/configure.py",
+      "bytes": 5487,
+      "sha256": "54332762f6454251cbebeba93d3d9c43bf1162f8ad1b5e7af2280268d1806383"
+    },
+    {
+      "path": "homework1/cluster/lab_preflight.py",
+      "bytes": 4046,
+      "sha256": "9b35a8142fc8528b5b6de9bed7b0c056bef7b9a9ccbc5c4a757ae1a31c017e2b"
+    },
+    {
+      "path": "homework1/cluster/run_required.sh",
+      "bytes": 2030,
+      "sha256": "07001efb800eafdf1a87cb1d7418da8ec6fbd0b7231f1929da7190293c072c4e"
+    },
+    {
+      "path": "homework1/data/README.md",
+      "bytes": 409,
+      "sha256": "a8f54efc9395545485e768836fd7c53f5bd7e26f16a62cfa7fc62067a84bde67"
+    },
+    {
+      "path": "homework1/data/figure_numeric.txt",
+      "bytes": 82,
+      "sha256": "efeb1166f6d9b9d6e3eb516b2c834c0d4688cc4fa1612030ddacf221eb47d98d"
+    },
+    {
+      "path": "homework1/data/hadoop_regression.txt",
+      "bytes": 81,
+      "sha256": "92ab24d1b20b6f6b792ca6180841c45220c822378671a84028f9bc816c54fe42"
+    },
+    {
+      "path": "homework1/data/shakespeare_prepared/manifest.json",
+      "bytes": 37543,
+      "sha256": "99c1b1fa1855f74016bc972f412c613b9bafe4e42911e87a2accb925f8222196"
+    },
+    {
+      "path": "homework1/report/Homework1_Report_Draft.md",
+      "bytes": 24795,
+      "sha256": "13c3037b4b9618ba5fe2956e95e569b5d7ba59484bae6cd2af31eaec55f3aebb"
+    },
+    {
+      "path": "homework1/report/Homework1_Report_Draft.pdf",
+      "bytes": 89403,
+      "sha256": "a76ad02d73f641ffafb9fb9b4e6c1603267c7682c5fdde1b3966473e4d9c7783"
+    },
+    {
+      "path": "homework1/report/build_report.py",
+      "bytes": 5188,
+      "sha256": "d4deb934133bbb2bc6a0452d33e4a7d9d9e0c82a219f3996f46a0313ce2f8148"
+    },
+    {
+      "path": "homework1/results/data_access_status.json",
+      "bytes": 985,
+      "sha256": "31ba519db7a1f9c78aebd6f00952ee40646370f0bd7639e6478c6289a54b6667"
+    },
+    {
+      "path": "homework1/results/figure_top10.scores.txt",
+      "bytes": 88,
+      "sha256": "6d01f8939071a9e20b8fbbf3846361e1aca1671c1c7b94f364c19ed5d6d19f37"
+    },
+    {
+      "path": "homework1/results/figure_top10.txt",
+      "bytes": 50,
+      "sha256": "a24baa5ab2fcb3fbc199bb8bde8a9512d561695ebf0a10506d52317072514395"
+    },
+    {
+      "path": "homework1/results/hadoop_counters_summary.json",
+      "bytes": 1552,
+      "sha256": "521f67fc1bddf4b0ea254711a220103b43804d6de59e447550211e7715639637"
+    },
+    {
+      "path": "homework1/results/hadoop_figure_top10.txt",
+      "bytes": 50,
+      "sha256": "a24baa5ab2fcb3fbc199bb8bde8a9512d561695ebf0a10506d52317072514395"
+    },
+    {
+      "path": "homework1/results/hadoop_job_status.json",
+      "bytes": 1177,
+      "sha256": "c6692b83887db8651bd213271d73b136e9da86350ccc0c0b25182e4fb1949d2c"
+    },
+    {
+      "path": "homework1/results/hadoop_regression_actual.txt",
+      "bytes": 500,
+      "sha256": "9623c674d0b43fcd4647caeb6ff12b54acff3d3a1da7d7d2dfaa64b4f7be5b95"
+    },
+    {
+      "path": "homework1/results/hadoop_regression_expected.txt",
+      "bytes": 500,
+      "sha256": "9623c674d0b43fcd4647caeb6ff12b54acff3d3a1da7d7d2dfaa64b4f7be5b95"
+    },
+    {
+      "path": "homework1/results/hadoop_validation.json",
+      "bytes": 938,
+      "sha256": "d189b0c3055bd42b334a2df5b0cf2087787323c2bba58674f5713855386d6b95"
+    },
+    {
+      "path": "homework1/results/lab_preparation.json",
+      "bytes": 878,
+      "sha256": "2fcff24dbce0419a73a1885c6ce40e0eb575070af00e72f9451f20252303e45d"
+    },
+    {
+      "path": "homework1/results/local_tests.log",
+      "bytes": 1374,
+      "sha256": "5f10369cab8a55960ba7b7863c996604e20656e32a49c6b37842e4baa3e99f10"
+    },
+    {
+      "path": "homework1/results/lowmem_validation.json",
+      "bytes": 224,
+      "sha256": "463a0434af471846b4f33837433988727e1a3389902ed773ae479124a13a1f93"
+    },
+    {
+      "path": "homework1/results/medium_validation.json",
+      "bytes": 378,
+      "sha256": "643cb961131dcaad45904ae15bcc515bda16f19d882f9a130f02597fc28343b1"
+    },
+    {
+      "path": "homework1/results/repository_unit_tests_2026-11-06.log",
+      "bytes": 1680,
+      "sha256": "5e6ed521faa5d7a7e81a5c63c5f38c3cf5c1750aebbbff5a0d124f4fc1654c97"
+    },
+    {
+      "path": "homework1/results/runtime_versions.txt",
+      "bytes": 589,
+      "sha256": "feabf359e20810b73067cbd198fb6aa5aed5f931d0748c63c6a0d7d42928111b"
+    },
+    {
+      "path": "homework1/results/shakespeare_validation.json",
+      "bytes": 515,
+      "sha256": "4ecf85c3ba2d1dcf4ff809f00f73fe081b1ce3e48d5d1d011803eecf7ef1d141"
+    },
+    {
+      "path": "homework1/results/wordcount_local_smoke.txt",
+      "bytes": 29,
+      "sha256": "6c7f9cd7816ab0902d13833291fd3784c40e9a841faa29ad255428d68edcb2c4"
+    },
+    {
+      "path": "homework1/results/yelp_input_manifest.json",
+      "bytes": 312,
+      "sha256": "ea14e6a9b0c33426479fdf8fc4643cbe8565ceca7e71593d6d2c5712d5028c66"
+    },
+    {
+      "path": "homework1/src/community.py",
+      "bytes": 9524,
+      "sha256": "633ac9af5e46ea4e3293f93c320ca191e75a1dda299c6fffe288134bd4c2c28d"
+    },
+    {
+      "path": "homework1/src/export_suffixes.py",
+      "bytes": 983,
+      "sha256": "5ba6de78e7f819cbd3381ed36a0efbca0df9c5070b4ca9c1b84b7c7785a70040"
+    },
+    {
+      "path": "homework1/src/fetch_course_data.py",
+      "bytes": 2323,
+      "sha256": "f74311b1a70087aa98f6fbdd0ebb5ac0da930b04b452133710976d8e1b83e434"
+    },
+    {
+      "path": "homework1/src/filter_suffix.py",
+      "bytes": 644,
+      "sha256": "7f2fd4ec4fd2bd3659ca0ef30efd062393d68b6fb18f4e3fb5565ac69c4b4510"
+    },
+    {
+      "path": "homework1/src/local_demo.py",
+      "bytes": 997,
+      "sha256": "2652c7d2e0d84929e90a79f6a137de70dfa8f8b441052c1a4bf72ed9956322ab"
+    },
+    {
+      "path": "homework1/src/metrics.py",
+      "bytes": 3468,
+      "sha256": "6ac3edf8592ad94fe3e3f87de61f2634bea673e478bd1f1936e38b5c4d555fc0"
+    },
+    {
+      "path": "homework1/src/prepare_words.py",
+      "bytes": 2425,
+      "sha256": "bc2f5a80f464123d3ff3b2111324a13712867b42e77bb2451c744da9ce599d57"
+    },
+    {
+      "path": "homework1/src/run_community.sh",
+      "bytes": 5074,
+      "sha256": "a2566b3841e8c23a4dd2e32c0659d4cd33f216d1299e83dcffb588cb4fe4a96a"
+    },
+    {
+      "path": "homework1/src/run_wordcount.py",
+      "bytes": 6678,
+      "sha256": "ff6228487f4a676d54994c134065c0099fd5fd81d4b9595267b5e7dcd1e7bc28"
+    },
+    {
+      "path": "homework1/src/validate_medium.py",
+      "bytes": 3696,
+      "sha256": "53fd9976942319f8f4ff6f77f9b10fd20102641d9617052a190d557e2fb27897"
+    },
+    {
+      "path": "homework1/tests/test_community.py",
+      "bytes": 6731,
+      "sha256": "eeb90c623834e9ab882cebf0dd1607b6d0d6bd5b267f36adfb42dbe5aa96510a"
+    },
+    {
+      "path": "homework1/tests/test_metrics.py",
+      "bytes": 1395,
+      "sha256": "675452ee5295fc4f5f4e069b812ec862860a080b4467ffb0062e340415ff7b26"
+    },
+    {
+      "path": "homework1/tests/test_profiles.py",
+      "bytes": 4140,
+      "sha256": "d7ef0c178fbf8f9e666fbf1fe6d566578586c5d1969747d2eb6901cb69c7cb5c"
+    },
+    {
+      "path": "scripts/compare_top10.py",
+      "bytes": 2170,
+      "sha256": "4eb74450260b8cc2bbf9437148525f69d36dc96b26acb707a5eec549efabc536"
+    },
+    {
+      "path": "scripts/verify_repository.py",
+      "bytes": 1132,
+      "sha256": "f76668eb3e964161c975ba775ebd11a662f741bb424765cbfc3cdb6706ecd090"
+    }
+  ]
+}

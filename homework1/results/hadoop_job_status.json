@@ -1,0 +1,50 @@
+[
+  {
+    "stage": "01_dedup",
+    "job_ids": [
+      "job_local221088007_0001"
+    ],
+    "completed_successfully": true,
+    "framework": "Hadoop LocalJobRunner; not a four-VM YARN cluster"
+  },
+  {
+    "stage": "02_universe",
+    "job_ids": [
+      "job_local280174610_0001"
+    ],
+    "completed_successfully": true,
+    "framework": "Hadoop LocalJobRunner; not a four-VM YARN cluster"
+  },
+  {
+    "stage": "03_blocks",
+    "job_ids": [
+      "job_local634610909_0001"
+    ],
+    "completed_successfully": true,
+    "framework": "Hadoop LocalJobRunner; not a four-VM YARN cluster"
+  },
+  {
+    "stage": "04_pairs",
+    "job_ids": [
+      "job_local2040562691_0001"
+    ],
+    "completed_successfully": true,
+    "framework": "Hadoop LocalJobRunner; not a four-VM YARN cluster"
+  },
+  {
+    "stage": "05_scores",
+    "job_ids": [
+      "job_local24445213_0001"
+    ],
+    "completed_successfully": true,
+    "framework": "Hadoop LocalJobRunner; not a four-VM YARN cluster"
+  },
+  {
+    "stage": "06_top10",
+    "job_ids": [
+      "job_local153600962_0001"
+    ],
+    "completed_successfully": true,
+    "framework": "Hadoop LocalJobRunner; not a four-VM YARN cluster"
+  }
+]

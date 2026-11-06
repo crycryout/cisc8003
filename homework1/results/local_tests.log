@@ -1,0 +1,18 @@
+test_assignment_figure (test_community.CommunityTests.test_assignment_figure) ... ok
+test_duplicate_edges_and_lines (test_community.CommunityTests.test_duplicate_edges_and_lines) ... ok
+test_edge_direction_and_undirected_mode (test_community.CommunityTests.test_edge_direction_and_undirected_mode) ... ok
+test_empty_and_single_user (test_community.CommunityTests.test_empty_and_single_user) ... ok
+test_high_degree_blocking (test_community.CommunityTests.test_high_degree_blocking) ... ok
+test_invalid_ids_fail (test_community.CommunityTests.test_invalid_ids_fail) ... ok
+test_large_numeric_ids_and_leading_zeros (test_community.CommunityTests.test_large_numeric_ids_and_leading_zeros) ... ok
+test_random_graphs (test_community.CommunityTests.test_random_graphs) ... ok
+test_zero_similarity_and_followee_only_users (test_community.CommunityTests.test_zero_similarity_and_followee_only_users) ... ok
+test_partial_tasks_are_rejected (test_metrics.TimingTests.test_partial_tasks_are_rejected) ... ok
+test_synthetic_timestamp_arithmetic (test_metrics.TimingTests.test_synthetic_timestamp_arithmetic) ... ok
+test_lowmem_budget (test_profiles.ProfileTests.test_lowmem_budget) ... ok
+test_standard_budget_preserved (test_profiles.ProfileTests.test_standard_budget_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.830s
+
+OK

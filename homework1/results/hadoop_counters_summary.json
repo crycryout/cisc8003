@@ -1,0 +1,59 @@
+[
+  {
+    "stage": "01_dedup",
+    "Map input records": 2420766,
+    "Map output records": 7262298,
+    "Reduce input records": 2177662,
+    "Reduce output records": 1849455,
+    "Spilled Records": 5908716,
+    "Reduce shuffle bytes": 14067365
+  },
+  {
+    "stage": "02_universe",
+    "Map input records": 1849455,
+    "Map output records": 66,
+    "Reduce input records": 66,
+    "Reduce output records": 11,
+    "Spilled Records": 132,
+    "Reduce shuffle bytes": 405
+  },
+  {
+    "stage": "03_blocks",
+    "Map input records": 1849455,
+    "Map output records": 1849455,
+    "Reduce input records": 1849455,
+    "Reduce output records": 162820,
+    "Spilled Records": 3698910,
+    "Reduce shuffle bytes": 12486731,
+    "CandidatePairs": 154933408,
+    "Edges": 1768149,
+    "Users": 81306
+  },
+  {
+    "stage": "04_pairs",
+    "Map input records": 162820,
+    "Map output records": 163466,
+    "Reduce input records": 163466,
+    "Reduce output records": 155014714,
+    "Spilled Records": 326932,
+    "Reduce shuffle bytes": 9712755
+  },
+  {
+    "stage": "05_scores",
+    "Map input records": 155014714,
+    "Map output records": 155014714,
+    "Reduce input records": 147129597,
+    "Reduce output records": 64277285,
+    "Spilled Records": 294259194,
+    "Reduce shuffle bytes": 807103390
+  },
+  {
+    "stage": "06_top10",
+    "Map input records": 64277285,
+    "Map output records": 128473264,
+    "Reduce input records": 128473264,
+    "Reduce output records": 81306,
+    "Spilled Records": 382698666,
+    "Reduce shuffle bytes": 671925219
+  }
+]

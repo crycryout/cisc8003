@@ -1,0 +1,24 @@
+{
+  "reference": "Homework 1 Ref [7] Dropbox download",
+  "download_succeeded": true,
+  "format_observed": "two-column numeric edge list, no colon",
+  "compressed_bytes": 10621918,
+  "compressed_sha256": "d9f99b0e6a53b9204b8c215f41b3c10fb99a1e1e783858c012b06d0d3d4bd129",
+  "edge_lines": 2420766,
+  "unique_edges": 1768149,
+  "observed_unique_users": 81306,
+  "max_followers_if_first_column_follower": 3383,
+  "candidate_pairs_if_first_column_follower": 154933408,
+  "direction_assumption": "First column is follower; verify with course dataset documentation.",
+  "first_five_lines": [
+    "214328887 34428380",
+    "17116707 28465635",
+    "380580781 18996905",
+    "221036078 153460275",
+    "107830991 17868918"
+  ],
+  "full_q2_run_completed": true,
+  "direction_support": "SNAP readme-Ego.txt defines Twitter and Gplus directed edge a b as a follows b",
+  "direction_source": "https://snap.stanford.edu/data/readme-Ego.txt",
+  "execution_framework": "Hadoop 3.3.6 LocalJobRunner"
+}
