@@ -2,6 +2,7 @@
 """Collect completed YARN job evidence from the six Streaming console logs."""
 import argparse
 import json
+import os
 from pathlib import Path
 import re
 import sys
@@ -12,7 +13,7 @@ from metrics import collect, write_csv
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--logs", required=True)
 parser.add_argument("--output", required=True)
-parser.add_argument("--history", default="http://master:19888")
+parser.add_argument("--history", default=os.environ.get("HW1_HISTORY_URL", "http://master:19888"))
 args = parser.parse_args()
 logs = sorted(Path(args.logs).glob("*.log"))
 if len(logs) != 6:

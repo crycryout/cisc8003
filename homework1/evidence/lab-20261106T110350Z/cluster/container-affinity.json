@@ -1,0 +1,42 @@
+{
+  "worker1": [
+    {
+      "class": "org.apache.hadoop.mapred.YarnChild",
+      "allowed_cpus": "80-83",
+      "java_executable": "/home/experiment-user/cisc8003/.local/jdk/bin/java"
+    },
+    {
+      "class": "org.apache.hadoop.mapred.YarnChild",
+      "allowed_cpus": "80-83",
+      "java_executable": "/home/experiment-user/cisc8003/.local/jdk/bin/java"
+    },
+    {
+      "class": "org.apache.hadoop.mapred.YarnChild",
+      "allowed_cpus": "80-83",
+      "java_executable": "/home/experiment-user/cisc8003/.local/jdk/bin/java"
+    },
+    {
+      "class": "org.apache.hadoop.mapred.YarnChild",
+      "allowed_cpus": "80-83",
+      "java_executable": "/home/experiment-user/cisc8003/.local/jdk/bin/java"
+    }
+  ],
+  "worker2": [
+    {
+      "class": "org.apache.hadoop.mapreduce.v2.app.MRAppMaster",
+      "allowed_cpus": "16-19",
+      "java_executable": "/home/experiment-user/cisc8003/.local/jdk/bin/java"
+    },
+    {
+      "class": "org.apache.hadoop.mapred.YarnChild",
+      "allowed_cpus": "16-19",
+      "java_executable": "/home/experiment-user/cisc8003/.local/jdk/bin/java"
+    },
+    {
+      "class": "org.apache.hadoop.mapred.YarnChild",
+      "allowed_cpus": "16-19",
+      "java_executable": "/home/experiment-user/cisc8003/.local/jdk/bin/java"
+    }
+  ],
+  "worker3": []
+}

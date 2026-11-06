@@ -1,0 +1,47 @@
+{
+  "task_1793963521105_0007_r_000000": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963971348,
+          "finishTime": 1793963972592,
+          "elapsedTime": 1244,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0007_r_000000_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "reduce > reduce",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0007_01_000003",
+          "shuffleFinishTime": 1793963972321,
+          "mergeFinishTime": 1793963972399,
+          "elapsedShuffleTime": 973,
+          "elapsedMergeTime": 78,
+          "elapsedReduceTime": 193
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0007_m_000000": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963966510,
+          "finishTime": 1793963968369,
+          "elapsedTime": 1859,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0007_m_000000_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "map",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0007_01_000002"
+        }
+      ]
+    }
+  }
+}

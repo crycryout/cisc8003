@@ -17,6 +17,10 @@ parser.add_argument("--profile", choices=["standard", "lowmem"], default="standa
                     help="standard: 8 GiB/4 vCPU nodes; lowmem: 4 GiB/2 vCPU nodes")
 parser.add_argument("--node-memory-mb", type=int)
 parser.add_argument("--node-vcores", type=int)
+parser.add_argument("--port-offset", type=int, default=0,
+                    help="Offset every fixed service port to isolate this experiment")
+parser.add_argument("--node-host", help="This node's reachable IPv4 address or hostname")
+parser.add_argument("--hosts-file", help="Absolute, per-process JVM hosts file; no system DNS changes")
 args = parser.parse_args()
 lowmem = args.profile == "lowmem"
 if args.node_memory_mb is None:
@@ -29,11 +33,15 @@ if args.node_memory_mb < task_memory or args.node_vcores < 1:
     parser.error("Node resources must fit at least one task container")
 if not Path(args.data_root).is_absolute():
     parser.error("data-root must be absolute")
-hosts = [args.master] + args.workers
+hosts = [args.master] + args.workers + ([args.node_host] if args.node_host else [])
 if not all(re.fullmatch(r"[A-Za-z0-9_.-]+", name) for name in hosts):
     parser.error("Use simple hostnames or private IPv4 addresses")
-if args.mode == "multi" and (len(args.workers) != 3 or len(set(hosts)) != 4):
+if args.mode == "multi" and (len(args.workers) != 3 or len(set([args.master] + args.workers)) != 4):
     parser.error("Multi mode requires one master and three distinct workers")
+if not 0 <= args.port_offset <= 40000:
+    parser.error("port-offset must be between 0 and 40000")
+if args.hosts_file and (not Path(args.hosts_file).is_absolute() or any(c.isspace() for c in args.hosts_file)):
+    parser.error("hosts-file must be an absolute path without whitespace")
 workers = [args.master] if args.mode == "single" else args.workers
 out = Path(args.output)
 out.mkdir(parents=True, exist_ok=True)
@@ -50,17 +58,43 @@ def write_xml(filename, properties):
     ET.ElementTree(doc).write(out / filename, encoding="UTF-8", xml_declaration=True)
 
 
-write_xml("core-site.xml", {"fs.defaultFS": "hdfs://%s:9000" % args.master,
+def address(host, port):
+    return "%s:%d" % (host, port + args.port_offset)
+
+
+node = args.node_host or "0.0.0.0"
+
+
+write_xml("core-site.xml", {"fs.defaultFS": "hdfs://" + address(args.master, 9000),
                            "hadoop.tmp.dir": root + "/tmp"})
 write_xml("hdfs-site.xml", {
     "dfs.replication": 1 if args.mode == "single" else 3,
     "dfs.namenode.name.dir": "file://" + root + "/name",
     "dfs.datanode.data.dir": "file://" + root + "/data",
-    "dfs.namenode.http-address": args.master + ":9870"})
+    "dfs.namenode.http-address": address(args.master, 9870),
+    "dfs.namenode.secondary.http-address": address(node, 9868),
+    "dfs.namenode.checkpoint.dir": "file://" + root + "/checkpoint",
+    "dfs.datanode.address": address(node, 9866),
+    "dfs.datanode.ipc.address": address(node, 9867),
+    "dfs.datanode.http.address": address(node, 9864),
+    **({"dfs.datanode.hostname": args.node_host} if args.node_host else {})})
 write_xml("yarn-site.xml", {
     "yarn.resourcemanager.hostname": args.master,
+    "yarn.resourcemanager.address": address(args.master, 8032),
+    "yarn.resourcemanager.scheduler.address": address(args.master, 8030),
+    "yarn.resourcemanager.resource-tracker.address": address(args.master, 8031),
+    "yarn.resourcemanager.admin.address": address(args.master, 8033),
+    "yarn.resourcemanager.webapp.address": address(args.master, 8088),
+    "yarn.nodemanager.address": address(node, 8041),
+    "yarn.nodemanager.localizer.address": address(node, 8040),
+    "yarn.nodemanager.webapp.address": address(node, 8042),
+    **({"yarn.nodemanager.hostname": args.node_host} if args.node_host else {}),
+    "yarn.nodemanager.vmem-check-enabled": "false",
+    **({"yarn.nodemanager.admin-env": "JAVA_TOOL_OPTIONS=-Djdk.net.hosts.file=" + args.hosts_file}
+       if args.hosts_file else {}),
+    "mapreduce.shuffle.port": 13562 + args.port_offset,
     "yarn.nodemanager.aux-services": "mapreduce_shuffle",
-    "yarn.nodemanager.env-whitelist": "JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ,HADOOP_MAPRED_HOME",
+    "yarn.nodemanager.env-whitelist": "JAVA_HOME,JAVA_TOOL_OPTIONS,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ,HADOOP_MAPRED_HOME",
     "yarn.nodemanager.resource.memory-mb": args.node_memory_mb,
     "yarn.nodemanager.resource.cpu-vcores": args.node_vcores,
     "yarn.scheduler.minimum-allocation-mb": 512,
@@ -72,8 +106,8 @@ write_xml("yarn-site.xml", {
 write_xml("mapred-site.xml", {
     "mapreduce.framework.name": "yarn",
     "mapreduce.application.classpath": "$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*,$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*",
-    "mapreduce.jobhistory.address": args.master + ":10020",
-    "mapreduce.jobhistory.webapp.address": args.master + ":19888",
+    "mapreduce.jobhistory.address": address(args.master, 10020),
+    "mapreduce.jobhistory.webapp.address": address(args.master, 19888),
     "mapreduce.jobhistory.intermediate-done-dir": "/mr-history/tmp",
     "mapreduce.jobhistory.done-dir": "/mr-history/done",
     "mapreduce.map.memory.mb": task_memory,
@@ -94,6 +128,13 @@ write_xml("mapred-site.xml", {
     + 'export HADOOP_MAPRED_HOME="${HADOOP_HOME:-$HOME/hadoop-3.3.6}"\n')
 with (out / "homework-env.sh").open("a") as handle:
     handle.write("export HW1_MEMORY_PROFILE=%s\n" % args.profile)
+    handle.write("export HW1_HISTORY_URL=%s\n" % shlex.quote("http://" + address(args.master, 19888)))
+    handle.write("export HADOOP_CONF_DIR=%s\n" % shlex.quote(str(out.resolve())))
+    handle.write("export HADOOP_PID_DIR=%s\n" % shlex.quote(root + "/pids"))
+    handle.write("export HADOOP_LOG_DIR=%s\n" % shlex.quote(root + "/daemon-logs"))
+    handle.write("export HADOOP_HEAPSIZE_MAX=512m\n")
+    if args.hosts_file:
+        handle.write("export JAVA_TOOL_OPTIONS=%s\n" % shlex.quote("-Djdk.net.hosts.file=" + args.hosts_file))
 if lowmem:
     with (out / "homework-env.sh").open("a") as handle:
         handle.write("export HADOOP_HEAPSIZE_MAX=256m\n")

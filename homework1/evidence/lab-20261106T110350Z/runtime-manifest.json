@@ -1,0 +1,32 @@
+[
+  {
+    "archive": "hadoop-3.3.6.tar.gz",
+    "bytes": 730107476,
+    "sha512": "de3eaca2e0517e4b569a88b63c89fae19cb8ac6c01ff990f1ff8f0cc0f3128c8e8a23db01577ca562a0e0bb1b4a3889f8c74384e609cd55e537aada3dcaa9f8a",
+    "verification": "matches official Apache SHA-512",
+    "source": "https://mirrors.aliyun.com/apache/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz"
+  },
+  {
+    "archive": "hadoop-3.3.6-aarch64.tar.gz",
+    "bytes": 744905783,
+    "sha512": "b0a485c5ae0d97b08285bb83a3dd78b834153b2bd53f96ac301852862ccaff139f2c547aee808d5ad4afdc3a204b1c3b6ba459ea83ebf2779e9c129f37c69059",
+    "verification": "matches official Apache SHA-512",
+    "source": "https://mirrors.aliyun.com/apache/hadoop/common/hadoop-3.3.6/hadoop-3.3.6-aarch64.tar.gz"
+  },
+  {
+    "archive": "corretto11-x64.tar.gz",
+    "bytes": 195605369,
+    "sha256": "f368ac379f3b20e266080e80fcc1f5e8567d044a4f895c8786220cab5b580c15",
+    "version": "11.0.33.0.10",
+    "verification": "matches vendor SHA-256",
+    "source": "https://corretto.aws/downloads/resources/11.0.33.0.10/amazon-corretto-11.0.33.0.10-linux-x64.tar.gz"
+  },
+  {
+    "archive": "corretto11-aarch64.tar.gz",
+    "bytes": 192624162,
+    "sha256": "ada21539d4959e8946b20b55a2c868a006d4b993be0633c576e3d38c8b9d0c1c",
+    "version": "11.0.33.0.10",
+    "verification": "matches vendor SHA-256",
+    "source": "https://corretto.aws/downloads/resources/11.0.33.0.10/amazon-corretto-11.0.33.0.10-linux-aarch64.tar.gz"
+  }
+]

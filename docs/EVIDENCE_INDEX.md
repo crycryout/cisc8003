@@ -14,7 +14,7 @@
 
 其他摘要：`data_access_status.json`、`shakespeare_validation.json`、`lowmem_validation.json`、`runtime_versions.txt`、`lab_preparation.json`。历史 `local_tests.log` 是当时测试日志；本次仓库准备的 15 项测试另存 `repository_unit_tests_2026-11-06.log`。
 
-压缩文件的大小/哈希记于 `homework1/artifacts/manifest.json`。全仓库导入内容清单见 `docs/IMPORT_MANIFEST.json`，`scripts/verify_repository.py` 检查其 SHA-256。该 manifest 是导入快照；后续有意修改后需重新生成相应项，不能为了通过检查隐藏改动。
+压缩文件的大小/哈希记于 `homework1/artifacts/manifest.json`。全仓库导入内容清单见 `docs/IMPORT_MANIFEST.json`，`scripts/verify_repository.py` 检查其 SHA-256。该 manifest 现已透明刷新为本次完整仓库字节；`base_import_commit` 指向初始导入版本，旧快照保留在 Git 历史。后续有意修改后应重算对应条目，不能为了通过检查隐藏改动。
 
 ## 查阅旧结果
 
@@ -44,4 +44,12 @@ tar 内路径以 `results/` 开头。解压到独立的本地目录查阅，避�
 
 每轮以真实 UTC run ID 建独立目录（例如 `homework1/results/lab-20261107T...`），先本地保存原始输出。这些目录默认 gitignore，避免把 IP、巨量中间结果或未检查截图公开；将可公开的环境摘要、计时 CSV、校验、job/counter 索引和最终报告放入明确的跟踪目录后提交。
 
-至少记录：四个物理节点与角色、资源/配置、输入大小和哈希、单节点/集群成功截图、3 DN/3 NM、Q1 各实际 M/R 和七项时间、Q2 六 job IDs、全量结果/1000 抽样/完整参考比对、suffix 与未完成项。仓库目前还没有这些四机证据。
+至少记录：四个物理节点与角色、资源/配置、输入大小和哈希、单节点/集群成功截图、3 DN/3 NM、Q1 各实际 M/R 和七项时间、Q2 六 job IDs、全量结果/1000 抽样/完整参考比对、suffix 与未完成项。初始导入时尚无这些证据；本次真实四机证据见下节。
+
+## 2026-11-06 真实四台物理机 HDFS/YARN
+
+本次公开证据根为 `homework1/evidence/lab-20261106T110350Z/`。`single-node/` 保存四台独立单节点的成功 job、任务、输出和日志；`cluster/` 保存 3 DN / 3 NM、跨节点 smoke、native 库与进程 CPU affinity；`shakespeare/` 保存六个成功作业的原始 History、counters、attempts、CSV 与相同词频哈希；`community/` 保存六阶段 jobs、容量检查、独立 1000 抽样、81306 用户完整参考比对和 suffix manifest。`yelp/` 保存四种实际 M/R 各三轮的 12 个成功作业、完整七项时间和一致输出；最终集群汇总为 25 个四机 YARN 作业全部成功。
+
+本次全量答案 `artifacts/medium_all_users_top10_lab-20261106T110350Z.txt.gz` 和全部 1000 个后缀 `artifacts/medium_by_suffix_lab-20261106T110350Z.tar.gz` 为真实四机新结果，不能与初始本地归档混称。大小/哈希在 `result-artifacts.json`；tar 不含本机账号 UID/用户名元数据。
+
+公开 JSON、终端日志和真实页面截图只替换/遮蔽私网地址、主机访问名称和账号标识，保留 job ID、时间、计数器、状态和结果。未经脱敏的原始记录、完整配置/命令和 preflight 仍在忽略的 `.local/` 与本次 `results/lab-*/`，不提交私钥、登录配置、原始 Yelp 或庞大中间文件。

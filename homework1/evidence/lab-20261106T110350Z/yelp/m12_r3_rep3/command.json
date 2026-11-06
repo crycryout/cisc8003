@@ -1,0 +1,22 @@
+[
+  "hadoop",
+  "jar",
+  "/home/experiment-user/hadoop-3.3.6/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar",
+  "wordcount",
+  "-D",
+  "mapreduce.job.name=hw1-m12_r3_rep3",
+  "-D",
+  "mapreduce.job.reduces=3",
+  "-D",
+  "mapreduce.map.speculative=false",
+  "-D",
+  "mapreduce.reduce.speculative=false",
+  "-D",
+  "mapreduce.map.output.compress=true",
+  "-D",
+  "mapreduce.input.fileinputformat.split.minsize=445155737",
+  "-D",
+  "mapreduce.input.fileinputformat.split.maxsize=445155737",
+  "/hw1/input/yelp/reviews.json",
+  "/hw1/lab-20261106T110350Z/yelp-additional/m12_r3_rep3"
+]

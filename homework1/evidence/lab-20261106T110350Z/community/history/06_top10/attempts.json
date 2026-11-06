@@ -1,0 +1,392 @@
+{
+  "task_1793963521105_0013_m_000011": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964379397,
+          "finishTime": 1793964417498,
+          "elapsedTime": 38101,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000011_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=4455695/8890697 > sort",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000013"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000010": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335544,
+          "finishTime": 1793964378814,
+          "elapsedTime": 43270,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000010_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=3903267/7790585 > sort",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000012"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000009": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335489,
+          "finishTime": 1793964378164,
+          "elapsedTime": 42675,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000009_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=4119790/8219184 > sort",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000011"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000008": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335544,
+          "finishTime": 1793964378266,
+          "elapsedTime": 42722,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000008_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=4088785/8158622 > sort",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000010"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000007": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335465,
+          "finishTime": 1793964378467,
+          "elapsedTime": 43002,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000007_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=3959623/7898440 > sort",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000009"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_r_000000": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964380392,
+          "finishTime": 1793964444096,
+          "elapsedTime": 63704,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_r_000000_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=3443985/1 > reduce",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0013_01_000014",
+          "shuffleFinishTime": 1793964418738,
+          "mergeFinishTime": 1793964434094,
+          "elapsedShuffleTime": 38346,
+          "elapsedMergeTime": 15356,
+          "elapsedReduceTime": 10002
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_r_000001": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964381396,
+          "finishTime": 1793964445445,
+          "elapsedTime": 64049,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_r_000001_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=3451833/1 > reduce",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0013_01_000015",
+          "shuffleFinishTime": 1793964417803,
+          "mergeFinishTime": 1793964435166,
+          "elapsedShuffleTime": 36407,
+          "elapsedMergeTime": 17363,
+          "elapsedReduceTime": 10279
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_r_000002": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964382368,
+          "finishTime": 1793964445318,
+          "elapsedTime": 62950,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_r_000002_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=3602846/1 > reduce",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0013_01_000016",
+          "shuffleFinishTime": 1793964417811,
+          "mergeFinishTime": 1793964434981,
+          "elapsedShuffleTime": 35443,
+          "elapsedMergeTime": 17170,
+          "elapsedReduceTime": 10337
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_r_000003": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964383375,
+          "finishTime": 1793964445163,
+          "elapsedTime": 61788,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_r_000003_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=3316596/1 > reduce",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0013_01_000017",
+          "shuffleFinishTime": 1793964417832,
+          "mergeFinishTime": 1793964434868,
+          "elapsedShuffleTime": 34457,
+          "elapsedMergeTime": 17036,
+          "elapsedReduceTime": 10295
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_r_000004": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964387403,
+          "finishTime": 1793964443015,
+          "elapsedTime": 55612,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_r_000004_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=3545365/1 > reduce",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0013_01_000018",
+          "shuffleFinishTime": 1793964418483,
+          "mergeFinishTime": 1793964433582,
+          "elapsedShuffleTime": 31080,
+          "elapsedMergeTime": 15099,
+          "elapsedReduceTime": 9433
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_r_000005": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964387412,
+          "finishTime": 1793964442103,
+          "elapsedTime": 54691,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_r_000005_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=3299742/1 > reduce",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0013_01_000019",
+          "shuffleFinishTime": 1793964418591,
+          "mergeFinishTime": 1793964432991,
+          "elapsedShuffleTime": 31179,
+          "elapsedMergeTime": 14400,
+          "elapsedReduceTime": 9112
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000006": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335468,
+          "finishTime": 1793964378087,
+          "elapsedTime": 42619,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000006_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=4419788/8820373 > sort",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000008"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000005": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335505,
+          "finishTime": 1793964386719,
+          "elapsedTime": 51214,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000005_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=4421016/8821326 > sort",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000007"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000004": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335468,
+          "finishTime": 1793964386748,
+          "elapsedTime": 51280,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000004_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=4420987/8821251 > sort",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000006"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000003": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335502,
+          "finishTime": 1793964388117,
+          "elapsedTime": 52615,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000003_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=5778757/11532701 > sort",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000005"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000002": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335518,
+          "finishTime": 1793964414442,
+          "elapsedTime": 78924,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000002_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=5772881/11532606 > sort",
+          "nodeHttpAddress": "worker1:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000004"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000001": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335544,
+          "finishTime": 1793964415859,
+          "elapsedTime": 80315,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000001_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=5778817/11532746 > sort",
+          "nodeHttpAddress": "worker1:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000003"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0013_m_000000": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964335545,
+          "finishTime": 1793964413913,
+          "elapsedTime": 78368,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0013_m_000000_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=5773026/11532782 > sort",
+          "nodeHttpAddress": "worker1:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0013_01_000002"
+        }
+      ]
+    }
+  }
+}

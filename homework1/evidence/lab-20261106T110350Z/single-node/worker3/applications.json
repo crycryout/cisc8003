@@ -1,0 +1,64 @@
+{
+  "apps": {
+    "app": [
+      {
+        "id": "application_1793963323227_0001",
+        "user": "experiment-user",
+        "name": "word count",
+        "queue": "default",
+        "state": "FINISHED",
+        "finalStatus": "SUCCEEDED",
+        "progress": 100.0,
+        "trackingUI": "History",
+        "trackingUrl": "http://worker3:28088/proxy/application_1793963323227_0001/",
+        "diagnostics": "",
+        "clusterId": 1793963323227,
+        "applicationType": "MAPREDUCE",
+        "applicationTags": "",
+        "priority": 0,
+        "startedTime": 1793963332596,
+        "launchTime": 1793963333423,
+        "finishedTime": 1793963344210,
+        "elapsedTime": 11614,
+        "amContainerLogs": "http://worker3:28042/node/containerlogs/container_1793963323227_0001_01_000001/experiment-user",
+        "amHostHttpAddress": "worker3:28042",
+        "amRPCAddress": "worker3:36335",
+        "masterNodeId": "worker3:28041",
+        "allocatedMB": -1,
+        "allocatedVCores": -1,
+        "reservedMB": -1,
+        "reservedVCores": -1,
+        "runningContainers": -1,
+        "memorySeconds": 33358,
+        "vcoreSeconds": 20,
+        "queueUsagePercentage": 0.0,
+        "clusterUsagePercentage": 0.0,
+        "resourceSecondsMap": {
+          "entry": {
+            "key": "vcores",
+            "value": "20"
+          }
+        },
+        "preemptedResourceMB": 0,
+        "preemptedResourceVCores": 0,
+        "numNonAMContainerPreempted": 0,
+        "numAMContainerPreempted": 0,
+        "preemptedMemorySeconds": 0,
+        "preemptedVcoreSeconds": 0,
+        "preemptedResourceSecondsMap": {},
+        "logAggregationStatus": "SUCCEEDED",
+        "unmanagedApplication": false,
+        "amNodeLabelExpression": "",
+        "timeouts": {
+          "timeout": [
+            {
+              "type": "LIFETIME",
+              "expiryTime": "UNLIMITED",
+              "remainingTimeInSeconds": -1
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

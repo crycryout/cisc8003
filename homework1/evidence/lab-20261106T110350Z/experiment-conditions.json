@@ -1,0 +1,44 @@
+{
+  "repetitions": {
+    "shakespeare": 3,
+    "yelp": 3
+  },
+  "shakespeare_order": [
+    "small,merged",
+    "merged,small",
+    "small,merged"
+  ],
+  "yelp_plan": [
+    "6:1",
+    "6:3",
+    "12:1",
+    "12:3"
+  ],
+  "yarn_per_worker": {
+    "memory_mib": 6144,
+    "vcores": 4
+  },
+  "map_reduce_memory_mib": 1536,
+  "map_reduce_heap_mib": 768,
+  "application_master_memory_mib": 1536,
+  "application_master_heap_mib": 1024,
+  "speculation": false,
+  "port_offset": 20000,
+  "worker_cpu_affinity": {
+    "worker1": "80-83",
+    "worker2": "16-19",
+    "worker3": "16-19"
+  },
+  "background_load": "Shared laboratory hosts. Official Yelp download to worker1 remained active during Shakespeare comparison; no competing Hadoop job was submitted. OS and other users were not altered.",
+  "hdfs_replication": 3,
+  "hdfs_block_size_bytes": 134217728,
+  "input_preprocessing": "Full Yelp review JSONL is counted as text; no sampling or duplication. Shakespeare terminal newlines normalized equally.",
+  "timing": "Completed JobHistory job/task finishTime minus startTime. Reduce includes shuffle, sort and reduce.",
+  "native_libraries": "libhadoop and native zlib loaded on all four architectures. Optional OpenSSL, ISA-L, PMDK absent; no experiment depends on them.",
+  "q2_background_load": "Yelp download/extraction and then HDFS input upload overlapped Q2 correctness execution. Q2 stage durations are descriptive only, not a controlled performance comparison.",
+  "yelp_order": [
+    "6/1,6/3,12/1,12/3",
+    "12/3,12/1,6/3,6/1",
+    "6/1,6/3,12/1,12/3"
+  ]
+}

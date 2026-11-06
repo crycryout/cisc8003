@@ -1,3 +1,5 @@
+> 历史接续文档：2026-11-06 已在四台真实物理机执行。当前进展和证据以 [LAB_EXECUTION.md](LAB_EXECUTION.md)、[WORK_LOG.md](WORK_LOG.md) 和 [ACCEPTANCE.md](ACCEPTANCE.md) 为准；不要据此重新 format 或覆盖已有结果。
+
 # 给 H800 上 Codex 的完整接续说明
 
 记录截至 2026-11-06。用户决定让 H800 上的 Codex 从本仓库接续并实际完成实验。当前对话的执行环境没有实验室内网访问，**没有连接四台机器、没有启动实验室 Hadoop，也没有集群性能数据**。

@@ -38,12 +38,14 @@ def main():
     parser.add_argument("--large-input", help="Single uncompressed HDFS file for controlled input splits")
     parser.add_argument("--output-root", required=True, help="New HDFS directory")
     parser.add_argument("--evidence", required=True, help="New local directory")
-    parser.add_argument("--history", default="http://master:19888")
+    parser.add_argument("--history", default=os.environ.get("HW1_HISTORY_URL", "http://master:19888"))
     parser.add_argument("--repetitions", type=int, default=3)
+    parser.add_argument("--repetition-start", type=int, default=1,
+                        help="First repetition number when adding runs in a new output root")
     parser.add_argument("--plan", default="6:1,6:3,12:1,12:3", help="Target mappers:reducers combinations")
     args = parser.parse_args()
-    if args.repetitions < 1:
-        parser.error("repetitions must be positive")
+    if args.repetitions < 1 or args.repetition_start < 1:
+        parser.error("repetitions and repetition-start must be positive")
     home = os.environ.get("HADOOP_HOME")
     if not home:
         parser.error("Set HADOOP_HOME")
@@ -72,7 +74,7 @@ def main():
         settings = [("m%d_r%d" % (m, r), args.large_input, m, r) for m, r in plan]
     all_rows, digest = [], None
     # Alternate order to reduce a consistent first-run cache advantage.
-    for repetition in range(1, args.repetitions + 1):
+    for repetition in range(args.repetition_start, args.repetition_start + args.repetitions):
         ordered = settings if repetition % 2 else list(reversed(settings))
         for label, input_path, target_maps, reducers in ordered:
             run = "%s_rep%d" % (label, repetition)

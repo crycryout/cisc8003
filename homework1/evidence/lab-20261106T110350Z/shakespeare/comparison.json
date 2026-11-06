@@ -1,0 +1,21 @@
+{
+  "small": {
+    "job_s": [
+      75.648,
+      76.364,
+      77.015
+    ],
+    "median_job_s": 76.364
+  },
+  "merged": {
+    "job_s": [
+      8.241,
+      9.459,
+      8.43
+    ],
+    "median_job_s": 8.43
+  },
+  "median_speedup": 9.058600237247925,
+  "identical_output": true,
+  "output_sha256": "b9524c8e2c10b2b16d2e5334f34dc3384cb7c46b47f2a770c023d54cae877d31"
+}

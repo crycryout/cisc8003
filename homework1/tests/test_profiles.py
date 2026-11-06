@@ -77,6 +77,38 @@ class ProfileTests(unittest.TestCase):
                 self.assertNotEqual(result.returncode, 0)
                 self.assertFalse(output.exists())
 
+    def test_isolated_cluster_ports_and_runtime_directories(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "config"
+            subprocess.run(
+                [sys.executable, str(ROOT / "cluster/configure.py"), "--mode", "multi",
+                 "--master", "master", "--workers", "worker1", "worker2", "worker3",
+                 "--node-host", "worker1", "--port-offset", "20000", "--hosts-file", "/lab/hosts",
+                 "--data-root", "/lab/multi", "--output", str(output)], check=True, capture_output=True)
+            core = properties(output / "core-site.xml")
+            hdfs = properties(output / "hdfs-site.xml")
+            yarn = properties(output / "yarn-site.xml")
+            mr = properties(output / "mapred-site.xml")
+            self.assertEqual(core["fs.defaultFS"], "hdfs://master:29000")
+            self.assertEqual(hdfs["dfs.datanode.address"], "worker1:29866")
+            self.assertEqual(yarn["yarn.resourcemanager.address"], "master:28032")
+            self.assertEqual(yarn["yarn.nodemanager.hostname"], "worker1")
+            self.assertEqual(mr["mapreduce.jobhistory.webapp.address"], "master:39888")
+            self.assertEqual(yarn["yarn.nodemanager.admin-env"], "JAVA_TOOL_OPTIONS=-Djdk.net.hosts.file=/lab/hosts")
+            env = (output / "homework-env.sh").read_text()
+            self.assertIn("HADOOP_PID_DIR=/lab/multi/pids", env)
+            self.assertIn("HADOOP_LOG_DIR=/lab/multi/daemon-logs", env)
+
+    def test_invalid_port_offset_is_rejected_without_creating_config(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "config"
+            result = subprocess.run(
+                [sys.executable, str(ROOT / "cluster/configure.py"), "--mode", "single",
+                 "--master", "master", "--port-offset", "50000", "--data-root", "/lab/single",
+                 "--output", str(output)], capture_output=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertFalse(output.exists())
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

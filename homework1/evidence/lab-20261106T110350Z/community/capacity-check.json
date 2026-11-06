@@ -1,0 +1,17 @@
+{
+  "stage03_job": "job_1793963521105_0010",
+  "actual_counters": {
+    "CandidatePairs": 154933408,
+    "Edges": 1768149,
+    "ReplicatedFollowerIDs": 2032942,
+    "Users": 81306
+  },
+  "worker_free_bytes": {
+    "worker1": 382478815232,
+    "worker2": 687482802176,
+    "worker3": 539653124096
+  },
+  "estimated_medium_envelope_bytes": 39662952448,
+  "gate": "PASS: each worker >100 GiB free; three-worker total >3x conservative 256-byte/pair envelope",
+  "scope": "Capacity estimate from actual completed stage03; no bonus claim"
+}

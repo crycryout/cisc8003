@@ -1,0 +1,54 @@
+[
+  {
+    "node": "master",
+    "architecture": "aarch64",
+    "cpu_model": "-",
+    "logical_cpus": 14,
+    "memory_total_kib": 128790148,
+    "memory_available_at_preflight_kib": 44055704,
+    "free_work_disk_bytes": 453554900992,
+    "os_release": "\"Ubuntu 24.04.3 LTS\"",
+    "experiment_cpu_affinity": "0-3",
+    "yarn_memory_mib": null,
+    "yarn_vcores": null
+  },
+  {
+    "node": "worker1",
+    "architecture": "x86_64",
+    "cpu_model": "Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz",
+    "logical_cpus": 96,
+    "memory_total_kib": 263538292,
+    "memory_available_at_preflight_kib": 250556456,
+    "free_work_disk_bytes": 391253434368,
+    "os_release": "\"Ubuntu 22.04.5 LTS\"",
+    "experiment_cpu_affinity": "80-83",
+    "yarn_memory_mib": 6144,
+    "yarn_vcores": 4
+  },
+  {
+    "node": "worker2",
+    "architecture": "x86_64",
+    "cpu_model": "Intel(R) Core(TM) Ultra 7 265K",
+    "logical_cpus": 20,
+    "memory_total_kib": 65273220,
+    "memory_available_at_preflight_kib": 63691736,
+    "free_work_disk_bytes": 691608719360,
+    "os_release": "\"Ubuntu 26.04 LTS\"",
+    "experiment_cpu_affinity": "16-19",
+    "yarn_memory_mib": 6144,
+    "yarn_vcores": 4
+  },
+  {
+    "node": "worker3",
+    "architecture": "x86_64",
+    "cpu_model": "Intel(R) Core(TM) Ultra 7 265K",
+    "logical_cpus": 20,
+    "memory_total_kib": 65273232,
+    "memory_available_at_preflight_kib": 60036156,
+    "free_work_disk_bytes": 542520860672,
+    "os_release": "\"Ubuntu 26.04 LTS\"",
+    "experiment_cpu_affinity": "16-19",
+    "yarn_memory_mib": 6144,
+    "yarn_vcores": 4
+  }
+]

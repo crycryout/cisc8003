@@ -1,0 +1,15 @@
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+2026-11-06 19:13:35,069 INFO bzip2.Bzip2Factory: Successfully loaded & initialized native-bzip2 library system-native
+2026-11-06 19:13:35,071 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+2026-11-06 19:13:35,074 WARN erasurecode.ErasureCodeNative: Loading ISA-L failed: Failed to load libisal.so.2 (libisal.so.2: cannot open shared object file: No such file or directory)
+2026-11-06 19:13:35,074 WARN erasurecode.ErasureCodeNative: ISA-L support is not available in your platform... using builtin-java codec where applicable
+2026-11-06 19:13:35,099 INFO nativeio.NativeIO: The native code was built without PMDK support.
+Native library checking:
+hadoop:  true /home/experiment-user/hadoop-3.3.6/lib/native/libhadoop.so.1.0.0
+zlib:    true /lib/x86_64-linux-gnu/libz.so.1
+zstd  :  true /lib/x86_64-linux-gnu/libzstd.so.1
+bzip2:   true /lib/x86_64-linux-gnu/libbz2.so.1
+openssl: false Cannot load libcrypto.so (libcrypto.so: cannot open shared object file: No such file or directory)!
+ISA-L:   false Loading ISA-L failed: Failed to load libisal.so.2 (libisal.so.2: cannot open shared object file: No such file or directory)
+PMDK:    false The native code was built without PMDK support.
+2026-11-06 19:13:35,105 INFO util.ExitUtil: Exiting with status 1: ExitException

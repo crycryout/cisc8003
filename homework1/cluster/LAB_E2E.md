@@ -2,7 +2,7 @@
 
 更新于 2026-11-06。按用户决定改用实验室设备，不再申请云资源。本文件是当前部署入口；`DEPLOYMENT.md` 和 `TENCENT_E2E.md` 中的云平台选择是历史方案。
 
-**状态：部署脚本已适配，尚未连接实验室主机；集群运行、截图和性能测量尚未完成。** 原有中图完整结果来自 Hadoop LocalJobRunner，不能作为本次四机运行证据。原报告 PDF 的云环境段落是旧草稿，待真实实验后统一改为本次环境。
+**状态：已完成实际四机部署、四台单节点验证、Shakespeare 三轮、Yelp 四组各三轮和中图六阶段，独立验证全部通过。** 当前实际记录见 [LAB_EXECUTION.md](../../docs/LAB_EXECUTION.md)。下文保留通用部署流程；不要重新 format 本次已有命名空间。原 LocalJobRunner 归档与新四机结果分别标识。
 
 ## 1. 固定拓扑与访问
 
@@ -58,31 +58,29 @@ source "$HOME/hadoop-env-user.sh"
 
 ```bash
 source "$HOME/hadoop-env-user.sh"
+mkdir -p generated-lab
+cp -a "$HADOOP_HOME/etc/hadoop/." generated-lab/
+# Set these per-node variables from the private inventory; do not commit them.
 python3 cluster/configure.py --mode multi --profile standard \
-  --master thor --workers h800 rtx5090a rtx5090b \
+  --master "$MASTER_ADDR" --workers "$WORKER1_ADDR" "$WORKER2_ADDR" "$WORKER3_ADDR" \
+  --node-host "$NODE_ADDR" --port-offset 20000 --hosts-file "$HW1_HOSTS_FILE" \
   --data-root "$HOME/hw1-lab/multi" --output generated-lab
-cp generated-lab/*.xml generated-lab/workers "$HADOOP_HOME/etc/hadoop/"
-cat generated-lab/homework-env.sh >> "$HADOOP_HOME/etc/hadoop/hadoop-env.sh"
+printf '\n. "%s/homework-env.sh"\n' "$PWD/generated-lab" >> generated-lab/hadoop-env.sh
 source generated-lab/homework-env.sh
 ```
 
-这组命令只在初次安装配置时追加一次。`homework-env.sh` 从每台各自的 `hadoop-env-user.sh` 读取 JDK/安装路径，不将 ARM64 master 的 Java 路径写死到 x86 workers。所有实验目录必须由本次账号拥有，并与已有集群分开；如已发现 Hadoop 服务或端口冲突，先选用完整独立配置，不能停止其他人的服务。既有云指南中跨节点复制环境文件和 `start-*.sh` 的步骤以本文件为准。
+这组命令只在初次安装配置时执行；先复制 vendor defaults，再生成配置。本次真实执行使用隔离的 `.local/conf/single` 与 `.local/conf/multi`，没有改写安装目录的默认 XML。`homework-env.sh` 从每台各自的 `hadoop-env-user.sh` 读取 JDK/安装路径，不将 ARM64 master 的 Java 路径写死到 x86 workers。所有实验目录必须由本次账号拥有，并与已有集群分开；如已发现 Hadoop 服务或端口冲突，先选用完整独立配置，不能停止其他人的服务。既有云指南中跨节点复制环境文件和 `start-*.sh` 的步骤以本文件为准。
 
 只在 **Thor 上、确认本次 NameNode 目录为空**后执行一次 format；已有数据时禁止重复：
 
 ```bash
-hdfs namenode -format -nonInteractive
-hdfs --daemon start namenode
-hdfs --daemon start secondarynamenode
-yarn --daemon start resourcemanager
+bash cluster/lab_node.sh "$PWD/generated-lab" start-master
 ```
 
 在 **H800、5090a、5090b 各自的登录 shell**中，加载该机环境后执行：
 
 ```bash
-source "$HOME/hadoop-env-user.sh"
-hdfs --daemon start datanode
-yarn --daemon start nodemanager
+bash cluster/lab_node.sh "$PWD/generated-lab" start-worker
 ```
 
 回到 Thor：
@@ -98,16 +96,16 @@ yarn node -list
 
 ## 4. 数据、必做实验与证据
 
-原 ZIP 交付包含中图和 Shakespeare 输入；**本 Git 版本不包含原始数据**。先按 `../README.md` 下载并准备，核对 manifest，再上传中图：
+原 ZIP 交付包含中图和 Shakespeare 输入；**本 Git 版本不包含原始数据**。先按 `../README.md` 下载并准备，核对 manifest；下面仅用于全新输入路径，本次已有文件直接复用，不覆盖：
 
 ```bash
 # 若下载时已经 --decompress，直接复用并核对，不要再次覆盖。
-gzip -dc data/course_medium.txt.gz > data/course_medium.txt
+test -f data/course_medium.txt || gzip -dc data/course_medium.txt.gz > data/course_medium.txt
 hdfs dfs -mkdir -p /hw1/input/community /hw1/input/yelp
 hdfs dfs -put data/course_medium.txt /hw1/input/community/medium.txt
 ```
 
-Yelp 原文件不在代码包里，当前工作目录也未保留该 5 GB 原文件，需要在实验节点重新从官方地址取得；不要把原来的“已下载”记录误认为当前文件仍可用。历史输入记录位于 `results/yelp_input_manifest.json`：
+Yelp 原文件不放 Git；本次 H800 本地已经重新下载并核对，新的 checkout 则须从官方地址重新取得。历史输入记录位于 `results/yelp_input_manifest.json`：
 
 - 官方资源页：<https://business.yelp.com/data/resources/open-dataset/>
 - 公开 ZIP：<https://business.yelp.com/external-assets/files/Yelp-JSON.zip>
@@ -127,3 +125,9 @@ REPETITIONS=1 bash cluster/run_required.sh \
 截图使用实际节点信息、进程、HDFS/YARN 和 History 页面；报告写为“实验室四台物理主机”，记录软硬件、网卡、共用负载、资源上限、重复次数及计时方法。不要写成云 VM、GPU 加速或已经完成测量。待实测完成后再更新旧 PDF 的环境表与 NOT MEASURED 字段。
 
 参考：Apache [3.3.6 官方归档](https://archive.apache.org/dist/hadoop/common/hadoop-3.3.6/)、[集群部署文档](https://hadoop.apache.org/docs/r3.3.6/hadoop-project-dist/hadoop-common/ClusterSetup.html)、[本地库说明](https://hadoop.apache.org/docs/r3.3.6/hadoop-project-dist/hadoop-common/NativeLibraries.html)。
+
+## 本次已验证的新增选项
+
+`configure.py --port-offset 20000 --node-host NODE_ADDR --hosts-file /absolute/private/hosts` 为每个固定服务端口、节点地址和 JVM 名称解析生成配置；PID、日志与 checkpoint 随 data-root 隔离。hosts 文件仅存本地，不能提交私网地址。配置目录先复制 vendor defaults，再生成 site XML 和 `homework-env.sh`，只在本次配置目录的 `hadoop-env.sh` 中加载后者。
+
+`run_required.sh` 支持 `SHAKESPEARE_DIR` 指向实际准备的目录；本次为 `data/shakespeare_lab_prepared`。`run_wordcount.py --repetition-start 2 --repetitions 2` 可在新的 HDFS 输出根/本地证据目录补做第 2、3 轮，保持全局交替顺序，不覆盖第一轮。History 地址由生成环境的 `HW1_HISTORY_URL` 自动提供。

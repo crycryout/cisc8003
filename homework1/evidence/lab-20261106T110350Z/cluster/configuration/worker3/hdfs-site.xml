@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>3</value>
+  </property>
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>file:///home/experiment-user/cisc8003/.local/multi/gpu02/name</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>file:///home/experiment-user/cisc8003/.local/multi/gpu02/data</value>
+  </property>
+  <property>
+    <name>dfs.namenode.http-address</name>
+    <value>master:29870</value>
+  </property>
+  <property>
+    <name>dfs.namenode.secondary.http-address</name>
+    <value>worker3:29868</value>
+  </property>
+  <property>
+    <name>dfs.namenode.checkpoint.dir</name>
+    <value>file:///home/experiment-user/cisc8003/.local/multi/gpu02/checkpoint</value>
+  </property>
+  <property>
+    <name>dfs.datanode.address</name>
+    <value>worker3:29866</value>
+  </property>
+  <property>
+    <name>dfs.datanode.ipc.address</name>
+    <value>worker3:29867</value>
+  </property>
+  <property>
+    <name>dfs.datanode.http.address</name>
+    <value>worker3:29864</value>
+  </property>
+  <property>
+    <name>dfs.datanode.hostname</name>
+    <value>worker3</value>
+  </property>
+</configuration>

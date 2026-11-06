@@ -1,3 +1,5 @@
+> 历史接续文档：2026-11-06 已在四台真实物理机执行。当前进展和证据以 [LAB_EXECUTION.md](LAB_EXECUTION.md)、[WORK_LOG.md](WORK_LOG.md) 和 [ACCEPTANCE.md](ACCEPTANCE.md) 为准；不要据此重新 format 或覆盖已有结果。
+
 # 复制给 H800 上 Codex 的任务
 
 你现在在我的 H800 服务器上。我已把之前准备的 Hadoop 作业代码、历史结果和详细接续记录放入当前仓库。请先完整读取根目录 AGENTS.md、docs/H800_CODEX_HANDOFF.md、docs/WORK_LOG.md、docs/EVIDENCE_INDEX.md 和 docs/ACCEPTANCE.md，然后直接接续完成必做实验，不只给我方案。

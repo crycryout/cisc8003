@@ -1,0 +1,192 @@
+{
+  "task_1793963521105_0008_r_000004": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963996375,
+          "finishTime": 1793963999233,
+          "elapsedTime": 2858,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0008_r_000004_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=11682/1 > reduce",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0008_01_000008",
+          "shuffleFinishTime": 1793963997589,
+          "mergeFinishTime": 1793963997868,
+          "elapsedShuffleTime": 1214,
+          "elapsedMergeTime": 279,
+          "elapsedReduceTime": 1365
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0008_r_000003": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963996314,
+          "finishTime": 1793963998198,
+          "elapsedTime": 1884,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0008_r_000003_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=11821/1 > reduce",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0008_01_000007",
+          "shuffleFinishTime": 1793963997548,
+          "mergeFinishTime": 1793963997827,
+          "elapsedShuffleTime": 1234,
+          "elapsedMergeTime": 279,
+          "elapsedReduceTime": 371
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0008_r_000002": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963995325,
+          "finishTime": 1793963998548,
+          "elapsedTime": 3223,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0008_r_000002_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=5893/1 > reduce",
+          "nodeHttpAddress": "worker1:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0008_01_000006",
+          "shuffleFinishTime": 1793963997051,
+          "mergeFinishTime": 1793963997527,
+          "elapsedShuffleTime": 1726,
+          "elapsedMergeTime": 476,
+          "elapsedReduceTime": 1021
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0008_r_000001": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963995331,
+          "finishTime": 1793963997311,
+          "elapsedTime": 1980,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0008_r_000001_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=16503/1 > reduce",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0008_01_000005",
+          "shuffleFinishTime": 1793963996362,
+          "mergeFinishTime": 1793963996666,
+          "elapsedShuffleTime": 1031,
+          "elapsedMergeTime": 304,
+          "elapsedReduceTime": 645
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0008_r_000000": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963995305,
+          "finishTime": 1793963997132,
+          "elapsedTime": 1827,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0008_r_000000_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=12154/1 > reduce",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0008_01_000004",
+          "shuffleFinishTime": 1793963996249,
+          "mergeFinishTime": 1793963996541,
+          "elapsedShuffleTime": 944,
+          "elapsedMergeTime": 292,
+          "elapsedReduceTime": 591
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0008_m_000001": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963985446,
+          "finishTime": 1793963993058,
+          "elapsedTime": 7612,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0008_m_000001_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=11585/1 > sort",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0008_01_000003"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0008_m_000000": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963985460,
+          "finishTime": 1793963993156,
+          "elapsedTime": 7696,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0008_m_000000_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=11649/1 > sort",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0008_01_000002"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0008_r_000005": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793963996363,
+          "finishTime": 1793963999778,
+          "elapsedTime": 3415,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0008_r_000005_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "Records R/W=5825/1 > reduce",
+          "nodeHttpAddress": "worker1:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0008_01_000009",
+          "shuffleFinishTime": 1793963998637,
+          "mergeFinishTime": 1793963999017,
+          "elapsedShuffleTime": 2274,
+          "elapsedMergeTime": 380,
+          "elapsedReduceTime": 761
+        }
+      ]
+    }
+  }
+}

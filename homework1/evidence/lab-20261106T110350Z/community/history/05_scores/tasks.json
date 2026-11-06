@@ -1,0 +1,356 @@
+{
+  "tasks": {
+    "task": [
+      {
+        "startTime": 1793964233867,
+        "finishTime": 1793964308793,
+        "elapsedTime": 74926,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_r_000000",
+        "state": "SUCCEEDED",
+        "type": "REDUCE",
+        "successfulAttempt": "attempt_1793963521105_0012_r_000000_0"
+      },
+      {
+        "startTime": 1793964249919,
+        "finishTime": 1793964312167,
+        "elapsedTime": 62248,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_r_000001",
+        "state": "SUCCEEDED",
+        "type": "REDUCE",
+        "successfulAttempt": "attempt_1793963521105_0012_r_000001_0"
+      },
+      {
+        "startTime": 1793964252953,
+        "finishTime": 1793964323027,
+        "elapsedTime": 70074,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_r_000002",
+        "state": "SUCCEEDED",
+        "type": "REDUCE",
+        "successfulAttempt": "attempt_1793963521105_0012_r_000002_0"
+      },
+      {
+        "startTime": 1793964253955,
+        "finishTime": 1793964322701,
+        "elapsedTime": 68746,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_r_000003",
+        "state": "SUCCEEDED",
+        "type": "REDUCE",
+        "successfulAttempt": "attempt_1793963521105_0012_r_000003_0"
+      },
+      {
+        "startTime": 1793964267025,
+        "finishTime": 1793964311692,
+        "elapsedTime": 44667,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_r_000004",
+        "state": "SUCCEEDED",
+        "type": "REDUCE",
+        "successfulAttempt": "attempt_1793963521105_0012_r_000004_0"
+      },
+      {
+        "startTime": 1793964286099,
+        "finishTime": 1793964312139,
+        "elapsedTime": 26040,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_r_000005",
+        "state": "SUCCEEDED",
+        "type": "REDUCE",
+        "successfulAttempt": "attempt_1793963521105_0012_r_000005_0"
+      },
+      {
+        "startTime": 1793964206836,
+        "finishTime": 1793964252576,
+        "elapsedTime": 45740,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000006",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000006_0"
+      },
+      {
+        "startTime": 1793964206823,
+        "finishTime": 1793964253698,
+        "elapsedTime": 46875,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000005",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000005_0"
+      },
+      {
+        "startTime": 1793964206817,
+        "finishTime": 1793964252953,
+        "elapsedTime": 46136,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000004",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000004_0"
+      },
+      {
+        "startTime": 1793964206849,
+        "finishTime": 1793964251686,
+        "elapsedTime": 44837,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000003",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000003_0"
+      },
+      {
+        "startTime": 1793964206849,
+        "finishTime": 1793964228011,
+        "elapsedTime": 21162,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000002",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000002_0"
+      },
+      {
+        "startTime": 1793964206821,
+        "finishTime": 1793964228230,
+        "elapsedTime": 21409,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000001",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000001_0"
+      },
+      {
+        "startTime": 1793964206807,
+        "finishTime": 1793964227858,
+        "elapsedTime": 21051,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000000",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000000_0"
+      },
+      {
+        "startTime": 1793964234880,
+        "finishTime": 1793964255664,
+        "elapsedTime": 20784,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000014",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000014_0"
+      },
+      {
+        "startTime": 1793964228813,
+        "finishTime": 1793964249918,
+        "elapsedTime": 21105,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000013",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000013_0"
+      },
+      {
+        "startTime": 1793964228811,
+        "finishTime": 1793964249865,
+        "elapsedTime": 21054,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000012",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000012_0"
+      },
+      {
+        "startTime": 1793964228814,
+        "finishTime": 1793964249437,
+        "elapsedTime": 20623,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000011",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000011_0"
+      },
+      {
+        "startTime": 1793964206839,
+        "finishTime": 1793964233776,
+        "elapsedTime": 26937,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000010",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000010_0"
+      },
+      {
+        "startTime": 1793964206807,
+        "finishTime": 1793964233877,
+        "elapsedTime": 27070,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000009",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000009_0"
+      },
+      {
+        "startTime": 1793964206804,
+        "finishTime": 1793964233462,
+        "elapsedTime": 26658,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000008",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000008_0"
+      },
+      {
+        "startTime": 1793964206812,
+        "finishTime": 1793964232731,
+        "elapsedTime": 25919,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000007",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000007_0"
+      },
+      {
+        "startTime": 1793964256982,
+        "finishTime": 1793964295572,
+        "elapsedTime": 38590,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000022",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000022_0"
+      },
+      {
+        "startTime": 1793964256975,
+        "finishTime": 1793964280369,
+        "elapsedTime": 23394,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000021",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000021_0"
+      },
+      {
+        "startTime": 1793964255981,
+        "finishTime": 1793964277758,
+        "elapsedTime": 21777,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000020",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000020_0"
+      },
+      {
+        "startTime": 1793964255995,
+        "finishTime": 1793964296149,
+        "elapsedTime": 40154,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000019",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000019_0"
+      },
+      {
+        "startTime": 1793964250930,
+        "finishTime": 1793964266142,
+        "elapsedTime": 15212,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000018",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000018_0"
+      },
+      {
+        "startTime": 1793964250930,
+        "finishTime": 1793964266813,
+        "elapsedTime": 15883,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000017",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000017_0"
+      },
+      {
+        "startTime": 1793964234880,
+        "finishTime": 1793964255846,
+        "elapsedTime": 20966,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000016",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000016_0"
+      },
+      {
+        "startTime": 1793964234880,
+        "finishTime": 1793964255360,
+        "elapsedTime": 20480,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000015",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000015_0"
+      },
+      {
+        "startTime": 1793964282087,
+        "finishTime": 1793964287236,
+        "elapsedTime": 5149,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000028",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000028_0"
+      },
+      {
+        "startTime": 1793964281086,
+        "finishTime": 1793964287000,
+        "elapsedTime": 5914,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000027",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000027_0"
+      },
+      {
+        "startTime": 1793964281083,
+        "finishTime": 1793964285466,
+        "elapsedTime": 4383,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000026",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000026_0"
+      },
+      {
+        "startTime": 1793964279076,
+        "finishTime": 1793964289769,
+        "elapsedTime": 10693,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000025",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000025_0"
+      },
+      {
+        "startTime": 1793964268052,
+        "finishTime": 1793964279790,
+        "elapsedTime": 11738,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000024",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000024_0"
+      },
+      {
+        "startTime": 1793964256990,
+        "finishTime": 1793964281067,
+        "elapsedTime": 24077,
+        "progress": 100.0,
+        "id": "task_1793963521105_0012_m_000023",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0012_m_000023_0"
+      }
+    ]
+  }
+}

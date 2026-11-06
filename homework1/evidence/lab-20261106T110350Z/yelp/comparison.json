@@ -1,0 +1,50 @@
+{
+  "settings": {
+    "m6_r1": {
+      "actual_mappers": 6,
+      "actual_reducers": 1,
+      "repetitions": 3,
+      "job_s": [
+        125.302,
+        181.993,
+        135.032
+      ],
+      "median_job_s": 135.032
+    },
+    "m6_r3": {
+      "actual_mappers": 6,
+      "actual_reducers": 3,
+      "repetitions": 3,
+      "job_s": [
+        174.556,
+        177.431,
+        132.654
+      ],
+      "median_job_s": 174.556
+    },
+    "m12_r1": {
+      "actual_mappers": 12,
+      "actual_reducers": 1,
+      "repetitions": 3,
+      "job_s": [
+        124.663,
+        121.256,
+        121.511
+      ],
+      "median_job_s": 121.511
+    },
+    "m12_r3": {
+      "actual_mappers": 12,
+      "actual_reducers": 3,
+      "repetitions": 3,
+      "job_s": [
+        112.895,
+        117.878,
+        119.886
+      ],
+      "median_job_s": 117.878
+    }
+  },
+  "identical_output": true,
+  "output_sha256": "841320a7bf34efe2546c6efb85d4a87a2556795e28ae6871e017bde7deec6224"
+}

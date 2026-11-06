@@ -1,0 +1,9 @@
+{
+  "captured_at_utc": "2026-11-06T12:01:03.502486+00:00",
+  "successful_multi_yarn_applications": 25,
+  "failed_applications": 0,
+  "running_node_managers": 3,
+  "live_data_nodes": 3,
+  "last_job_id": "job_1793963521105_0025",
+  "services": "Thor master management only; three physical worker hosts"
+}

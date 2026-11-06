@@ -1,0 +1,82 @@
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+packageJobJar: [/tmp/hadoop-unjar2763081392546253043/] [] /tmp/streamjob9075095824478531650.jar tmpDir=null
+2026-11-06 19:20:02,813 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /master:28032
+2026-11-06 19:20:02,921 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /master:28032
+2026-11-06 19:20:03,053 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/experiment-user/.staging/job_1793963521105_0009
+2026-11-06 19:20:03,324 INFO mapred.FileInputFormat: Total input files to process : 6
+2026-11-06 19:20:03,370 INFO mapreduce.JobSubmitter: number of splits:6
+2026-11-06 19:20:03,559 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1793963521105_0009
+2026-11-06 19:20:03,559 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-06 19:20:03,665 INFO conf.Configuration: resource-types.xml not found
+2026-11-06 19:20:03,665 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-11-06 19:20:03,702 INFO impl.YarnClientImpl: Submitted application application_1793963521105_0009
+2026-11-06 19:20:03,722 INFO mapreduce.Job: The url to track the job: http://master:28088/proxy/application_1793963521105_0009/
+2026-11-06 19:20:03,722 INFO mapreduce.Job: Running job: job_1793963521105_0009
+2026-11-06 19:20:09,806 INFO mapreduce.Job: Job job_1793963521105_0009 running in uber mode : false
+2026-11-06 19:20:09,808 INFO mapreduce.Job:  map 0% reduce 0%
+2026-11-06 19:20:13,893 INFO mapreduce.Job:  map 33% reduce 0%
+2026-11-06 19:20:16,916 INFO mapreduce.Job:  map 100% reduce 0%
+2026-11-06 19:20:17,923 INFO mapreduce.Job:  map 100% reduce 100%
+2026-11-06 19:20:17,932 INFO mapreduce.Job: Job job_1793963521105_0009 completed successfully
+2026-11-06 19:20:17,991 INFO mapreduce.Job: Counters: 54
+	File System Counters
+		FILE: Number of bytes read=218
+		FILE: Number of bytes written=1959800
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=40783882
+		HDFS: Number of bytes written=59
+		HDFS: Number of read operations=23
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=6
+		Launched reduce tasks=1
+		Data-local map tasks=6
+		Total time spent by all maps in occupied slots (ms)=73767
+		Total time spent by all reduces in occupied slots (ms)=6483
+		Total time spent by all map tasks (ms)=24589
+		Total time spent by all reduce tasks (ms)=2161
+		Total vcore-milliseconds taken by all map tasks=24589
+		Total vcore-milliseconds taken by all reduce tasks=2161
+		Total megabyte-milliseconds taken by all map tasks=37768704
+		Total megabyte-milliseconds taken by all reduce tasks=3319296
+	Map-Reduce Framework
+		Map input records=1849455
+		Map output records=66
+		Map output bytes=413
+		Map output materialized bytes=405
+		Input split bytes=792
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=405
+		Reduce input records=66
+		Reduce output records=11
+		Spilled Records=132
+		Shuffled Maps =6
+		Failed Shuffles=0
+		Merged Map outputs=6
+		GC time elapsed (ms)=394
+		CPU time spent (ms)=6140
+		Physical memory (bytes) snapshot=2534912000
+		Virtual memory (bytes) snapshot=33388109824
+		Total committed heap usage (bytes)=5637144576
+		Peak Map Physical memory (bytes)=386039808
+		Peak Map Virtual memory (bytes)=5038395392
+		Peak Reduce Physical memory (bytes)=269438976
+		Peak Reduce Virtual memory (bytes)=5176807424
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=40783090
+	File Output Format Counters 
+		Bytes Written=59
+2026-11-06 19:20:17,991 INFO streaming.StreamJob: Output directory: /hw1/lab-20261106T110350Z/community/02_universe

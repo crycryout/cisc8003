@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the imported handoff snapshot without downloading or running cluster jobs."""
+"""Verify the recorded repository snapshot without downloading or running cluster jobs."""
 import hashlib
 import json
 from pathlib import Path
@@ -21,5 +21,5 @@ for row in manifest["files"]:
         errors.append({"path": row["path"], "error": "content differs from imported snapshot"})
 print(json.dumps({"checked_files": len(manifest["files"]), "mismatches": len(errors),
                   "errors": errors[:20],
-                  "scope": "Repository import integrity, not a cluster benchmark"}, indent=2))
+                  "scope": "Repository byte integrity, not a cluster benchmark"}, indent=2))
 sys.exit(bool(errors))

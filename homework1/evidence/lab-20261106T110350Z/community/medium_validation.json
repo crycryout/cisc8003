@@ -1,0 +1,9 @@
+{
+  "users_checked_for_presence_and_format": 81306,
+  "sampled_users_checked_for_exact_top10": 1000,
+  "sampling_seed": 20261103,
+  "independent_oracle": "deduplicated followee sets + inverted-index counting per sampled user",
+  "ranking_mismatches": 0,
+  "result_sha256": "cb6d2f7776b031314f648996bf24392774388eea261befca077172c5aaf4899f",
+  "edge_order": "follower-followee"
+}

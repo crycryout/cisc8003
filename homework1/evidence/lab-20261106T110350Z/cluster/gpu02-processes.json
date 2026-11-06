@@ -1,0 +1,1 @@
+{"time_ns": 1793963696664982115, "daemons": {"hadoop-experiment-user-nodemanager.pid": {"pid": "874740", "affinity": ["16-19"]}, "hadoop-experiment-user-datanode.pid": {"pid": "874638", "affinity": ["16-19"]}}}

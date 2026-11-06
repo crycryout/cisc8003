@@ -1,0 +1,9 @@
+{
+  "url": "https://business.yelp.com/external-assets/files/Yelp-JSON.zip",
+  "bytes": 4345335132,
+  "etag": "\"678833a7-103008d5c\"",
+  "zip_sha256": "47dd6e4d279ac9d8734ddc30bfb3d78e571b9df4bb95923d7acf9a6ef3d8a4ab",
+  "review_bytes": 5341868833,
+  "review_sha256": "a4edc050d14eec25373a75e7ee211d42f49f14f47230837d8c7849eb9c5f2f96",
+  "input_scope": "complete uncompressed review JSONL"
+}

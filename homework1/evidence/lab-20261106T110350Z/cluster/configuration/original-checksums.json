@@ -1,0 +1,194 @@
+[
+  {
+    "node": "master",
+    "file": "homework-env.sh",
+    "original_sha256": "fd5da9e4a0ad61f2d3413e8c007042aa4dcef9a0dbfffd4864edee53e2d9166f",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "master",
+    "file": "yarn-site.xml",
+    "original_sha256": "e966ad086aaa5b8c306721539e51cf48ed84cc37412ba1bdcaf86f087f10f2dd",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "master",
+    "file": "workers",
+    "original_sha256": "a2a811e968678269936b9e01bc99f632f0bc7c9cb8e1c37c7ef35566b3c80503",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "master",
+    "file": "core-site.xml",
+    "original_sha256": "7850b672afeba19eb6e2a09a474a8bb0380684eea363969b9cd600119cf5c686",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "master",
+    "file": "hadoop-env.sh",
+    "original_sha256": "e10a84ee4412956ddcc076b861fd0256f574eb81d7872bf959fba9dcc11655d4",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "master",
+    "file": "hdfs-site.xml",
+    "original_sha256": "848027f5d0b757adbf224ab833a43117f76d7583e0161957ffa570396e4f318e",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "master",
+    "file": "capacity-scheduler.xml",
+    "original_sha256": "59c0ce15a72f3dc1729880bfbd26030ded0e79dbe3f86b40aae5e763a61df430",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "master",
+    "file": "mapred-site.xml",
+    "original_sha256": "683b40e2baf331678aab514d43e5f44939d3533581b871aa0baa41aa32a214bd",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker1",
+    "file": "homework-env.sh",
+    "original_sha256": "47ed3a68e87a6fe2d3d9a9a6bc21317928b4a4d2fe895de28e51633c0a268daf",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker1",
+    "file": "yarn-site.xml",
+    "original_sha256": "79423fe2e7eef9ec98264d9c4ea36fef2e99e9238953995f0e22178ef7a964b3",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker1",
+    "file": "workers",
+    "original_sha256": "a2a811e968678269936b9e01bc99f632f0bc7c9cb8e1c37c7ef35566b3c80503",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker1",
+    "file": "core-site.xml",
+    "original_sha256": "4ef04fbd04d979fa5fc2c6540b29d3bda5edb7e2eb71f59c1b22a2698297565e",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker1",
+    "file": "hadoop-env.sh",
+    "original_sha256": "7e661e56138371a27c210fbb5236727263fbd5f88bbf4c3ee248d0d7aebaef63",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker1",
+    "file": "hdfs-site.xml",
+    "original_sha256": "8163699df14c6f1a1d306a7f66e8c1e7cbbbf92483019b0834915182ee06ce58",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker1",
+    "file": "capacity-scheduler.xml",
+    "original_sha256": "59c0ce15a72f3dc1729880bfbd26030ded0e79dbe3f86b40aae5e763a61df430",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker1",
+    "file": "mapred-site.xml",
+    "original_sha256": "683b40e2baf331678aab514d43e5f44939d3533581b871aa0baa41aa32a214bd",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker2",
+    "file": "homework-env.sh",
+    "original_sha256": "445e03d81bf8728c13670f73568c396104cba684f8125c6ef5370ee939923a49",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker2",
+    "file": "yarn-site.xml",
+    "original_sha256": "f4f771dcffd4af45a7ccacd4b9216490f9b010700f6f3582a0e3898f385ca12b",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker2",
+    "file": "workers",
+    "original_sha256": "a2a811e968678269936b9e01bc99f632f0bc7c9cb8e1c37c7ef35566b3c80503",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker2",
+    "file": "core-site.xml",
+    "original_sha256": "c00330aec92894f1f7fd2ce908851e40aa4636ebde411d44747a044749c5cff8",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker2",
+    "file": "hadoop-env.sh",
+    "original_sha256": "7e661e56138371a27c210fbb5236727263fbd5f88bbf4c3ee248d0d7aebaef63",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker2",
+    "file": "hdfs-site.xml",
+    "original_sha256": "f423ac710408b57cf89f192fd4b09fb243530ecea79dfecbdead295e3cb56a8f",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker2",
+    "file": "capacity-scheduler.xml",
+    "original_sha256": "59c0ce15a72f3dc1729880bfbd26030ded0e79dbe3f86b40aae5e763a61df430",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker2",
+    "file": "mapred-site.xml",
+    "original_sha256": "683b40e2baf331678aab514d43e5f44939d3533581b871aa0baa41aa32a214bd",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker3",
+    "file": "homework-env.sh",
+    "original_sha256": "a289204c9dbc4e645f86609fcbf50e095395d955a48c94910949f9df00ca83fb",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker3",
+    "file": "yarn-site.xml",
+    "original_sha256": "d16ef909e97f14835ba77eecc97f55b245db656ca26b9b225d63bc6b335cd261",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker3",
+    "file": "workers",
+    "original_sha256": "a2a811e968678269936b9e01bc99f632f0bc7c9cb8e1c37c7ef35566b3c80503",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker3",
+    "file": "core-site.xml",
+    "original_sha256": "54cb06315b66158cc02a8c94c388937e057088b48c6c19dd3bb90ec7b54748df",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker3",
+    "file": "hadoop-env.sh",
+    "original_sha256": "7e661e56138371a27c210fbb5236727263fbd5f88bbf4c3ee248d0d7aebaef63",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker3",
+    "file": "hdfs-site.xml",
+    "original_sha256": "c8c29c0fa6ae27452d8d8dd240c9a83b523881b976ff7752515f78bf91eb20e8",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker3",
+    "file": "capacity-scheduler.xml",
+    "original_sha256": "59c0ce15a72f3dc1729880bfbd26030ded0e79dbe3f86b40aae5e763a61df430",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  },
+  {
+    "node": "worker3",
+    "file": "mapred-site.xml",
+    "original_sha256": "683b40e2baf331678aab514d43e5f44939d3533581b871aa0baa41aa32a214bd",
+    "public_copy": "host/account identifiers redacted; other settings preserved"
+  }
+]

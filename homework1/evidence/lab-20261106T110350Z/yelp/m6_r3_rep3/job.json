@@ -1,0 +1,28 @@
+{
+  "job": {
+    "submitTime": 1793966019472,
+    "startTime": 1793966021594,
+    "finishTime": 1793966154248,
+    "id": "job_1793963521105_0023",
+    "name": "word count",
+    "queue": "default",
+    "user": "experiment-user",
+    "state": "SUCCEEDED",
+    "mapsTotal": 6,
+    "mapsCompleted": 6,
+    "reducesTotal": 3,
+    "reducesCompleted": 3,
+    "uberized": false,
+    "diagnostics": "",
+    "avgMapTime": 102721,
+    "avgReduceTime": 6885,
+    "avgShuffleTime": 2150,
+    "avgMergeTime": 12831,
+    "failedReduceAttempts": 0,
+    "killedReduceAttempts": 0,
+    "successfulReduceAttempts": 3,
+    "failedMapAttempts": 0,
+    "killedMapAttempts": 0,
+    "successfulMapAttempts": 6
+  }
+}

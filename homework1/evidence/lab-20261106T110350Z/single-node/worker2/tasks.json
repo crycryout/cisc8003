@@ -1,0 +1,26 @@
+{
+  "tasks": {
+    "task": [
+      {
+        "startTime": 1793963341662,
+        "finishTime": 1793963343150,
+        "elapsedTime": 1488,
+        "progress": 100.0,
+        "id": "task_1793963323157_0001_r_000000",
+        "state": "SUCCEEDED",
+        "type": "REDUCE",
+        "successfulAttempt": "attempt_1793963323157_0001_r_000000_0"
+      },
+      {
+        "startTime": 1793963337699,
+        "finishTime": 1793963338781,
+        "elapsedTime": 1082,
+        "progress": 100.0,
+        "id": "task_1793963323157_0001_m_000000",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963323157_0001_m_000000_0"
+      }
+    ]
+  }
+}

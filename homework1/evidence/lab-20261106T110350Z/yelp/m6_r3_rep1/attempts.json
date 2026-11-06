@@ -1,0 +1,197 @@
+{
+  "task_1793963521105_0015_r_000000": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964799555,
+          "finishTime": 1793964869553,
+          "elapsedTime": 69998,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0015_r_000000_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "reduce > reduce",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0015_01_000008",
+          "shuffleFinishTime": 1793964848857,
+          "mergeFinishTime": 1793964857941,
+          "elapsedShuffleTime": 49302,
+          "elapsedMergeTime": 9084,
+          "elapsedReduceTime": 11612
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0015_m_000005": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964697511,
+          "finishTime": 1793964799035,
+          "elapsedTime": 101524,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0015_m_000005_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "map > sort",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0015_01_000007"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0015_r_000001": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964799590,
+          "finishTime": 1793964869381,
+          "elapsedTime": 69791,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0015_r_000001_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "reduce > reduce",
+          "nodeHttpAddress": "worker2:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0015_01_000009",
+          "shuffleFinishTime": 1793964848915,
+          "mergeFinishTime": 1793964858016,
+          "elapsedShuffleTime": 49325,
+          "elapsedMergeTime": 9101,
+          "elapsedReduceTime": 11365
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0015_m_000004": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964697508,
+          "finishTime": 1793964796993,
+          "elapsedTime": 99485,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0015_m_000004_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "map > sort",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0015_01_000006"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0015_m_000003": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964697515,
+          "finishTime": 1793964801818,
+          "elapsedTime": 104303,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0015_m_000003_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "map > sort",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0015_01_000005"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0015_r_000002": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964799591,
+          "finishTime": 1793964869704,
+          "elapsedTime": 70113,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0015_r_000002_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "reduce > reduce",
+          "nodeHttpAddress": "worker3:28042",
+          "diagnostics": "",
+          "type": "REDUCE",
+          "assignedContainerId": "container_1793963521105_0015_01_000010",
+          "shuffleFinishTime": 1793964848946,
+          "mergeFinishTime": 1793964858081,
+          "elapsedShuffleTime": 49355,
+          "elapsedMergeTime": 9135,
+          "elapsedReduceTime": 11623
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0015_m_000002": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964697512,
+          "finishTime": 1793964842780,
+          "elapsedTime": 145268,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0015_m_000002_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "map > sort",
+          "nodeHttpAddress": "worker1:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0015_01_000004"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0015_m_000001": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964697513,
+          "finishTime": 1793964846177,
+          "elapsedTime": 148664,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0015_m_000001_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "map > sort",
+          "nodeHttpAddress": "worker1:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0015_01_000003"
+        }
+      ]
+    }
+  },
+  "task_1793963521105_0015_m_000000": {
+    "taskAttempts": {
+      "taskAttempt": [
+        {
+          "startTime": 1793964697500,
+          "finishTime": 1793964848081,
+          "elapsedTime": 150581,
+          "progress": 100.0,
+          "id": "attempt_1793963521105_0015_m_000000_0",
+          "rack": "/default-rack",
+          "state": "SUCCEEDED",
+          "status": "map > sort",
+          "nodeHttpAddress": "worker1:28042",
+          "diagnostics": "",
+          "type": "MAP",
+          "assignedContainerId": "container_1793963521105_0015_01_000002"
+        }
+      ]
+    }
+  }
+}

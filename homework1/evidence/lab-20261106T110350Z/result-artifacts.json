@@ -1,0 +1,14 @@
+[
+  {
+    "file": "medium_all_users_top10_lab-20261106T110350Z.txt.gz",
+    "bytes": 2933522,
+    "sha256": "8e484321812299e827135984ceffc034acf7b386aca0abdc38740ce9bea52acd",
+    "provenance": "Actual four-physical-host HDFS/YARN run; all 81306 users verified"
+  },
+  {
+    "file": "medium_by_suffix_lab-20261106T110350Z.tar.gz",
+    "bytes": 3082201,
+    "sha256": "2b7d70b3e37423c2b62f4fda3676233e31cf3983e09488858079904b0efa9830",
+    "provenance": "Actual four-physical-host HDFS/YARN run; all 81306 users verified"
+  }
+]

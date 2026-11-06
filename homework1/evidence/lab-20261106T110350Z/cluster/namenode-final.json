@@ -1,0 +1,54 @@
+{
+  "beans": [
+    {
+      "name": "Hadoop:service=NameNode,name=NameNodeInfo",
+      "modelerType": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem",
+      "Version": "3.3.6, r1be78238728da9266a4f88195058f08fd012bf9c",
+      "BlockPoolId": "BP-192788106-master-1793963514075",
+      "ClusterId": "CID-dc2e86c1-814e-4378-b29d-01e365ef8a5f",
+      "UpgradeFinalized": true,
+      "HighestPriorityLowRedundancyReplicatedBlocks": 0,
+      "HighestPriorityLowRedundancyECBlocks": 0,
+      "Used": 82890594241,
+      "Free": 1517629861888,
+      "Total": 5916415586304,
+      "ProvidedCapacity": 0,
+      "Safemode": "",
+      "NonDfsUsedSpace": 4015131138111,
+      "PercentUsed": 1.4010273,
+      "BlockPoolUsedSpace": 82890594241,
+      "PercentBlockPoolUsed": 1.4010273,
+      "PercentRemaining": 25.65117,
+      "CacheCapacity": 0,
+      "CacheUsed": 0,
+      "TotalBlocks": 571,
+      "NumberOfMissingBlocks": 0,
+      "NumberOfMissingBlocksWithReplicationFactorOne": 0,
+      "LiveNodes": "{\"worker2:29866\":{\"infoAddr\":\"worker2:29864\",\"infoSecureAddr\":\"worker2:0\",\"xferaddr\":\"worker2:29866\",\"location\":\"/default-rack\",\"lastContact\":0,\"usedSpace\":27684452317,\"adminState\":\"In Service\",\"nonDfsUsedSpace\":1223833421859,\"capacity\":2013991550976,\"numBlocks\":571,\"version\":\"3.3.6\",\"used\":27684452317,\"remaining\":660092973056,\"blockScheduled\":0,\"blockPoolUsed\":27684452317,\"blockPoolUsedPercent\":1.3746061,\"volfails\":0,\"lastBlockReport\":49},\"worker3:29866\":{\"infoAddr\":\"worker3:29864\",\"infoSecureAddr\":\"worker3:0\",\"xferaddr\":\"worker3:29866\",\"location\":\"/default-rack\",\"lastContact\":0,\"usedSpace\":27549153280,\"adminState\":\"In Service\",\"nonDfsUsedSpace\":1371800152064,\"capacity\":2013991550976,\"numBlocks\":571,\"version\":\"3.3.6\",\"used\":27549153280,\"remaining\":512261541888,\"blockScheduled\":0,\"blockPoolUsed\":27549153280,\"blockPoolUsedPercent\":1.3678882,\"volfails\":0,\"lastBlockReport\":49},\"worker1:29866\":{\"infoAddr\":\"worker1:29864\",\"infoSecureAddr\":\"worker1:0\",\"xferaddr\":\"worker1:29866\",\"location\":\"/default-rack\",\"lastContact\":0,\"usedSpace\":27656988644,\"adminState\":\"In Service\",\"nonDfsUsedSpace\":1419497564188,\"capacity\":1888432484352,\"numBlocks\":571,\"version\":\"3.3.6\",\"used\":27656988644,\"remaining\":345275346944,\"blockScheduled\":0,\"blockPoolUsed\":27656988644,\"blockPoolUsedPercent\":1.4645474,\"volfails\":0,\"lastBlockReport\":29}}",
+      "DeadNodes": "{}",
+      "DecomNodes": "{}",
+      "EnteringMaintenanceNodes": "{}",
+      "NameDirStatuses": "{\"active\":{\"/home/experiment-user/cisc8003/.local/multi/thor/name\":\"IMAGE_AND_EDITS\"},\"failed\":{}}",
+      "NodeUsage": "{\"nodeUsage\":{\"min\":\"1.37%\",\"median\":\"1.37%\",\"max\":\"1.46%\",\"stdDev\":\"0.04%\"}}",
+      "NameJournalStatus": "[{\"manager\":\"FileJournalManager(root=/home/experiment-user/cisc8003/.local/multi/thor/name)\",\"stream\":\"EditLogFileOutputStream(/home/experiment-user/cisc8003/.local/multi/thor/name/current/edits_inprogress_0000000000000000009)\",\"disabled\":\"false\",\"required\":\"false\"}]",
+      "JournalTransactionInfo": "{\"MostRecentCheckpointTxId\":\"0\",\"LastAppliedOrWrittenTxId\":\"4905\"}",
+      "NNStartedTimeInMillis": 1793963515450,
+      "CompileInfo": "2023-06-18T23:15Z by ubuntu from (HEAD detached at release-3.3.6-RC1)",
+      "CorruptFiles": "[]",
+      "CorruptFilesCount": 0,
+      "NumberOfSnapshottableDirs": 0,
+      "DistinctVersionCount": 1,
+      "DistinctVersions": [
+        {
+          "key": "3.3.6",
+          "value": 3
+        }
+      ],
+      "SoftwareVersion": "3.3.6",
+      "NameDirSize": "{\"/home/experiment-user/cisc8003/.local/multi/thor/name\":1049797}",
+      "RollingUpgradeStatus": null,
+      "VerifyECWithTopologyResult": "{\"isSupported\":\"false\",\"resultMessage\":\"9 DataNodes are required for the erasure coding policies: RS-6-3-1024k. The number of DataNodes is only 3.\"}",
+      "Threads": 50
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://master:29000</value>
+  </property>
+  <property>
+    <name>hadoop.tmp.dir</name>
+    <value>/home/experiment-user/cisc8003/.local/multi/h800/tmp</value>
+  </property>
+</configuration>

@@ -1,0 +1,7 @@
+{
+  "complete_settings": 4,
+  "repetitions_per_setting": 3,
+  "successful_jobs": 12,
+  "output_hashes_identical": true,
+  "provenance": "First full sweep, then two additional alternating-order repetitions. Separate HDFS output roots retained."
+}

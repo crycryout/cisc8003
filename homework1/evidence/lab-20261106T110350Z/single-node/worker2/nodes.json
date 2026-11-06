@@ -1,0 +1,115 @@
+{
+  "nodes": {
+    "node": [
+      {
+        "rack": "/default-rack",
+        "state": "RUNNING",
+        "id": "worker2:28041",
+        "nodeHostName": "worker2",
+        "nodeHTTPAddress": "worker2:28042",
+        "lastHealthUpdate": 1793963324303,
+        "version": "3.3.6",
+        "healthReport": "",
+        "numContainers": 0,
+        "usedMemoryMB": 0,
+        "availMemoryMB": 6144,
+        "usedVirtualCores": 0,
+        "availableVirtualCores": 4,
+        "memUtilization": 9.718714,
+        "cpuUtilization": 2.1492836,
+        "numRunningOpportContainers": 0,
+        "usedMemoryOpportGB": 0,
+        "usedVirtualCoresOpport": 0,
+        "numQueuedContainers": 0,
+        "allocationTags": {},
+        "resourceUtilization": {
+          "nodePhysicalMemoryMB": 6195,
+          "nodeVirtualMemoryMB": 6195,
+          "nodeCPUUsage": 0.42985671758651733,
+          "aggregatedContainersPhysicalMemoryMB": 0,
+          "aggregatedContainersVirtualMemoryMB": 0,
+          "containersCPUUsage": 0.0
+        },
+        "usedResource": {
+          "memory": 0,
+          "vCores": 0,
+          "resourceInformations": {
+            "resourceInformation": [
+              {
+                "attributes": {},
+                "maximumAllocation": 9223372036854775807,
+                "minimumAllocation": 0,
+                "name": "memory-mb",
+                "resourceType": "COUNTABLE",
+                "units": "Mi",
+                "value": 0
+              },
+              {
+                "attributes": {},
+                "maximumAllocation": 9223372036854775807,
+                "minimumAllocation": 0,
+                "name": "vcores",
+                "resourceType": "COUNTABLE",
+                "units": "",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "availableResource": {
+          "memory": 6144,
+          "vCores": 4,
+          "resourceInformations": {
+            "resourceInformation": [
+              {
+                "attributes": {},
+                "maximumAllocation": 9223372036854775807,
+                "minimumAllocation": 0,
+                "name": "memory-mb",
+                "resourceType": "COUNTABLE",
+                "units": "Mi",
+                "value": 6144
+              },
+              {
+                "attributes": {},
+                "maximumAllocation": 9223372036854775807,
+                "minimumAllocation": 0,
+                "name": "vcores",
+                "resourceType": "COUNTABLE",
+                "units": "",
+                "value": 4
+              }
+            ]
+          }
+        },
+        "nodeAttributesInfo": {},
+        "totalResource": {
+          "memory": 6144,
+          "vCores": 4,
+          "resourceInformations": {
+            "resourceInformation": [
+              {
+                "attributes": {},
+                "maximumAllocation": 9223372036854775807,
+                "minimumAllocation": 0,
+                "name": "memory-mb",
+                "resourceType": "COUNTABLE",
+                "units": "Mi",
+                "value": 6144
+              },
+              {
+                "attributes": {},
+                "maximumAllocation": 9223372036854775807,
+                "minimumAllocation": 0,
+                "name": "vcores",
+                "resourceType": "COUNTABLE",
+                "units": "",
+                "value": 4
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

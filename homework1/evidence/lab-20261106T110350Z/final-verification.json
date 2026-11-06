@@ -1,0 +1,11 @@
+{
+  "public_text_files_checked": 309,
+  "privacy_findings": [],
+  "shakespeare_successful_jobs": 6,
+  "yelp_successful_jobs": 12,
+  "medium_users": 81306,
+  "independent_exact_samples": 1000,
+  "all_reference_rankings_identical": true,
+  "all_result_archive_hashes_match": true,
+  "final_pdf_hash_matches_validation": true
+}

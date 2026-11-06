@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "file": "course_medium.txt.gz",
+      "bytes": 10621918,
+      "sha256": "d9f99b0e6a53b9204b8c215f41b3c10fb99a1e1e783858c012b06d0d3d4bd129"
+    },
+    {
+      "file": "course_medium.txt",
+      "bytes": 44550129,
+      "sha256": "6bc15ae46e4e4e29c4d338366d188583690d8f0db8f9d6ad42f7f0826afeb4fa"
+    },
+    {
+      "file": "Shakespeare.tar.gz",
+      "bytes": 2264358,
+      "sha256": "d387361c46d956b7626a6d2e004c11ed25d3d4944db484c2078742efdf036028"
+    },
+    {
+      "file": "shakespeare_lab_prepared/merged.txt",
+      "bytes": 6460189,
+      "sha256": "cbdce1378b75ae2194375b3869be8f8fed590698c71604c41da37d2e7a882faf"
+    }
+  ],
+  "shakespeare_files": 196,
+  "normalization": "Every nonempty text file ends in newline; same token stream for both layouts.",
+  "medium_source": "Original course Dropbox download; SHA matches handoff.",
+  "yelp_scope": "complete uncompressed review JSONL; download pending"
+}

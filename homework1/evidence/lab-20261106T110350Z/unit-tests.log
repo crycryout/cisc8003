@@ -1,0 +1,23 @@
+test_assignment_figure (test_community.CommunityTests) ... ok
+test_duplicate_edges_and_lines (test_community.CommunityTests) ... ok
+test_edge_direction_and_undirected_mode (test_community.CommunityTests) ... ok
+test_empty_and_single_user (test_community.CommunityTests) ... ok
+test_high_degree_blocking (test_community.CommunityTests) ... ok
+test_invalid_ids_fail (test_community.CommunityTests) ... ok
+test_large_numeric_ids_and_leading_zeros (test_community.CommunityTests) ... ok
+test_random_graphs (test_community.CommunityTests) ... ok
+test_zero_similarity_and_followee_only_users (test_community.CommunityTests) ... ok
+test_interrupted_range_resumes_and_extracts_exact_reviews (test_fetch_yelp.YelpDownloadTests) ... ok
+test_partial_tasks_are_rejected (test_metrics.TimingTests) ... ok
+test_synthetic_timestamp_arithmetic (test_metrics.TimingTests) ... ok
+test_invalid_port_offset_is_rejected_without_creating_config (test_profiles.ProfileTests) ... ok
+test_invalid_resource_budget_fails_before_creating_config (test_profiles.ProfileTests) ... ok
+test_isolated_cluster_ports_and_runtime_directories (test_profiles.ProfileTests) ... ok
+test_lowmem_budget (test_profiles.ProfileTests) ... ok
+test_machine_specific_environment_is_resolved_on_each_host (test_profiles.ProfileTests) ... ok
+test_standard_budget_preserved (test_profiles.ProfileTests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.199s
+
+OK

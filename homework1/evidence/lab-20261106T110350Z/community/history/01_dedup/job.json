@@ -1,0 +1,28 @@
+{
+  "job": {
+    "submitTime": 1793963979720,
+    "startTime": 1793963983138,
+    "finishTime": 1793963999807,
+    "id": "job_1793963521105_0008",
+    "name": "hw1-01_dedup",
+    "queue": "default",
+    "user": "experiment-user",
+    "state": "SUCCEEDED",
+    "mapsTotal": 2,
+    "mapsCompleted": 2,
+    "reducesTotal": 6,
+    "reducesCompleted": 6,
+    "uberized": false,
+    "diagnostics": "",
+    "avgMapTime": 7654,
+    "avgReduceTime": 792,
+    "avgShuffleTime": 1403,
+    "avgMergeTime": 335,
+    "failedReduceAttempts": 0,
+    "killedReduceAttempts": 0,
+    "successfulReduceAttempts": 6,
+    "failedMapAttempts": 0,
+    "killedMapAttempts": 0,
+    "successfulMapAttempts": 2
+  }
+}

@@ -1,0 +1,7 @@
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+2026-11-06 19:16:23,787 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /master:28032
+Total Nodes:3
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+worker3:28041	        RUNNING	worker3:28042	                           0
+worker1:28041	        RUNNING	worker1:28042	                           1
+worker2:28041	        RUNNING	worker2:28042	                           0

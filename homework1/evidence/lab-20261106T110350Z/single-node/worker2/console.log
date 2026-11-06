@@ -1,0 +1,157 @@
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+Safe mode is OFF
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+2026-11-06 11:08:51,601 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /worker2:28032
+2026-11-06 11:08:51,759 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/experiment-user/.staging/job_1793963323157_0001
+2026-11-06 11:08:51,886 INFO input.FileInputFormat: Total input files to process : 1
+2026-11-06 11:08:52,349 INFO mapreduce.JobSubmitter: number of splits:1
+2026-11-06 11:08:52,437 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1793963323157_0001
+2026-11-06 11:08:52,437 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-06 11:08:52,507 INFO conf.Configuration: resource-types.xml not found
+2026-11-06 11:08:52,508 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-11-06 11:08:52,598 INFO impl.YarnClientImpl: Submitted application application_1793963323157_0001
+2026-11-06 11:08:52,613 INFO mapreduce.Job: The url to track the job: http://worker2:28088/proxy/application_1793963323157_0001/
+2026-11-06 11:08:52,613 INFO mapreduce.Job: Running job: job_1793963323157_0001
+2026-11-06 11:08:56,666 INFO mapreduce.Job: Job job_1793963323157_0001 running in uber mode : false
+2026-11-06 11:08:56,667 INFO mapreduce.Job:  map 0% reduce 0%
+2026-11-06 11:09:00,710 INFO mapreduce.Job:  map 100% reduce 0%
+2026-11-06 11:09:04,732 INFO mapreduce.Job:  map 100% reduce 100%
+2026-11-06 11:09:04,743 INFO mapreduce.Job: Job job_1793963323157_0001 completed successfully
+2026-11-06 11:09:04,780 INFO mapreduce.Job: Counters: 54
+	File System Counters
+		FILE: Number of bytes read=47
+		FILE: Number of bytes written=553015
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=146
+		HDFS: Number of bytes written=29
+		HDFS: Number of read operations=8
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=3246
+		Total time spent by all reduces in occupied slots (ms)=4464
+		Total time spent by all map tasks (ms)=1082
+		Total time spent by all reduce tasks (ms)=1488
+		Total vcore-milliseconds taken by all map tasks=1082
+		Total vcore-milliseconds taken by all reduce tasks=1488
+		Total megabyte-milliseconds taken by all map tasks=1661952
+		Total megabyte-milliseconds taken by all reduce tasks=2285568
+	Map-Reduce Framework
+		Map input records=2
+		Map output records=4
+		Map output bytes=45
+		Map output materialized bytes=47
+		Input split bytes=117
+		Combine input records=4
+		Combine output records=3
+		Reduce input groups=3
+		Reduce shuffle bytes=47
+		Reduce input records=3
+		Reduce output records=3
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=19
+		CPU time spent (ms)=780
+		Physical memory (bytes) snapshot=594104320
+		Virtual memory (bytes) snapshot=10010726400
+		Total committed heap usage (bytes)=1610612736
+		Peak Map Physical memory (bytes)=359706624
+		Peak Map Virtual memory (bytes)=4833918976
+		Peak Reduce Physical memory (bytes)=234397696
+		Peak Reduce Virtual memory (bytes)=5176807424
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=29
+	File Output Format Counters 
+		Bytes Written=29
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+hadoop	1
+hello	2
+mapreduce	1
+EXACT_SMOKE_OUTPUT_VERIFIED
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+Configured Capacity: 2013991550976 (1.83 TB)
+Present Capacity: 688334660838 (641.06 GB)
+DFS Remaining: 688333516800 (641.06 GB)
+DFS Used: 1144038 (1.09 MB)
+DFS Used%: 0.00%
+Replicated Blocks:
+	Under replicated blocks: 0
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (1):
+
+Name: worker2:29866 (worker2)
+Hostname: worker2
+Decommission Status : Normal
+Configured Capacity: 2013991550976 (1.83 TB)
+DFS Used: 1144038 (1.09 MB)
+Non DFS Used: 1223276186394 (1.11 TB)
+DFS Remaining: 688333516800 (641.06 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 34.18%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 1
+Last contact: Fri Nov 06 11:09:04 UTC 2026
+Last Block Report: Fri Nov 06 11:08:40 UTC 2026
+Num of Blocks: 5
+
+
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+2026-11-06 11:09:07,366 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /worker2:28032
+Total Nodes:1
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+worker2:28041	        RUNNING	worker2:28042	                           1
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+openjdk version "11.0.33" 2026-10-20 LTS
+OpenJDK Runtime Environment Corretto-11.0.33.0.10 (build 11.0.33+10-LTS)
+OpenJDK 64-Bit Server VM Corretto-11.0.33.0.10 (build 11.0.33+10-LTS, mixed mode)
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+Hadoop 3.3.6
+Source code repository https://github.com/apache/hadoop.git -r 1be78238728da9266a4f88195058f08fd012bf9c
+Compiled by ubuntu on 2023-06-18T08:22Z
+Compiled on platform linux-x86_64
+Compiled with protoc 3.7.1
+From source with checksum 5652179ad55f76cb287d9c633bb53bbd
+This command was run using /home/experiment-user/hadoop-3.3.6/share/hadoop/common/hadoop-common-3.3.6.jar
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+17616 org.apache.hadoop.hdfs.server.namenode.NameNode
+17794 org.apache.hadoop.hdfs.server.datanode.DataNode
+18164 org.apache.hadoop.yarn.server.nodemanager.NodeManager
+19606 jdk.jcmd/sun.tools.jps.Jps
+18809 org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+17722 org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode
+18462 org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer
+17902 org.apache.hadoop.yarn.server.resourcemanager.ResourceManager

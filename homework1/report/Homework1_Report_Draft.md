@@ -1,130 +1,102 @@
 # Homework 1 - Hadoop and Common-Followee Top-10
 
-**Reference implementation and report draft | Prepared 3 November 2026**
+**Four physical laboratory machines | Actual HDFS/YARN experiments, 6 November 2026**
 
 Name: ____________________    SID: ____________________
 
-**Evidence status.** The algorithms, scripts and local validation are supplied. No four-VM cloud cluster has been deployed in this session. Therefore the required cloud screenshots, four-VM WordCount performance table and a cloud-scale execution claim cannot be supplied yet. Values marked NOT MEASURED are intentionally unfilled. Local verification is identified separately in the accompanying results files.
+**Completed experiment.** Four independent single-node WordCount checks, a Thor master with three physical workers, the three-repetition Shakespeare comparison, four actual Yelp mapper/reducer configurations, and all six medium-graph jobs were executed successfully. The full medium result covers 81,306 users; 1,000 independent sampled rankings and all reference rankings agree. Every performance value below comes from completed jobs in this run, not the earlier LocalJobRunner results.
 
-The assignment deadline is 9 November 2026 at 23:59; its time zone is not specified in the PDF. The course submission system should be checked.
+**Environment choice.** The student selected laboratory hardware in place of the assignment's cloud VMs/course cluster. These measurements demonstrate the laboratory deployment and do not claim that the instructor formally approved that substitution. GPUs do not execute these Hadoop jobs. The optional large-graph bonus is reported separately; it is not included in the completed mandatory result.
 
-**Authorship and acknowledgment.** This draft and reference implementation were prepared with ChatGPT/Codex assistance. The assignment requires independently produced work, disclosure of discussions, and acknowledgment of external sources. The student must follow the course policy, produce the final submission accordingly, and sign the declaration only if it is accurate. No signature or originality assertion has been made here.
+**Authorship and acknowledgment.** Implementation, deployment, verification and this report used ChatGPT/Codex assistance. The student must check the course policy, acknowledge actual discussions and sources, fill in personal information, and personally verify any declaration before signing. No identity, signature or originality assertion has been supplied by the assistant.
 
-## Deliverables and remaining evidence
+## 1. Hardware, software and fixed resources
 
-| Requirement | Supplied material | Remaining evidence |
-|---|---|---|
-| Q1(a), 10 marks | Single-node configuration and smoke-test commands | Real screenshots on the VMs |
-| Q1(b), 20 marks | Four-node deployment procedure and paired experiment runner | Four-VM cluster and measured comparison |
-| Q1(c), 20 marks | Four-configuration sweep and task timing collector | Actual Yelp runs and measured table |
-| Q2(a), 50 marks | Code, full local-Hadoop results and all suffix exports | Required-cluster execution evidence; choose own suffix |
-| Q2(b), 15 bonus | Same blocked implementation for the large graph | Large input, execution and suffix export |
+The topology consists of four independent physical hosts, not four NUMA domains. The H800 host has two CPU sockets/NUMA nodes but remains one worker. All hosts use Hadoop 3.3.6, architecture-matched Amazon Corretto JDK 11.0.33.0.10, and Python 3. Public evidence uses role labels; network addresses and account identifiers remain in the ignored local evidence.
 
-This report describes how the supplied implementation addresses each requirement. The detailed deployment commands are in `cluster/DEPLOYMENT.md`; the experiment commands are in `README.md`.
-
----PAGE---
-
-## 1. Q1(a): single-node Hadoop
-
-The selected software stack is Ubuntu 22.04 x86_64, Java 11 and Hadoop 3.3.6. Hadoop 3.3.6 satisfies the assignment's version requirement of 2.7.1 or above. The old Ubuntu/Java versions in the tutorial are examples rather than assignment requirements. Java compatibility is documented by Apache [1].
-
-`bootstrap_node.sh` installs Java, SSH, Python and Hadoop under a non-root VM user. It verifies the Hadoop archive against Apache's SHA-512 checksum. `configure.py --mode single` generates the four site XML files and a workers file containing only that VM. This follows Apache's single-node setup model [2].
-
-The single-node configuration uses HDFS replication 1, YARN as the MapReduce framework, local directories below `~/hadoop-single`, and a JobHistoryServer. This setup is to be verified separately on each VM before changing to the four-node configuration.
-
-For a fresh, empty namespace, format the NameNode once and start HDFS, YARN and the history server. An existing NameNode must not be reformatted. Upload the following two-line smoke-test input:
-
-```text
-hello hadoop
-hello mapreduce
-```
-
-The built-in Hadoop WordCount example must return the following counts, irrespective of output-file order:
-
-```text
-hadoop     1
-hello      2
-mapreduce  1
-```
-
-**Required evidence:** actual Hadoop and Java version output, the successful job and result, and `jps` showing the single-node services. The above counts are an analytically known smoke-test expectation, not a fabricated screenshot or benchmark result.
-
-Stop the single-node daemons on every VM before moving to the multi-node setup. Retain its screenshots and keep its storage separate from the new multi-node namespace.
-
----PAGE---
-
-## 2. Q1(b): four-VM setup
-
-The intended topology has one master and three workers. This separates cluster coordination from data and task execution [3].
-
-| VM | Hadoop services |
-|---|---|
-| master | NameNode, SecondaryNameNode, ResourceManager, JobHistoryServer |
-| worker1 | DataNode, NodeManager |
-| worker2 | DataNode, NodeManager |
-| worker3 | DataNode, NodeManager |
-
-A practical starting configuration is 4 vCPUs and 8 GiB RAM per VM. Worker YARN capacity is set to 6,144 MiB and 4 vcores. Task containers request 1,536 MiB with a 768 MiB Java heap. These are proposed settings, not descriptions of provisioned hardware. The actual VM type and storage must be recorded after deployment.
-
-All VMs should share a private network. Private hostnames must resolve consistently. The Hadoop user needs passwordless SSH from the master to the workers. Hadoop Web and RPC endpoints should remain private; SSH forwarding provides access to the Web interfaces.
-
-`configure.py --mode multi` sets the HDFS endpoint to `hdfs://master:9000`, replication to 3, ResourceManager to master, history interfaces to ports 10020/19888, and the workers list to exactly worker1-worker3. Separate `~/hadoop-multi` directories avoid reusing a single-node namespace.
-
-After copying the generated files to all VMs, format the new NameNode only once. Start HDFS and YARN, create the history directories, and start the history server. Verify the following before measuring performance:
-
-| Check | Required observation |
-|---|---|
-| `hdfs dfsadmin -report` | 3 live DataNodes |
-| `yarn node -list` | 3 RUNNING NodeManagers |
-| `jps` on master | Coordination services, no DataNode/NodeManager |
-| `jps` on workers | DataNode and NodeManager on each |
-| WordCount smoke test | Correct word frequencies, successful job |
-
-**Evidence not yet collected:** cloud console VM list, service/process screenshots, HDFS/YARN status, and the successful four-VM smoke test.
-
----PAGE---
-
-## 3. Q1(b): small files versus one merged file
-
-The exact Shakespeare archive specified in assignment reference [11] has been downloaded and prepared. It contains 196 text files; the normalized merged input is 6,460,189 bytes. Both equivalent inputs and a per-file checksum manifest are supplied in `data/shakespeare_prepared`. `prepare_words.py` adds a terminating newline to any nonempty file that lacks one, applies the same normalization to both inputs, and concatenates the normalized files. This prevents words at file boundaries from being accidentally joined.
-
-As a local correctness check, both inputs were executed with real Hadoop LocalJobRunner. They produced identical frequencies for 72,379 distinct tokens, with 196 and 1 map tasks respectively. These are not four-VM timing measurements. The canonical output and checksum are included in `results/shakespeare_validation.json`.
-
-For the assessed benchmark, use the same built-in WordCount program, cluster settings and number of reducers for both inputs. Run each condition three times, alternating their order to reduce a consistent first-run advantage. Do not execute competing jobs during the comparison. The output frequencies must agree: the runner sorts each output and compares SHA-256 hashes.
-
-| Setting | Actual maps | Reducers | Job times, 3 repetitions | Output equality |
+| Node | CPU / architecture | RAM (GiB) | OS | Hadoop role |
 |---|---|---|---|---|
-| Many small files | NOT MEASURED | 1 planned | NOT MEASURED | NOT CHECKED |
-| One merged file | NOT MEASURED | 1 planned | NOT MEASURED | NOT CHECKED |
+| master | Thor / aarch64 (14 logical CPUs) | 122.8 | Ubuntu 24.04.3 LTS | NN, SNN, RM, History |
+| worker1 | Xeon Gold 6342 CPU @ 2.80GHz / x86_64 | 251.3 | Ubuntu 22.04.5 LTS | DN + NM |
+| worker2 | Core Ultra 7 265K / x86_64 | 62.2 | Ubuntu 26.04 LTS | DN + NM |
+| worker3 | Core Ultra 7 265K / x86_64 | 62.2 | Ubuntu 26.04 LTS | DN + NM |
 
-**Expected mechanism, not an observed result:** with default TextInputFormat, many small files can create many short map tasks. Their initialization, scheduling, metadata access and per-task I/O may dominate useful work. Merging can reduce this overhead, as discussed by the course tutorial [4].
+Each worker advertises 6,144 MiB and 4 YARN vcores. Map/reduce containers request 1,536 MiB with 768 MiB heap; the ApplicationMaster requests 1,536 MiB with 1,024 MiB heap. NodeManagers and their child containers inherit four-CPU affinity: worker1 80-83; workers2/3 16-19. The cluster therefore has 18,432 MiB and 12 advertised vcores. These are experiment allocations, not the total host resources. Map/reduce speculation is disabled. Map output uses DefaultCodec compression. HDFS replication is three with 128 MiB blocks. Worker quotas, input and task heap were fixed before the comparisons.
 
-The merged condition is not guaranteed to be faster. If the merged Shakespeare text produces only one split, it may use only one mapper while the small-file condition exposes more parallelism. Runtime depends on the balance between launch overhead and useful parallel work, as well as caching, input size and I/O locality.
+Hadoop packages passed official Apache SHA-512 checks and both JDK packages passed vendor SHA-256 checks. Native libhadoop and zlib loaded on all four hosts. Optional OpenSSL, ISA-L and PMDK were absent; no assessed operation required them. The system's default Java, GPU software, network configuration and other users' workloads were not changed.
 
-For the completed analysis, report both actual mapper counts and measured job times, then calculate `speedup = median(small-file job time) / median(merged-file job time)`. A value below 1 means the merged condition was slower. Explain the measured direction using task counts, task durations and counters rather than assuming the expected mechanism won.
+Every experiment uses dedicated configuration, PID, checkpoint, log and storage directories. All fixed service ports have offset 20000 to avoid existing services. A per-JVM hosts file resolves the four nodes consistently without editing system DNS. Single-node daemons were stopped before the new multi-node namespace was formatted once. Thor runs management services only; each other physical host runs one DataNode and one NodeManager.
 
-This comparison measures default small-file behavior. A CombineFileInputFormat experiment would be a separate mitigation experiment and should not silently replace this baseline.
+The hosts are shared. An official Yelp download to worker1 remained active during the Shakespeare runs; this is an I/O limitation of that comparison. No competing Hadoop job was submitted. The Yelp comparison began only after its complete input had been downloaded and extracted. These are small repeated observations on this particular heterogeneous laboratory cluster, not universal hardware performance claims.
 
 ---PAGE---
 
-## 4. Q1(c): mapper/reducer experiment and timing table
+## 2. Q1(a): independent single-node checks and cluster acceptance
 
-Use the same actual Yelp dataset for every run [5]. The supplied procedure treats one uncompressed Yelp review JSONL file as text. If the course expects review text only, extract the `text` field consistently first. Record the precise input filename, byte count, SHA-256, preprocessing and HDFS block size. A gzip text file is unsuitable for this split-control experiment because ordinary gzip input is not splittable.
+Each physical host first ran its own fresh HDFS/YARN namespace with replication one. H800 initially used its existing OpenJDK 11.0.27 runtime; the remote single-node checks used Corretto 11.0.33. All four hosts were normalized to Corretto 11.0.33 before the measured multi-node experiments. The built-in WordCount input was `hello hadoop` and `hello mapreduce` on separate lines. Every result was exactly hadoop=1, hello=2, mapreduce=1. Successful History pages, service/version logs and original JSON were retained.
 
-Target four combinations: (6 mappers, 1 reducer), (6, 3), (12, 1), and (12, 3). The runner sets both input split bounds to `ceil(input_bytes / target_maps)`. Actual mapper count is governed by InputFormat and split construction; `mapreduce.job.maps` is not a reliable way to force it. The script records actual counts and rejects a sweep yielding fewer than four distinct actual combinations.
+| Physical node | Single-node job ID | Result | Actual M/R |
+|---|---|---|---|
+| master | job_1793963355242_0001 | SUCCEEDED | 1 / 1 |
+| worker1 | job_1793962962220_0002 | SUCCEEDED | 1 / 1 |
+| worker2 | job_1793963323157_0001 | SUCCEEDED | 1 / 1 |
+| worker3 | job_1793963323227_0001 | SUCCEEDED | 1 / 1 |
 
-| Target M/R | Actual M/R | Map max/min/avg (s) | Reduce max/min/avg (s) | Job (s) |
+The multi-node acceptance showed exactly three Live DataNodes and three RUNNING NodeManagers. A separate six-input-file WordCount used six maps and three reducers; output was hadoop=6, hello=12, mapreduce=6. History recorded successful tasks on all three workers, confirming cross-host execution. The smoke job is not included in the benchmark tables.
+
+![Actual ResourceManager page: three RUNNING workers, 18 GiB and 12 vcores. Host/account identifiers redacted.](../evidence/lab-20261106T110350Z/screenshots/multi-yarn-nodes.png)
+
+---PAGE---
+
+## 3. Q1(b): Shakespeare small files versus merged input
+
+The assignment archive was downloaded again and prepared as 196 text files and one 6,460,189-byte merged file. Every nonempty source file has a trailing newline in both layouts. There is no sampling or repeated expansion. The two layouts therefore contain the identical token stream. Both use the same built-in WordCount, cluster configuration and one reducer. Their order alternates small/merged, merged/small, small/merged.
+
+| Layout | Rep | Actual maps | Reducers | Job seconds |
 |---|---|---|---|---|
-| 6 / 1 | NOT MEASURED | NOT MEASURED | NOT MEASURED | NOT MEASURED |
-| 6 / 3 | NOT MEASURED | NOT MEASURED | NOT MEASURED | NOT MEASURED |
-| 12 / 1 | NOT MEASURED | NOT MEASURED | NOT MEASURED | NOT MEASURED |
-| 12 / 3 | NOT MEASURED | NOT MEASURED | NOT MEASURED | NOT MEASURED |
+| small | 1 | 196 | 1 | 75.648 |
+| merged | 1 | 1 | 1 | 8.241 |
+| merged | 2 | 1 | 1 | 9.459 |
+| small | 2 | 196 | 1 | 76.364 |
+| small | 3 | 196 | 1 | 77.015 |
+| merged | 3 | 1 | 1 | 8.430 |
 
-This compact table lists the four planned settings; expand it to one row per actual job, including its job ID (twelve rows for three repetitions). It groups the seven required time statistics. `timings.csv` writes each of the seven as a separate column, together with actual M/R counts and job IDs. Repeat each configuration three times; retain every run rather than reporting only the best result.
+Median job time is **76.364 s** for small files and **8.430 s** for the merged file. The observed median speedup is **9.06x**. All six canonical output hashes equal `b9524c8e2c10b2b16d2e5334f34dc3384cb7c46b47f2a770c023d54cae877d31`, matching the independent archived reference containing 72,379 distinct tokens.
 
-`metrics.py` reads completed jobs from JobHistory REST [6]. Job time is `(job.finishTime - job.startTime)/1000`. Task time is `(task.finishTime - task.startTime)/1000`; maximum, minimum and arithmetic mean are calculated over completed tasks of that type. Reducer task time includes shuffle, merge/sort and reduce. It is not only time spent inside the user's reduce function. Missing tasks or unsuccessful jobs are rejected. Raw job, task and counter JSON is retained.
+The small layout creates 196 short map tasks; the merged input creates one. In these measurements, reduced scheduling/JVM startup overhead outweighed the loss of map parallelism. The small-file reducers overlap the map phase and include waiting for shuffle input, so their elapsed times should not be added to the maps' times. Single-map placement varies across the heterogeneous workers and contributes to the merged-run spread. Shared disk/network activity and caching were not independently controlled.
 
-More maps may improve parallelism but increase startup, sort/spill and scheduling overhead. More reducers may relieve a reduce bottleneck but increase shuffle fan-out and output fragmentation. Interpret the actual measurements using map/reduce duration dispersion, spilled records, shuffle bytes and failed-attempt counts. Job time is not the sum of task times because tasks overlap.
+![Measured Shakespeare durations; dots are every repetition, bars are medians.](../evidence/lab-20261106T110350Z/charts/shakespeare.png)
+
+---PAGE---
+
+## 4. Q1(c): complete Yelp input and measured task times
+
+The official ZIP was downloaded completely and only its review JSONL was extracted. Input is the full **5,341,868,833-byte** uncompressed review file, SHA-256 `a4edc050d14eec25373a75e7ee211d42f49f14f47230837d8c7849eb9c5f2f96`. The file is counted as JSONL text, including field names and identifiers; it is not a text-field-only transform, sample, synthetic expansion or unsplittable gzip input. Every setting reads the identical HDFS file.
+
+The runner fixes both split bounds to ceil(input bytes / target maps). Actual M/R counts are verified from History, rather than trusting a requested mapper count. Times below are seconds; each row is a real successful job. Map/reduce max, min and mean use completed task finishTime-startTime; reducer time includes shuffle, sort and reduce. Job duration is job.finishTime-job.startTime. Parallel task durations are not summed to obtain job duration. The preserved CSV has separate columns for all seven required statistics, actual M/R, job IDs and output hashes.
+
+| Actual M/R | Rep | Map max | Map min | Map mean | Reduce max | Reduce min | Reduce mean | Job |
+|---|---|---|---|---|---|---|---|---|
+| 6/1 | 1 | 104.930 | 101.226 | 104.026 | 18.927 | 18.927 | 18.927 | 125.302 |
+| 6/3 | 1 | 150.581 | 99.485 | 124.971 | 70.113 | 69.791 | 69.967 | 174.556 |
+| 12/1 | 1 | 82.221 | 42.613 | 63.507 | 66.405 | 66.405 | 66.405 | 124.663 |
+| 12/3 | 1 | 81.477 | 42.423 | 63.102 | 55.632 | 51.999 | 53.487 | 112.895 |
+| 12/3 | 2 | 76.066 | 43.980 | 61.122 | 55.510 | 53.722 | 54.675 | 117.878 |
+| 12/1 | 2 | 86.378 | 42.513 | 63.730 | 65.991 | 65.991 | 65.991 | 121.256 |
+| 6/3 | 2 | 159.126 | 102.071 | 125.874 | 71.035 | 68.308 | 69.671 | 177.431 |
+| 6/1 | 2 | 157.771 | 103.499 | 126.761 | 73.560 | 73.560 | 73.560 | 181.993 |
+| 6/1 | 3 | 115.258 | 97.107 | 108.622 | 33.731 | 33.731 | 33.731 | 135.032 |
+| 6/3 | 3 | 103.960 | 101.457 | 102.722 | 26.283 | 19.533 | 21.867 | 132.654 |
+| 12/1 | 3 | 83.623 | 42.915 | 63.738 | 65.260 | 65.260 | 65.260 | 121.511 |
+| 12/3 | 3 | 79.661 | 43.603 | 61.223 | 57.494 | 56.765 | 57.176 | 119.886 |
+
+All Yelp output hashes agree: `841320a7bf34efe2546c6efb85d4a87a2556795e28ae6871e017bde7deec6224`. There are no failed map or reduce attempts in the reported jobs.
+
+Each setting has 3 successful repetitions. Observed median job durations by setting: 6/1 135.032 s, 6/3 174.556 s, 12/1 121.511 s, 12/3 117.878 s. The fastest observed setting is 12/3, while 6/3 is slowest. More maps expose additional parallel tasks while increasing startup and spill/sort work; more reducers distribute distinct-key aggregation but increase shuffle fan-out. The measurements and task-duration spread, not the requested counts alone, determine the observed ordering. Three repetitions expose variation in elapsed time and task placement. All individual runs are retained; these measurements describe this shared heterogeneous cluster, and do not establish a hardware-independent causal effect.
+
+The first 6/1 job placed its six maps on workers2/3 (three each); the first 6/3 job used workers1/3 (three each). The first two 12-map jobs used four maps per worker. The H800 host is a Xeon CPU worker and has longer map elapsed times than the Core Ultra workers in those jobs. Consequently the observed settings also differ in task placement on heterogeneous CPUs. This is a measured placement effect and a limit on causal interpretation of mapper/reducer counts alone; task-placement.json and raw attempts preserve the evidence.
+
+![Measured Yelp durations for the four actual settings.](../evidence/lab-20261106T110350Z/charts/yelp.png)
 
 ---PAGE---
 
@@ -191,35 +163,83 @@ Map-output compression is enabled. This compresses shuffle/spill output, not all
 
 ---PAGE---
 
-## 8. Validation, suffix output and completion checklist
+## 8. Actual medium-graph execution, validation and suffix outputs
 
-The automated semantic tests compare the blocked pipeline against an independent brute-force implementation based on followee-set intersections. They include the assignment figure, duplicate edges and input lines, empty input, an isolated user, followee-only users, zero-score padding, ties, leading-zero IDs, IDs larger than 64 bits, both directed edge conventions, explicit undirected mode and a high-degree blocked case. An additional 100 fixed-seed random graphs are checked. Timing-parser fixtures are explicitly synthetic and are not experimental measurements.
+All six stages below were executed on this four-physical-host HDFS/YARN cluster. Stage 03 capacity counters were checked before pair enumeration; the actual candidate-pair count is 154,933,408. Available worker disks had sufficient headroom for the medium intermediates. The older LocalJobRunner run remains a separately identified reference and supplies no timings to this table.
 
-**Completed medium-data execution.** All six jobs succeeded using Hadoop 3.3.6 and Java 11 with LocalJobRunner and the local filesystem. The full result contains 81,306 users with ten distinct, non-self candidates each. All-user coverage and formatting were checked, and 1,000 fixed-seed sampled rankings were independently recomputed from deduplicated followee sets: zero mismatches. Files for all 1,000 possible student-ID suffixes are supplied. This validates the results and implementation, but is not four-VM/YARN or IE DIC execution evidence.
+| Stage | Job ID | Maps | Reducers | Job seconds |
+|---|---|---|---|---|
+| 01_dedup | job_1793963521105_0008 | 2 | 6 | 16.669 |
+| 02_universe | job_1793963521105_0009 | 6 | 1 | 8.281 |
+| 03_blocks | job_1793963521105_0010 | 6 | 6 | 13.345 |
+| 04_pairs | job_1793963521105_0011 | 6 | 6 | 38.374 |
+| 05_scores | job_1793963521105_0012 | 29 | 6 | 118.407 |
+| 06_top10 | job_1793963521105_0013 | 12 | 6 | 112.363 |
 
-The full-result SHA-256 is:
+The new merged output has **81,306** users, ten distinct non-self candidates per user, and exact input-user coverage. An independent followee-set/inverted-index oracle recomputed **1,000** fixed-seed sampled users: **zero ranking mismatches**. Exact per-user comparison against all 81,306 archived rankings also found zero missing users, extra users or changed rankings. User-line ordering across part files is ignored; candidate ordering is not.
 
-```text
-1d86de53417447e7a124c0cb9983b2761c834125e9e4620802c9d65a1b655ed9
-```
+The new full-output SHA-256 is `cb6d2f7776b031314f648996bf24392774388eea261befca077172c5aaf4899f`. Its bytes can differ from the older output solely because reducer/part ordering differs; semantic comparison is the appropriate full-result check.
 
-Using A=1, B=2, C=3, D=4 and E=5, the assignment example yields:
+Suffix filtering occurs after computing every user's result. Because no student-ID suffix was supplied, all 1,000 subsets 000.txt through 999.txt are exported and archived with the new all-user result. Select the three-digit suffix matching the student's SID; no full SID is needed for computation. The optional large-graph bonus has not been completed and no bonus result is claimed.
 
-```text
-1:2 3 5 4
-2:1 3 4 5
-3:1 2 4 5
-4:2 1 3 5
-5:1 2 3 4
-```
+The implementation additionally passes 18 semantic/timing/configuration/download tests, including 100 fixed-seed random graphs, duplicate edges, isolated/followee-only users, ties, zero-score padding, leading zeros, large integer IDs and high-degree blocking. These tests supplement the real cluster evidence and are not benchmark measurements.
 
-For example, users 1 and 2 share followees 3 and 5, giving similarity 2. Their similarity to other users is lower. With only five users, each line contains four candidates; the zero-score suffix follows the stated tie policy.
+---PAGE---
 
-The complete result is computed for every user before submission filtering. `filter_suffix.py --suffix XYZ` retains users satisfying `int(user_id) % 1000 == int(XYZ)`. For suffix 007, this correctly includes IDs ending in 007. Filtering the graph before similarity calculation would discard candidate users or shared followees and is not equivalent.
+## 9. Evidence and repeatability
 
-**To complete the assessed submission:** obtain real four-VM deployment screenshots; run the Shakespeare comparison; run and export the four-configuration Yelp sweep; rerun the supplied medium graph code on the required course cluster if necessary; select the already supplied student-suffix subset; and optionally run the large graph for the bonus. Populate every NOT MEASURED entry using the preserved job IDs and raw records. Inspect input, all-user and suffix-result counts and include relevant output excerpts/screenshots.
+| Evidence | Repository path relative to homework1 |
+|---|---|
+| Actual timings, raw job/tasks/counters/attempts | evidence/lab-20261106T110350Z/ |
+| Environment, runtime checksums, input manifests | evidence/lab-20261106T110350Z/ |
+| Real service screenshots with access identifiers redacted | evidence/lab-20261106T110350Z/screenshots/ |
+| Independent validation and full-reference comparison | evidence/lab-20261106T110350Z/community/ |
+| All-user output and 1,000 suffixes | artifacts/ (files named with lab-20261106T110350Z) |
+The public JSON/log copies redact only host addresses and account identifiers. Original unredacted logs, exact configuration/commands and machine inventory remain in the ignored .local/results directories. Job IDs, timestamps, counters, task states, outputs and timing values are preserved. Screenshots come from actual running Hadoop pages; a visible privacy note identifies the label redaction.
 
-No measured cloud speedup, cloud execution time, or bonus completion is claimed. The supplied medium all-user results and all 1,000 suffix subsets are from LocalJobRunner. They do not establish a four-VM or IE DIC execution. The `results/` directory preserves the validation records and successful job logs.
+The successful cluster smoke ran on every worker. Public task-attempt data records actual task placement for each benchmark. Exact command arrays, split sizes and return states are retained alongside the successful jobs. Dedicated runtime directories permit inspection without altering other services or reformatting existing HDFS. Any failed preparation attempts are retained locally and described in the work log; they are excluded from successful measurement tables.
+
+| Setting / stage | Completed job ID |
+|---|---|
+| small rep 1 | job_1793963521105_0002 |
+| merged rep 1 | job_1793963521105_0003 |
+| merged rep 2 | job_1793963521105_0004 |
+| small rep 2 | job_1793963521105_0005 |
+| small rep 3 | job_1793963521105_0006 |
+| merged rep 3 | job_1793963521105_0007 |
+| m6_r1 rep 1 | job_1793963521105_0014 |
+| m6_r3 rep 1 | job_1793963521105_0015 |
+| m12_r1 rep 1 | job_1793963521105_0016 |
+| m12_r3 rep 1 | job_1793963521105_0017 |
+| m12_r3 rep 2 | job_1793963521105_0018 |
+| m12_r1 rep 2 | job_1793963521105_0019 |
+| m6_r3 rep 2 | job_1793963521105_0020 |
+| m6_r1 rep 2 | job_1793963521105_0021 |
+| m6_r1 rep 3 | job_1793963521105_0022 |
+| m6_r3 rep 3 | job_1793963521105_0023 |
+| m12_r1 rep 3 | job_1793963521105_0024 |
+| m12_r3 rep 3 | job_1793963521105_0025 |
+
+---PAGE---
+
+## 10. Actual screenshots
+
+![master: actual independent single-node WordCount SUCCEEDED. Original runtime/version and output logs accompany the screenshot.](../evidence/lab-20261106T110350Z/screenshots/master-single-history.png)
+
+![worker1: actual independent single-node WordCount SUCCEEDED. Original runtime/version and output logs accompany the screenshot.](../evidence/lab-20261106T110350Z/screenshots/worker1-single-history.png)
+
+![worker2: actual independent single-node WordCount SUCCEEDED. Original runtime/version and output logs accompany the screenshot.](../evidence/lab-20261106T110350Z/screenshots/worker2-single-history.png)
+
+![worker3: actual independent single-node WordCount SUCCEEDED. Original runtime/version and output logs accompany the screenshot.](../evidence/lab-20261106T110350Z/screenshots/worker3-single-history.png)
+
+![Actual NameNode page: all three physical DataNodes in service.](../evidence/lab-20261106T110350Z/screenshots/multi-hdfs-nodes.png)
+
+![Actual cross-node WordCount: six maps and three reducers, all successful.](../evidence/lab-20261106T110350Z/screenshots/multi-smoke-history.png)
+
+![Actual successful Yelp WordCount on the full uncompressed input.](../evidence/lab-20261106T110350Z/screenshots/yelp-history.png)
+
+![Actual sixth medium-graph job: all-user Top-10 successfully produced.](../evidence/lab-20261106T110350Z/screenshots/community-top10-history.png)
+
 
 ---PAGE---
 
@@ -245,7 +265,7 @@ The uploaded Homework 1 PDF is the source of the question, marking scheme, outpu
 
 [9] Stanford SNAP. Ego-network dataset readme (edge-direction convention). https://snap.stanford.edu/data/readme-Ego.txt
 
-The exact course dataset URLs and Shakespeare URL remain those printed in the assignment. Dataset orientation and any changed course distribution should be confirmed with the instructor rather than inferred from a filename.
+The course Dropbox file was downloaded and hash-checked again; SNAP is used to corroborate its observed size and direction, not as a silent replacement. Amazon Corretto download and checksum documentation: https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html
 
 ---PAGE---
 

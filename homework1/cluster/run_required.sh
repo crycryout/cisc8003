@@ -14,6 +14,10 @@ esac
 REPETITIONS=${REPETITIONS:-1}
 [[ $REPETITIONS =~ ^[1-9][0-9]*$ ]] || { echo "REPETITIONS must be a positive integer." >&2; exit 2; }
 PROJECT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
+SHAKESPEARE_DIR=${SHAKESPEARE_DIR:-"$PROJECT/data/shakespeare_prepared"}
+[[ -d "$SHAKESPEARE_DIR/small" && -f "$SHAKESPEARE_DIR/merged.txt" ]] || {
+  echo "Set SHAKESPEARE_DIR to the prepared directory containing small/ and merged.txt." >&2; exit 2;
+}
 RUN_ID=$(date -u +%Y%m%dT%H%M%SZ)-$$
 BASE="/hw1/e2e-$RUN_ID"
 EVIDENCE="$PROJECT/results/e2e-$RUN_ID"
@@ -22,8 +26,8 @@ export LOG_DIR="$EVIDENCE/community"
 hdfs dfs -test -f "$1"
 hdfs dfs -test -f "$2"
 hdfs dfs -mkdir -p "$BASE/input"
-hdfs dfs -put "$PROJECT/data/shakespeare_prepared/small" "$BASE/input/small"
-hdfs dfs -put "$PROJECT/data/shakespeare_prepared/merged.txt" "$BASE/input/merged.txt"
+hdfs dfs -put "$SHAKESPEARE_DIR/small" "$BASE/input/small"
+hdfs dfs -put "$SHAKESPEARE_DIR/merged.txt" "$BASE/input/merged.txt"
 python3 "$PROJECT/src/run_wordcount.py" --mode files --repetitions "$REPETITIONS" \
   --small-input "$BASE/input/small" --merged-input "$BASE/input/merged.txt" \
   --output-root "$BASE/shakespeare" --evidence "$EVIDENCE/shakespeare"

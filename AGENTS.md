@@ -1,3 +1,5 @@
+> 当前状态：2026-11-06 必做四机实验与报告已实际完成，见 `docs/LAB_EXECUTION.md`、`docs/ACCEPTANCE.md` 和本次 evidence。下方为接续时规则；不要重新 format 已有 NameNode，也不要覆盖已有实测输出。
+
 # Codex 接续规则
 
 当前任务是完成 Hadoop Homework 1 的实际实验与报告。用户明确要求把此仓库拉到 H800，然后由该服务器上的 Codex 接续执行；不要停留在方案讨论。

@@ -1,0 +1,18 @@
+[
+  "hadoop",
+  "jar",
+  "/home/experiment-user/hadoop-3.3.6/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar",
+  "wordcount",
+  "-D",
+  "mapreduce.job.name=hw1-merged_rep2",
+  "-D",
+  "mapreduce.job.reduces=1",
+  "-D",
+  "mapreduce.map.speculative=false",
+  "-D",
+  "mapreduce.reduce.speculative=false",
+  "-D",
+  "mapreduce.map.output.compress=true",
+  "/hw1/input/shakespeare/merged.txt",
+  "/hw1/lab-20261106T110350Z/shakespeare/merged_rep2"
+]

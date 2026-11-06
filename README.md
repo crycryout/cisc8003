@@ -1,44 +1,37 @@
-# CISC8003 / Homework 1 实验接续
+# CISC8003 / Homework 1 四机实测
 
-**下一步：在 H800 主机上启动 Codex，先读取 [`AGENTS.md`](AGENTS.md) 和 [完整接续说明](docs/H800_CODEX_HANDOFF.md)。**
+**[实验报告 PDF](homework1/report/Homework1_Report.pdf) · [可编辑报告](homework1/report/Homework1_Report_Draft.md) · [实际执行记录](docs/LAB_EXECUTION.md)**
 
-当前已完成算法、运行脚本、真实 Hadoop 本地验证和中图全量结果；**四台实验室机器的集群部署、性能测量和截图尚未完成**。本仓库用于把工作交接给可访问实验室内网的 Codex。
+已用实验室四台独立物理主机完成必做实验：Thor 为 master；H800 主机、两台 5090 各为一个 worker。GPU 不参与计算，H800 的两个 NUMA 节点没有拆分。软件为 Hadoop 3.3.6、Java 11、Python 3；真实服务截图、成功 JobHistory 和输出核验均已保存。
 
-| 物理机器 | 规划角色 |
+| 内容 | 本次真实结果 |
 |---|---|
-| 独立 Jetson Thor | master：NameNode、SecondaryNameNode、ResourceManager、JobHistoryServer |
-| H800 所在的 NUMA 双节点主机 | worker1：DataNode、NodeManager |
-| 第一台独立 RTX 5090 主机 | worker2：DataNode、NodeManager |
-| 第二台独立 RTX 5090 主机 | worker3：DataNode、NodeManager |
+| Q1(a) | 四台分别完成独立 HDFS/YARN WordCount；词频完全正确 |
+| 四机集群 | 3 Live DataNode、3 RUNNING NodeManager；smoke 在三个 workers 执行 |
+| Q1(b) | Shakespeare 两种输入各 3 次；中位数 76.364 / 8.430 s，merged 快 9.06 倍；六次词频一致 |
+| Q1(c) | 完整 5,341,868,833-byte Yelp；实际 6/1、6/3、12/1、12/3 四组均成功，七项时间齐全、输出一致；四组各 3 次全部成功 |
+| Q2(a) | 中图六个 YARN jobs 成功；81,306 用户，1,000 独立抽样零误差、全量参考排名零差异；全部 1,000 个 suffix 已导出 |
 
-不再使用云服务器；H800 不拆成两台，GPU 不参与 Hadoop 作业。主机名、CPU 架构、SSH 地址和账号仍须在实验室确认；文档中的 `thor/h800/rtx5090a/rtx5090b` 都是示例名。
+本次证据根：[homework1/evidence/lab-20261106T110350Z](homework1/evidence/lab-20261106T110350Z/)。计时来自成功 JobHistory 的 job/task 时间；没有使用历史 LocalJobRunner 数据填充四机性能表。实际主机分配、共享负载和环境差异在报告中如实说明。
 
-## 从 H800 接续
+## 结果文件
+
+- [本次全量中图 Top-10](homework1/artifacts/medium_all_users_top10_lab-20261106T110350Z.txt.gz)。新 raw SHA 会受 part 顺序影响；已逐用户比较候选顺序并通过。
+- [全部学号后三位文件](homework1/artifacts/medium_by_suffix_lab-20261106T110350Z.tar.gz)：`000.txt` 至 `999.txt`，完整计算后才筛选，共 81,306 行。
+- [验收清单](docs/ACCEPTANCE.md)、[证据索引](docs/EVIDENCE_INDEX.md)、[工作日志](docs/WORK_LOG.md)。旧接续说明保留为历史，不要据此重新 format 已有 HDFS。
+
+原始图、Shakespeare 和 Yelp 文件不进入 Git；下载来源、字节数与哈希在 manifests。公开证据只遮蔽访问地址和账号标识；原始未脱敏记录及完整机器访问配置留在忽略的 `.local/` 与本次 `results/lab-*/`。
+
+## 复核
 
 ```bash
-git clone https://github.com/crycryout/cisc8003.git
-cd cisc8003
-codex
-```
-
-给 Codex 的完整任务提示见 [`docs/NEXT_CODEX_PROMPT.md`](docs/NEXT_CODEX_PROMPT.md)，可直接复制。已有 checkout 时先查看 `git status`，确认没有未保存修改再 `git pull --ff-only`。
-
-## 记录入口
-
-| 文件 | 内容 |
-|---|---|
-| [H800_CODEX_HANDOFF.md](docs/H800_CODEX_HANDOFF.md) | 当前状态、接续顺序、操作边界、必做实验与产物 |
-| [WORK_LOG.md](docs/WORK_LOG.md) | 已完成的真实工作、部署决策、修复与未完成事项 |
-| [EVIDENCE_INDEX.md](docs/EVIDENCE_INDEX.md) | 原始日志、完整中图答案、校验值和证据范围 |
-| [ACCEPTANCE.md](docs/ACCEPTANCE.md) | 完成判据与最后提交检查 |
-| [ASSIGNMENT_REQUIREMENTS.md](docs/ASSIGNMENT_REQUIREMENTS.md) | 题目要求摘要、与实验室方案的差异 |
-
-代码和实验命令在 [`homework1/`](homework1/README.md)。历史报告 Markdown/PDF 已保留，环境段落和 `NOT MEASURED` 字段须用真实实验补完，不能直接当作最终报告。
-
-原始课程图数据、Shakespeare 文本和 Yelp 原文件不放入 Git；获取地址、原始输入 manifest 和哈希均已记录。压缩的既有结果及 28 份真实本地 Hadoop 日志已纳入仓库，便于核查，**它们不是本次四机实验结果**。
-
-```bash
+cd ~/cisc8003
 python3 scripts/verify_repository.py
-cd homework1
-python3 -m unittest discover -s tests -v
+python3 -m unittest discover -s homework1/tests -v
 ```
+
+[部署与重复实验](homework1/cluster/LAB_E2E.md)使用独立配置、端口、PID、日志和数据目录。新实验选择新输出根；已有 NameNode 不重新 format。源码保持精确共同关注数 Top-10，未用近似或提前按 SID 过滤。
+
+报告披露了实验室硬件替代课程云 VM/课程集群的选择，以及 AI 协助。大图 bonus 未完成，不将中图算作 bonus。姓名、SID、声明和签名留给学生本人核实填写。
+
+下一步：在报告源文件填写姓名和 SID，再从归档中选择对应的后三位文件。

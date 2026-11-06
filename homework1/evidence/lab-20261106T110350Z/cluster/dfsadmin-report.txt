@@ -1,0 +1,83 @@
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+Configured Capacity: 5916415586304 (5.38 TB)
+Present Capacity: 1611010770470 (1.47 TB)
+DFS Remaining: 1610793992171 (1.47 TB)
+DFS Used: 216778299 (206.74 MB)
+DFS Used%: 0.01%
+Replicated Blocks:
+	Under replicated blocks: 2
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (3):
+
+Name: worker2:29866 (worker2)
+Hostname: worker2
+Decommission Status : Normal
+Configured Capacity: 2013991550976 (1.83 TB)
+DFS Used: 72259433 (68.91 MB)
+Non DFS Used: 1223967230103 (1.11 TB)
+DFS Remaining: 687437152249 (640.23 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 34.13%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 2
+Last contact: Fri Nov 06 19:16:20 CST 2026
+Last Block Report: Fri Nov 06 19:11:56 CST 2026
+Num of Blocks: 228
+
+
+Name: worker3:29866 (worker3)
+Hostname: worker3
+Decommission Status : Normal
+Configured Capacity: 2013991550976 (1.83 TB)
+DFS Used: 72259433 (68.91 MB)
+Non DFS Used: 1371788572823 (1.25 TB)
+DFS Remaining: 539615809529 (502.56 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 26.79%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 2
+Last contact: Fri Nov 06 19:16:20 CST 2026
+Last Block Report: Fri Nov 06 19:11:56 CST 2026
+Num of Blocks: 228
+
+
+Name: worker1:29866 (worker1)
+Hostname: worker1
+Decommission Status : Normal
+Configured Capacity: 1888432484352 (1.72 TB)
+DFS Used: 72259433 (68.91 MB)
+Non DFS Used: 1408482404503 (1.28 TB)
+DFS Remaining: 383741030393 (357.39 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 20.32%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 2
+Last contact: Fri Nov 06 19:16:20 CST 2026
+Last Block Report: Fri Nov 06 19:11:56 CST 2026
+Num of Blocks: 228
+
+

@@ -1,0 +1,2 @@
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+/hw1/input/yelp/reviews.json	MD5-of-262144MD5-of-512CRC32C	000002000000000000040000537488100dec4c87bae8154bb907a96f

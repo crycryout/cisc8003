@@ -1,0 +1,50 @@
+{
+  "master": [
+    {
+      "class": "org.apache.hadoop.hdfs.server.namenode.NameNode",
+      "allowed_cpus": "0-3"
+    },
+    {
+      "class": "org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode",
+      "allowed_cpus": "0-3"
+    },
+    {
+      "class": "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager",
+      "allowed_cpus": "0-3"
+    },
+    {
+      "class": "org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer",
+      "allowed_cpus": "0-13"
+    }
+  ],
+  "worker1": [
+    {
+      "class": "org.apache.hadoop.hdfs.server.datanode.DataNode",
+      "allowed_cpus": "80-83"
+    },
+    {
+      "class": "org.apache.hadoop.yarn.server.nodemanager.NodeManager",
+      "allowed_cpus": "80-83"
+    }
+  ],
+  "worker2": [
+    {
+      "class": "org.apache.hadoop.hdfs.server.datanode.DataNode",
+      "allowed_cpus": "16-19"
+    },
+    {
+      "class": "org.apache.hadoop.yarn.server.nodemanager.NodeManager",
+      "allowed_cpus": "16-19"
+    }
+  ],
+  "worker3": [
+    {
+      "class": "org.apache.hadoop.hdfs.server.datanode.DataNode",
+      "allowed_cpus": "16-19"
+    },
+    {
+      "class": "org.apache.hadoop.yarn.server.nodemanager.NodeManager",
+      "allowed_cpus": "16-19"
+    }
+  ]
+}

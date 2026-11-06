@@ -1,0 +1,122 @@
+{
+  "apps": {
+    "app": [
+      {
+        "id": "application_1793962962220_0001",
+        "user": "experiment-user",
+        "name": "word count",
+        "queue": "default",
+        "state": "FINISHED",
+        "finalStatus": "SUCCEEDED",
+        "progress": 100.0,
+        "trackingUI": "History",
+        "trackingUrl": "http://worker1:28088/proxy/application_1793962962220_0001/",
+        "diagnostics": "",
+        "clusterId": 1793962962220,
+        "applicationType": "MAPREDUCE",
+        "applicationTags": "",
+        "priority": 0,
+        "startedTime": 1793962978855,
+        "launchTime": 1793962980276,
+        "finishedTime": 1793962994516,
+        "elapsedTime": 15661,
+        "amContainerLogs": "http://worker1:28042/node/containerlogs/container_1793962962220_0001_01_000001/experiment-user",
+        "amHostHttpAddress": "worker1:28042",
+        "amRPCAddress": "worker1:33711",
+        "masterNodeId": "worker1:28041",
+        "allocatedMB": -1,
+        "allocatedVCores": -1,
+        "reservedMB": -1,
+        "reservedVCores": -1,
+        "runningContainers": -1,
+        "memorySeconds": 41978,
+        "vcoreSeconds": 26,
+        "queueUsagePercentage": 0.0,
+        "clusterUsagePercentage": 0.0,
+        "resourceSecondsMap": {
+          "entry": {
+            "key": "vcores",
+            "value": "26"
+          }
+        },
+        "preemptedResourceMB": 0,
+        "preemptedResourceVCores": 0,
+        "numNonAMContainerPreempted": 0,
+        "numAMContainerPreempted": 0,
+        "preemptedMemorySeconds": 0,
+        "preemptedVcoreSeconds": 0,
+        "preemptedResourceSecondsMap": {},
+        "logAggregationStatus": "SUCCEEDED",
+        "unmanagedApplication": false,
+        "amNodeLabelExpression": "",
+        "timeouts": {
+          "timeout": [
+            {
+              "type": "LIFETIME",
+              "expiryTime": "UNLIMITED",
+              "remainingTimeInSeconds": -1
+            }
+          ]
+        }
+      },
+      {
+        "id": "application_1793962962220_0002",
+        "user": "experiment-user",
+        "name": "word count",
+        "queue": "default",
+        "state": "FINISHED",
+        "finalStatus": "SUCCEEDED",
+        "progress": 100.0,
+        "trackingUI": "History",
+        "trackingUrl": "http://worker1:28088/proxy/application_1793962962220_0002/",
+        "diagnostics": "",
+        "clusterId": 1793962962220,
+        "applicationType": "MAPREDUCE",
+        "applicationTags": "",
+        "priority": 0,
+        "startedTime": 1793963317250,
+        "launchTime": 1793963317735,
+        "finishedTime": 1793963332216,
+        "elapsedTime": 14966,
+        "amContainerLogs": "http://worker1:28042/node/containerlogs/container_1793962962220_0002_01_000001/experiment-user",
+        "amHostHttpAddress": "worker1:28042",
+        "amRPCAddress": "worker1:35867",
+        "masterNodeId": "worker1:28041",
+        "allocatedMB": -1,
+        "allocatedVCores": -1,
+        "reservedMB": -1,
+        "reservedVCores": -1,
+        "runningContainers": -1,
+        "memorySeconds": 42123,
+        "vcoreSeconds": 25,
+        "queueUsagePercentage": 0.0,
+        "clusterUsagePercentage": 0.0,
+        "resourceSecondsMap": {
+          "entry": {
+            "key": "vcores",
+            "value": "25"
+          }
+        },
+        "preemptedResourceMB": 0,
+        "preemptedResourceVCores": 0,
+        "numNonAMContainerPreempted": 0,
+        "numAMContainerPreempted": 0,
+        "preemptedMemorySeconds": 0,
+        "preemptedVcoreSeconds": 0,
+        "preemptedResourceSecondsMap": {},
+        "logAggregationStatus": "SUCCEEDED",
+        "unmanagedApplication": false,
+        "amNodeLabelExpression": "",
+        "timeouts": {
+          "timeout": [
+            {
+              "type": "LIFETIME",
+              "expiryTime": "UNLIMITED",
+              "remainingTimeInSeconds": -1
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

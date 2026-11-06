@@ -1,0 +1,90 @@
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+packageJobJar: [/tmp/hadoop-unjar5040927679355830558/] [] /tmp/streamjob10632050933839672069.jar tmpDir=null
+2026-11-06 19:20:19,367 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /master:28032
+2026-11-06 19:20:19,474 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /master:28032
+2026-11-06 19:20:19,602 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/experiment-user/.staging/job_1793963521105_0010
+2026-11-06 19:20:19,911 INFO mapred.FileInputFormat: Total input files to process : 6
+2026-11-06 19:20:19,971 INFO mapreduce.JobSubmitter: number of splits:6
+2026-11-06 19:20:20,122 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1793963521105_0010
+2026-11-06 19:20:20,122 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-06 19:20:20,219 INFO conf.Configuration: resource-types.xml not found
+2026-11-06 19:20:20,219 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-11-06 19:20:20,252 INFO impl.YarnClientImpl: Submitted application application_1793963521105_0010
+2026-11-06 19:20:20,272 INFO mapreduce.Job: The url to track the job: http://master:28088/proxy/application_1793963521105_0010/
+2026-11-06 19:20:20,273 INFO mapreduce.Job: Running job: job_1793963521105_0010
+2026-11-06 19:20:28,446 INFO mapreduce.Job: Job job_1793963521105_0010 running in uber mode : false
+2026-11-06 19:20:28,448 INFO mapreduce.Job:  map 0% reduce 0%
+2026-11-06 19:20:32,526 INFO mapreduce.Job:  map 33% reduce 0%
+2026-11-06 19:20:34,574 INFO mapreduce.Job:  map 100% reduce 0%
+2026-11-06 19:20:36,588 INFO mapreduce.Job:  map 100% reduce 17%
+2026-11-06 19:20:38,598 INFO mapreduce.Job:  map 100% reduce 33%
+2026-11-06 19:20:40,607 INFO mapreduce.Job:  map 100% reduce 50%
+2026-11-06 19:20:41,612 INFO mapreduce.Job:  map 100% reduce 100%
+2026-11-06 19:20:41,625 INFO mapreduce.Job: Job job_1793963521105_0010 completed successfully
+2026-11-06 19:20:41,725 INFO mapreduce.Job: Counters: 58
+	File System Counters
+		FILE: Number of bytes read=11234751
+		FILE: Number of bytes written=27086621
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=40783882
+		HDFS: Number of bytes written=18469675
+		HDFS: Number of read operations=48
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=12
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=6
+		Launched reduce tasks=6
+		Data-local map tasks=6
+		Total time spent by all maps in occupied slots (ms)=68802
+		Total time spent by all reduces in occupied slots (ms)=75243
+		Total time spent by all map tasks (ms)=22934
+		Total time spent by all reduce tasks (ms)=25081
+		Total vcore-milliseconds taken by all map tasks=22934
+		Total vcore-milliseconds taken by all reduce tasks=25081
+		Total megabyte-milliseconds taken by all map tasks=35226624
+		Total megabyte-milliseconds taken by all reduce tasks=38524416
+	Map-Reduce Framework
+		Map input records=1849455
+		Map output records=1849455
+		Map output bytes=40783090
+		Map output materialized bytes=12486731
+		Input split bytes=792
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1849455
+		Reduce shuffle bytes=12486731
+		Reduce input records=1849455
+		Reduce output records=162820
+		Spilled Records=3698910
+		Shuffled Maps =36
+		Failed Shuffles=0
+		Merged Map outputs=36
+		GC time elapsed (ms)=527
+		CPU time spent (ms)=21370
+		Physical memory (bytes) snapshot=4287700992
+		Virtual memory (bytes) snapshot=60278669312
+		Total committed heap usage (bytes)=9663676416
+		Peak Map Physical memory (bytes)=539734016
+		Peak Map Virtual memory (bytes)=4970237952
+		Peak Reduce Physical memory (bytes)=273104896
+		Peak Reduce Virtual memory (bytes)=5244968960
+	HW
+		CandidatePairs=154933408
+		Edges=1768149
+		ReplicatedFollowerIDs=2032942
+		Users=81306
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=40783090
+	File Output Format Counters 
+		Bytes Written=18469675
+2026-11-06 19:20:41,725 INFO streaming.StreamJob: Output directory: /hw1/lab-20261106T110350Z/community/03_blocks

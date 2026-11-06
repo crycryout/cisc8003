@@ -1,0 +1,12 @@
+{
+  "reference_users": 81306,
+  "actual_users": 81306,
+  "missing_users": 0,
+  "extra_users": 0,
+  "ranking_mismatches": 0,
+  "identical_rankings": true,
+  "missing_user_examples": [],
+  "extra_user_examples": [],
+  "mismatched_user_examples": [],
+  "comparison": "Exact candidate order per numeric user; user-line order ignored"
+}

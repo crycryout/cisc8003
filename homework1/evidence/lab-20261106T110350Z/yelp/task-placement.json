@@ -1,0 +1,254 @@
+[
+  {
+    "setting_run": "m6_r1_rep1",
+    "job_id": "job_1793963521105_0014",
+    "map_tasks_by_node": {
+      "worker3": {
+        "count": 3,
+        "mean_elapsed_s": 104.44266666666667,
+        "min_elapsed_s": 104.232,
+        "max_elapsed_s": 104.696
+      },
+      "worker2": {
+        "count": 3,
+        "mean_elapsed_s": 103.61,
+        "min_elapsed_s": 101.226,
+        "max_elapsed_s": 104.93
+      }
+    }
+  },
+  {
+    "setting_run": "m6_r3_rep2",
+    "job_id": "job_1793963521105_0020",
+    "map_tasks_by_node": {
+      "worker1": {
+        "count": 3,
+        "mean_elapsed_s": 149.047,
+        "min_elapsed_s": 142.086,
+        "max_elapsed_s": 159.126
+      },
+      "worker3": {
+        "count": 3,
+        "mean_elapsed_s": 102.7,
+        "min_elapsed_s": 102.071,
+        "max_elapsed_s": 103.136
+      }
+    }
+  },
+  {
+    "setting_run": "m12_r3_rep3",
+    "job_id": "job_1793963521105_0025",
+    "map_tasks_by_node": {
+      "worker3": {
+        "count": 5,
+        "mean_elapsed_s": 55.3818,
+        "min_elapsed_s": 43.603,
+        "max_elapsed_s": 59.164
+      },
+      "worker2": {
+        "count": 4,
+        "mean_elapsed_s": 58.1285,
+        "min_elapsed_s": 57.716,
+        "max_elapsed_s": 58.671
+      },
+      "worker1": {
+        "count": 3,
+        "mean_elapsed_s": 75.083,
+        "min_elapsed_s": 72.749,
+        "max_elapsed_s": 79.661
+      }
+    }
+  },
+  {
+    "setting_run": "m12_r1_rep1",
+    "job_id": "job_1793963521105_0016",
+    "map_tasks_by_node": {
+      "worker2": {
+        "count": 4,
+        "mean_elapsed_s": 50.486000000000004,
+        "min_elapsed_s": 42.613,
+        "max_elapsed_s": 53.375
+      },
+      "worker1": {
+        "count": 4,
+        "mean_elapsed_s": 81.3365,
+        "min_elapsed_s": 80.097,
+        "max_elapsed_s": 82.221
+      },
+      "worker3": {
+        "count": 4,
+        "mean_elapsed_s": 58.69825,
+        "min_elapsed_s": 57.253,
+        "max_elapsed_s": 59.668
+      }
+    }
+  },
+  {
+    "setting_run": "m6_r3_rep3",
+    "job_id": "job_1793963521105_0023",
+    "map_tasks_by_node": {
+      "worker3": {
+        "count": 3,
+        "mean_elapsed_s": 102.94833333333332,
+        "min_elapsed_s": 101.457,
+        "max_elapsed_s": 103.96
+      },
+      "worker2": {
+        "count": 3,
+        "mean_elapsed_s": 102.49533333333333,
+        "min_elapsed_s": 101.966,
+        "max_elapsed_s": 102.907
+      }
+    }
+  },
+  {
+    "setting_run": "m6_r1_rep3",
+    "job_id": "job_1793963521105_0022",
+    "map_tasks_by_node": {
+      "worker2": {
+        "count": 2,
+        "mean_elapsed_s": 97.1645,
+        "min_elapsed_s": 97.107,
+        "max_elapsed_s": 97.222
+      },
+      "worker3": {
+        "count": 4,
+        "mean_elapsed_s": 114.35125,
+        "min_elapsed_s": 113.549,
+        "max_elapsed_s": 115.258
+      }
+    }
+  },
+  {
+    "setting_run": "m12_r3_rep2",
+    "job_id": "job_1793963521105_0018",
+    "map_tasks_by_node": {
+      "worker3": {
+        "count": 5,
+        "mean_elapsed_s": 55.577,
+        "min_elapsed_s": 43.98,
+        "max_elapsed_s": 59.093
+      },
+      "worker2": {
+        "count": 4,
+        "mean_elapsed_s": 58.1275,
+        "min_elapsed_s": 57.677,
+        "max_elapsed_s": 58.607
+      },
+      "worker1": {
+        "count": 3,
+        "mean_elapsed_s": 74.356,
+        "min_elapsed_s": 71.619,
+        "max_elapsed_s": 76.066
+      }
+    }
+  },
+  {
+    "setting_run": "m6_r3_rep1",
+    "job_id": "job_1793963521105_0015",
+    "map_tasks_by_node": {
+      "worker3": {
+        "count": 3,
+        "mean_elapsed_s": 101.77066666666667,
+        "min_elapsed_s": 99.485,
+        "max_elapsed_s": 104.303
+      },
+      "worker1": {
+        "count": 3,
+        "mean_elapsed_s": 148.171,
+        "min_elapsed_s": 145.268,
+        "max_elapsed_s": 150.581
+      }
+    }
+  },
+  {
+    "setting_run": "m12_r1_rep3",
+    "job_id": "job_1793963521105_0024",
+    "map_tasks_by_node": {
+      "worker3": {
+        "count": 4,
+        "mean_elapsed_s": 49.80175,
+        "min_elapsed_s": 42.915,
+        "max_elapsed_s": 53.128
+      },
+      "worker2": {
+        "count": 4,
+        "mean_elapsed_s": 58.464999999999996,
+        "min_elapsed_s": 56.912,
+        "max_elapsed_s": 59.385
+      },
+      "worker1": {
+        "count": 4,
+        "mean_elapsed_s": 82.94825,
+        "min_elapsed_s": 82.059,
+        "max_elapsed_s": 83.623
+      }
+    }
+  },
+  {
+    "setting_run": "m6_r1_rep2",
+    "job_id": "job_1793963521105_0021",
+    "map_tasks_by_node": {
+      "worker1": {
+        "count": 3,
+        "mean_elapsed_s": 149.48499999999999,
+        "min_elapsed_s": 144.298,
+        "max_elapsed_s": 157.771
+      },
+      "worker2": {
+        "count": 3,
+        "mean_elapsed_s": 104.03699999999999,
+        "min_elapsed_s": 103.499,
+        "max_elapsed_s": 104.562
+      }
+    }
+  },
+  {
+    "setting_run": "m12_r1_rep2",
+    "job_id": "job_1793963521105_0019",
+    "map_tasks_by_node": {
+      "worker3": {
+        "count": 4,
+        "mean_elapsed_s": 49.1395,
+        "min_elapsed_s": 42.513,
+        "max_elapsed_s": 52.549
+      },
+      "worker2": {
+        "count": 4,
+        "mean_elapsed_s": 58.99775,
+        "min_elapsed_s": 58.243,
+        "max_elapsed_s": 59.841
+      },
+      "worker1": {
+        "count": 4,
+        "mean_elapsed_s": 83.05425,
+        "min_elapsed_s": 78.893,
+        "max_elapsed_s": 86.378
+      }
+    }
+  },
+  {
+    "setting_run": "m12_r3_rep1",
+    "job_id": "job_1793963521105_0017",
+    "map_tasks_by_node": {
+      "worker2": {
+        "count": 4,
+        "mean_elapsed_s": 49.688,
+        "min_elapsed_s": 42.423,
+        "max_elapsed_s": 52.465
+      },
+      "worker1": {
+        "count": 4,
+        "mean_elapsed_s": 81.02775,
+        "min_elapsed_s": 80.475,
+        "max_elapsed_s": 81.477
+      },
+      "worker3": {
+        "count": 4,
+        "mean_elapsed_s": 58.591499999999996,
+        "min_elapsed_s": 57.074,
+        "max_elapsed_s": 59.679
+      }
+    }
+  }
+]

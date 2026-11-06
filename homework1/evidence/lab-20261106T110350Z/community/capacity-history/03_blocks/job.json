@@ -1,0 +1,28 @@
+{
+  "job": {
+    "submitTime": 1793964020207,
+    "startTime": 1793964026434,
+    "finishTime": 1793964039779,
+    "id": "job_1793963521105_0010",
+    "name": "hw1-03_blocks",
+    "queue": "default",
+    "user": "experiment-user",
+    "state": "SUCCEEDED",
+    "mapsTotal": 6,
+    "mapsCompleted": 6,
+    "reducesTotal": 6,
+    "reducesCompleted": 6,
+    "uberized": false,
+    "diagnostics": "",
+    "avgMapTime": 3822,
+    "avgReduceTime": 1449,
+    "avgShuffleTime": 2340,
+    "avgMergeTime": 391,
+    "failedReduceAttempts": 0,
+    "killedReduceAttempts": 0,
+    "successfulReduceAttempts": 6,
+    "failedMapAttempts": 0,
+    "killedMapAttempts": 0,
+    "successfulMapAttempts": 6
+  }
+}

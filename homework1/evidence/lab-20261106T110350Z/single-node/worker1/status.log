@@ -1,0 +1,62 @@
+worker1
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+openjdk version "11.0.33" 2026-10-20 LTS
+OpenJDK Runtime Environment Corretto-11.0.33.0.10 (build 11.0.33+10-LTS)
+OpenJDK 64-Bit Server VM Corretto-11.0.33.0.10 (build 11.0.33+10-LTS, mixed mode)
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+2925068 org.apache.hadoop.yarn.server.resourcemanager.ResourceManager
+2924926 org.apache.hadoop.hdfs.server.datanode.DataNode
+2924719 org.apache.hadoop.hdfs.server.namenode.NameNode
+2925785 org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer
+2935686 jdk.jcmd/sun.tools.jps.Jps
+2924839 org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode
+2925187 org.apache.hadoop.yarn.server.nodemanager.NodeManager
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+Configured Capacity: 1888432484352 (1.72 TB)
+Present Capacity: 385077282653 (358.63 GB)
+DFS Remaining: 385076330496 (358.63 GB)
+DFS Used: 952157 (929.84 KB)
+DFS Used%: 0.00%
+Replicated Blocks:
+	Under replicated blocks: 0
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (1):
+
+Name: worker1:29866 (worker1)
+Hostname: worker1
+Decommission Status : Normal
+Configured Capacity: 1888432484352 (1.72 TB)
+DFS Used: 952157 (929.84 KB)
+Non DFS Used: 1407352617123 (1.28 TB)
+DFS Remaining: 385076330496 (358.63 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 20.39%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Fri Nov 06 19:11:09 CST 2026
+Last Block Report: Fri Nov 06 19:02:39 CST 2026
+Num of Blocks: 10
+
+
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+2026-11-06 19:11:11,706 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /worker1:28032
+Total Nodes:1
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+worker1:28041	        RUNNING	worker1:28042	                           0
