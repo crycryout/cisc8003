@@ -1,8 +1,8 @@
 {
   "snapshot": "2026-11-06 completed four-physical-host laboratory experiment",
   "scope": "Current repository bytes, including redacted real execution evidence. Byte verification is not itself a cluster benchmark.",
-  "base_import_commit": "e4da2bd44ae4e46bd876cf12db2821673be4eacf",
-  "updated_at_utc": "2026-11-06T12:07:12.939723+00:00",
+  "base_import_commit": "30d5420723ebbf5d4608c5141941e9a669b5bd89",
+  "updated_at_utc": "2026-11-06T12:09:01.377697+00:00",
   "files": [
     {
       "path": ".gitattributes",
