@@ -34,4 +34,4 @@
 
 - [ ] 大图原题输入已取得并核对，stage 03 counters/工作盘容量检查通过后才继续。
 - [ ] 若实际运行 bonus，单独保存全体结果、验证、suffix 与截图；否则明确写“未完成”。
-- [ ] 更新 WORK_LOG / EVIDENCE_INDEX / 清单，检查公开内容无密钥或私网访问配置，提交并报告 commit。
+- [x] 更新 WORK_LOG / EVIDENCE_INDEX / 清单，检查公开内容无密钥或私网访问配置，提交并报告 commit。
