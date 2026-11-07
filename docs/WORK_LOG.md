@@ -87,3 +87,5 @@ Yelp 四种实际 M/R 各三次共 12 个 jobs 全部成功，输入/资源没�
 大图阶段04已提交 `job_1793963521105_0035`。监控发现 H800 NM 虽已注册，但本地启动会话结束后进程未驻留，两个远端 worker 仍持续计算、无失败 attempts；改为本账号独立进程会话启动原任务专用 NM 后，三个 worker 各8个容器正常运行。没有重复启动已有活跃 daemon，没有丢弃成功中间结果。追加45秒采样的本任务 Python/JVM RSS、VmHWM与CPU affinity记录；这些是观察到的峰值，不宣称捕获所有瞬时峰值。
 
 阶段04实际成功：`job_1793963521105_0035`，6maps/64reducers，509.392秒；输出10,984,156,325条，等于CandidatePairs+Users，38,095,358,435压缩字节，单副本，比容量情景保守预算小。没有失败map/reduce attempts。阶段05 `job_1793963521105_0036` 已继续运行；监控和持久后处理已配置，后者仅在六阶段计算exit0后采集、独立验证并流式分区。当前仍不可宣称bonus完成。
+
+07:23 UTC阶段05期间，首批23 maps完成后有reducers等待shuffle。H800新预检显示96CPU、load7.72、约231.45GiB可用内存和397.41GB独立shuffle盘空闲，原8核配额留下大量空闲。本账号本次NM通过官方Hadoop3.3.6 `rmadmin -updateNodeResource`在线增至24vcores/36GiB，NM线程affinity72–95；另外两worker保持8核/12GiB，单task1536MiB/heap768MiB不变。RM和NM REST均确认新资源，原NM PID不变、无重启或故意失败task，既有进度保留。按60%最坏情景shuffle/merge分配到H800并加20%倾斜得253.07GB，加3.30GB重试仍低于397.41−95GB预算。原配置hash、更新后hash、实际资源和时间线均保存在online-resource-update；bonus时长包含资源变化，不作为固定配置扩展性对比。Q1/中图表未改动。

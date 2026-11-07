@@ -1,0 +1,181 @@
+{
+  "utc": "2026-11-07T07:23:02.520236+00:00",
+  "scope": "Online update of task-owned H800 NM only; no restart, no failed task intentionally introduced; other workers unchanged",
+  "node": "worker1",
+  "resources_before": {
+    "logical_cpus": 96,
+    "memory_available_kib": 242700212,
+    "load": [
+      7.53125,
+      9.38427734375,
+      9.89111328125
+    ],
+    "shuffle_filesystem_free_bytes": 396993503232
+  },
+  "node_manager_pid_unchanged": 4008504,
+  "before": {
+    "nodeInfo": {
+      "healthReport": "",
+      "totalVmemAllocatedContainersMB": 25804,
+      "totalPmemAllocatedContainersMB": 12288,
+      "totalVCoresAllocatedContainers": 8,
+      "vmemCheckEnabled": false,
+      "pmemCheckEnabled": true,
+      "lastNodeUpdateTime": 1794036091602,
+      "resourceTypes": "memory-mb (unit=Mi), vcores",
+      "nodeHealthy": true,
+      "nodeManagerVersion": "3.3.6",
+      "nodeManagerBuildVersion": "3.3.6 from 1be78238728da9266a4f88195058f08fd012bf9c by ubuntu source checksum d42eb795a5eadb0febf5e44a7f87a9",
+      "nodeManagerVersionBuiltOn": "2023-06-18T08:31Z",
+      "hadoopVersion": "3.3.6",
+      "hadoopBuildVersion": "3.3.6 from 1be78238728da9266a4f88195058f08fd012bf9c by ubuntu source checksum 5652179ad55f76cb287d9c633bb53bbd",
+      "hadoopVersionBuiltOn": "2023-06-18T08:22Z",
+      "id": "worker1:28041",
+      "nodeHostName": "worker1",
+      "nmStartupTime": 1794033930819
+    }
+  },
+  "before_yarn_config_sha256": "0231c7599a203d05f99ca8872da7556b479c39a27bc06dcd72732545275b0164",
+  "after_yarn_config_sha256": "d7f749874c7214f4dbdcfea675d77942abb321bcc39ebdf9b6130ada9bae2151",
+  "new_resource": {
+    "memory_mib": 36864,
+    "vcores": 24,
+    "cpu_affinity": "72-95"
+  },
+  "basis": "Installed yarn rmadmin help and official Hadoop3.3.6 YarnCommands updateNodeResource",
+  "capacity_assumption": "Existing stage04 output only38.10GB. Even assigning60% of scenario shuffle/merge (175.74GB*2*0.60*1.20=253.07GB) to H800 remains below397.41GB free minus95GB reserve. Single largest reducer retry3.30GB included within remaining49GB margin. HDFS resides on separate home filesystem.",
+  "after_node_manager": {
+    "nodeInfo": {
+      "healthReport": "",
+      "totalVmemAllocatedContainersMB": 77414,
+      "totalPmemAllocatedContainersMB": 36864,
+      "totalVCoresAllocatedContainers": 24,
+      "vmemCheckEnabled": false,
+      "pmemCheckEnabled": true,
+      "lastNodeUpdateTime": 1794036211601,
+      "resourceTypes": "memory-mb (unit=Mi), vcores",
+      "nodeHealthy": true,
+      "nodeManagerVersion": "3.3.6",
+      "nodeManagerBuildVersion": "3.3.6 from 1be78238728da9266a4f88195058f08fd012bf9c by ubuntu source checksum d42eb795a5eadb0febf5e44a7f87a9",
+      "nodeManagerVersionBuiltOn": "2023-06-18T08:31Z",
+      "hadoopVersion": "3.3.6",
+      "hadoopBuildVersion": "3.3.6 from 1be78238728da9266a4f88195058f08fd012bf9c by ubuntu source checksum 5652179ad55f76cb287d9c633bb53bbd",
+      "hadoopVersionBuiltOn": "2023-06-18T08:22Z",
+      "id": "worker1:28041",
+      "nodeHostName": "worker1",
+      "nmStartupTime": 1794033930819
+    }
+  },
+  "after_resource_manager": {
+    "node": {
+      "rack": "/default-rack",
+      "state": "RUNNING",
+      "id": "worker1:28041",
+      "nodeHostName": "worker1",
+      "nodeHTTPAddress": "worker1:28042",
+      "lastHealthUpdate": 1794036211601,
+      "version": "3.3.6",
+      "healthReport": "",
+      "numContainers": 21,
+      "usedMemoryMB": 32256,
+      "availMemoryMB": 4608,
+      "usedVirtualCores": 21,
+      "availableVirtualCores": 3,
+      "memUtilization": 65.31137,
+      "cpuUtilization": 23.722221,
+      "numRunningOpportContainers": 0,
+      "usedMemoryOpportGB": 0,
+      "usedVirtualCoresOpport": 0,
+      "numQueuedContainers": 0,
+      "allocationTags": {},
+      "resourceUtilization": {
+        "nodePhysicalMemoryMB": 168086,
+        "nodeVirtualMemoryMB": 168455,
+        "nodeCPUUsage": 22.773332595825195,
+        "aggregatedContainersPhysicalMemoryMB": 15447,
+        "aggregatedContainersVirtualMemoryMB": 117907,
+        "containersCPUUsage": 3.6150002479553223
+      },
+      "usedResource": {
+        "memory": 32256,
+        "vCores": 21,
+        "resourceInformations": {
+          "resourceInformation": [
+            {
+              "attributes": {},
+              "maximumAllocation": 9223372036854775807,
+              "minimumAllocation": 0,
+              "name": "memory-mb",
+              "resourceType": "COUNTABLE",
+              "units": "Mi",
+              "value": 32256
+            },
+            {
+              "attributes": {},
+              "maximumAllocation": 9223372036854775807,
+              "minimumAllocation": 0,
+              "name": "vcores",
+              "resourceType": "COUNTABLE",
+              "units": "",
+              "value": 21
+            }
+          ]
+        }
+      },
+      "availableResource": {
+        "memory": 4608,
+        "vCores": 3,
+        "resourceInformations": {
+          "resourceInformation": [
+            {
+              "attributes": {},
+              "maximumAllocation": 9223372036854775807,
+              "minimumAllocation": 0,
+              "name": "memory-mb",
+              "resourceType": "COUNTABLE",
+              "units": "Mi",
+              "value": 4608
+            },
+            {
+              "attributes": {},
+              "maximumAllocation": 9223372036854775807,
+              "minimumAllocation": 0,
+              "name": "vcores",
+              "resourceType": "COUNTABLE",
+              "units": "",
+              "value": 3
+            }
+          ]
+        }
+      },
+      "nodeAttributesInfo": {},
+      "totalResource": {
+        "memory": 36864,
+        "vCores": 24,
+        "resourceInformations": {
+          "resourceInformation": [
+            {
+              "attributes": {},
+              "maximumAllocation": 9223372036854775807,
+              "minimumAllocation": 0,
+              "name": "memory-mb",
+              "resourceType": "COUNTABLE",
+              "units": "Mi",
+              "value": 36864
+            },
+            {
+              "attributes": {},
+              "maximumAllocation": 9223372036854775807,
+              "minimumAllocation": 0,
+              "name": "vcores",
+              "resourceType": "COUNTABLE",
+              "units": "",
+              "value": 24
+            }
+          ]
+        }
+      }
+    }
+  },
+  "verified_utc": "2026-11-07T07:23:32.305463+00:00"
+}

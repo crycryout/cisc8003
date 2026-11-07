@@ -1,0 +1,7 @@
+{
+  "valid": false,
+  "operation": "build",
+  "error": "not enough values to unpack (expected 2, got 1)",
+  "exception": "ValueError",
+  "peak_rss_mib": 25.26953125
+}

@@ -178,5 +178,35 @@
     }
   },
   "input_sha256": "c3b6e5fa980c688ef783cd6afabc0c17a635e5e7ad8f3edf8396907d3f1ab451",
-  "note": "Private configuration contents/addresses intentionally excluded; original configs retained on corresponding hosts."
+  "note": "Private configuration contents/addresses intentionally excluded; original configs retained on corresponding hosts.",
+  "online_worker_resource_update": "2026-11-07T07:23:02.520236+00:00",
+  "h800_updated_yarn_config_sha256": "d7f749874c7214f4dbdcfea675d77942abb321bcc39ebdf9b6130ada9bae2151",
+  "worker_resource_profile": {
+    "initial": {
+      "vcores_each": 8,
+      "yarn_memory_mib_each": 12288
+    },
+    "current": {
+      "h800": {
+        "vcores": 24,
+        "yarn_memory_mib": 36864,
+        "affinity": "72-95"
+      },
+      "rtx5090_a": {
+        "vcores": 8,
+        "yarn_memory_mib": 12288,
+        "affinity": "12-19"
+      },
+      "rtx5090_b": {
+        "vcores": 8,
+        "yarn_memory_mib": 12288,
+        "affinity": "12-19"
+      }
+    },
+    "task_memory_mib": 1536,
+    "task_heap_mib": 768,
+    "h800_shuffle_on_separate_filesystem": true,
+    "online_update_utc": "2026-11-07T07:23:02.520236+00:00",
+    "no_node_restart_during_online_update": true
+  }
 }

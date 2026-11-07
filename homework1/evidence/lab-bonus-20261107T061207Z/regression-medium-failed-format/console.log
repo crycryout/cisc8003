@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/experiment-user/cisc8003/homework1/src/graph_audit.py", line 392, in <module>
+    raise SystemExit(main())
+  File "/home/experiment-user/cisc8003/homework1/src/graph_audit.py", line 378, in main
+    result = build_index(args.input, args.database, args.format, args.edge_order, args.cache_mib, args.resume)
+  File "/home/experiment-user/cisc8003/homework1/src/graph_audit.py", line 153, in build_index
+    for source, target in parse_line(raw, fmt, order):
+  File "/home/experiment-user/cisc8003/homework1/src/graph_audit.py", line 41, in parse_line
+    head, tail = line.split(":", 1)
+ValueError: not enough values to unpack (expected 2, got 1)

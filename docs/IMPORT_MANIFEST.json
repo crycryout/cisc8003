@@ -2,7 +2,7 @@
   "snapshot": "2026-11-07 large-graph bonus execution checkpoint",
   "scope": "Current repository bytes, including redacted real execution evidence. Byte verification is not itself a cluster benchmark.",
   "base_import_commit": "30d5420723ebbf5d4608c5141941e9a669b5bd89",
-  "updated_at_utc": "2026-11-07T06:55:26.848132+00:00",
+  "updated_at_utc": "2026-11-07T07:29:31.399191+00:00",
   "files": [
     {
       "path": ".gitattributes",
@@ -71,8 +71,8 @@
     },
     {
       "path": "docs/WORK_LOG.md",
-      "bytes": 15654,
-      "sha256": "8b4d7321939479e0552ddff4c7bd88f4a698f2697d5862f2abeaa07b6c6a698c"
+      "bytes": 16466,
+      "sha256": "9d4c8048e1d2edb1f78ff326e59a4425466560541c4a5e0a8fd846948ee5c8f3"
     },
     {
       "path": "docs/history/ORIGINAL_PACKAGE_README_2026-11-06.md",
@@ -1800,14 +1800,24 @@
       "sha256": "593d90b9d4f8d3bb9ca0dba0d8cea0d3d47bfb7c269b03b97e44b3ea9da8fc31"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/live-monitor.jsonl",
+      "bytes": 1835423,
+      "sha256": "94884fa0a7de2011d55b04d44d02395f273f1dd30091f01ec4ccac0b151770ff"
+    },
+    {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/monitor.jsonl",
-      "bytes": 161210,
-      "sha256": "594a4357392d79e1d26b0c40f005ba20af974c295c39b360a7606d39ce6bec8e"
+      "bytes": 632347,
+      "sha256": "c9ef6a39bd0dfb08d608c75f539b376708cb03fb65175c5a645d48f9d6ea0b6c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/online-resource-update.json",
+      "bytes": 6424,
+      "sha256": "5576e945778f3b6e9257509365272ef2e8ddb3f80ef291a3d9221e1bb8102281"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/process-monitor.jsonl",
-      "bytes": 118370,
-      "sha256": "8fb5a7c7c9f0911f421a01dec784c134b4d20b643272efe58df020da572dc9ea"
+      "bytes": 669774,
+      "sha256": "14eeead6c207bade3a8d5045388b89b510c9680a28760a52b667c31585ea7bf2"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/04_pairs/counters.json",
@@ -2010,6 +2020,16 @@
       "sha256": "a2069267883be1eb981f9fb4ea7f5c26f782c8a39f5daf56f4d978ab8359ab53"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-medium-failed-format/console.log",
+      "bytes": 694,
+      "sha256": "82fa6856107315265c9b55ab02653b019d6568ff4ef96ea87300751315be05a1"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-medium-failed-format/input-statistics.json",
+      "bytes": 167,
+      "sha256": "3ffd9acbb7cf4c7c080fd2e8129984469cccad792068ab1dca7b12729843e17c"
+    },
+    {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-medium/suffix-comparison.json",
       "bytes": 114,
       "sha256": "07ca6507863d6c6b26fd78ebf534f19f776fb127fd359a4b67ff816e589205b0"
@@ -2046,8 +2066,8 @@
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/run-manifest.json",
-      "bytes": 14280,
-      "sha256": "4bddd1924a01373766bceae255a1ef6cd9eba17e0224945e1ecfffcbad15168a"
+      "bytes": 15148,
+      "sha256": "63c991047bbdc51da410527db52683cd03d68dde6b93e23842667e3dddfd5b89"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/screenshots/bonus-pairs-running.png",
