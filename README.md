@@ -34,4 +34,4 @@ python3 -m unittest discover -s homework1/tests -v
 
 报告披露了实验室硬件替代课程云 VM/课程集群的选择，以及 AI 协助。大图 bonus 未完成，不将中图算作 bonus。姓名、SID、声明和签名留给学生本人核实填写。
 
-下一步：在报告源文件填写姓名和 SID，再从归档中选择对应的后三位文件。
+下一步：服务器 Codex 按 [大图 bonus 接续任务](docs/BONUS_COMPLETION_HANDOFF.md) 补完加分题与最终提交包。必做实验无需重跑；本人信息与签名仍待核实填写。

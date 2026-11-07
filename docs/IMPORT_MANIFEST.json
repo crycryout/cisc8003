@@ -1,8 +1,8 @@
 {
-  "snapshot": "2026-11-06 completed four-physical-host laboratory experiment",
+  "snapshot": "2026-11-07 bonus handoff documentation; measured experiment evidence unchanged",
   "scope": "Current repository bytes, including redacted real execution evidence. Byte verification is not itself a cluster benchmark.",
   "base_import_commit": "30d5420723ebbf5d4608c5141941e9a669b5bd89",
-  "updated_at_utc": "2026-11-06T12:09:01.377697+00:00",
+  "updated_at_utc": "2026-11-07T05:57:52.849382+00:00",
   "files": [
     {
       "path": ".gitattributes",
@@ -21,8 +21,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2980,
-      "sha256": "93fa829068155a1ab611a001a8c7218e29bf111d563b93f891967f78a1adffba"
+      "bytes": 3079,
+      "sha256": "007cb810b115d24148b53cad120d8727d7dc6cae015a4cc3237f9f16132657d4"
     },
     {
       "path": "docs/ACCEPTANCE.md",
@@ -33,6 +33,11 @@
       "path": "docs/ASSIGNMENT_REQUIREMENTS.md",
       "bytes": 1820,
       "sha256": "7bb4dbe42e04f66bf32f4eec6d8512ea77f5e5807f0235aa4350b91656f5f94f"
+    },
+    {
+      "path": "docs/BONUS_COMPLETION_HANDOFF.md",
+      "bytes": 16514,
+      "sha256": "fb1c71859cd85e96bc67d6a81ab9cf006130e0e6b46d9c4e294c93ae08771503"
     },
     {
       "path": "docs/EVIDENCE_INDEX.md",
@@ -51,13 +56,13 @@
     },
     {
       "path": "docs/NEXT_CODEX_PROMPT.md",
-      "bytes": 2260,
-      "sha256": "ee00b33e48444f2ebe67d43db66566eaa790ddbc67dd94d64bf6046eaffa2ae3"
+      "bytes": 1727,
+      "sha256": "ec02c860be05bc5c6134b4aaeb1aab5d0702229037fbbe5a83e71d3264657318"
     },
     {
       "path": "docs/WORK_LOG.md",
-      "bytes": 10341,
-      "sha256": "6bc41dbcf5988e3da23bf041a5ff3b777b41393e451d7c8f2ff1d48fd38b2c71"
+      "bytes": 11433,
+      "sha256": "363a3223286ac2e906db7f9321ecc730b065f78ef07c46ba1146d1fbeb6bdde2"
     },
     {
       "path": "docs/history/ORIGINAL_PACKAGE_README_2026-11-06.md",

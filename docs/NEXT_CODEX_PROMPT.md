@@ -1,13 +1,13 @@
-> 历史接续文档：2026-11-06 已在四台真实物理机执行。当前进展和证据以 [LAB_EXECUTION.md](LAB_EXECUTION.md)、[WORK_LOG.md](WORK_LOG.md) 和 [ACCEPTANCE.md](ACCEPTANCE.md) 为准；不要据此重新 format 或覆盖已有结果。
+# 给服务器 Codex 的当前任务
 
-# 复制给 H800 上 Codex 的任务
+更新时间：2026-11-07。必做四机实验与报告主体已完成；本轮补完 Q2(b) 大图加分题和最终提交包。
 
-你现在在我的 H800 服务器上。我已把之前准备的 Hadoop 作业代码、历史结果和详细接续记录放入当前仓库。请先完整读取根目录 AGENTS.md、docs/H800_CODEX_HANDOFF.md、docs/WORK_LOG.md、docs/EVIDENCE_INDEX.md 和 docs/ACCEPTANCE.md，然后直接接续完成必做实验，不只给我方案。
+请完整读取并直接执行 [BONUS_COMPLETION_HANDOFF.md](BONUS_COMPLETION_HANDOFF.md)，再核对根目录 AGENTS.md、LAB_EXECUTION.md、WORK_LOG.md 和 ACCEPTANCE.md。正常可逆操作和现有四台机器的计算已获授权，不要只给计划，不要重跑已经完成的整套 Q1/中图实验。
 
-部署使用实验室的四台独立物理主机：Jetson Thor 做 master；H800 主机、两台单机 RTX 5090 各做一个 worker。H800 的两个 NUMA 节点不拆分；不租云服务器。先检查当前机器和本账号的实际资源、现有端口/服务以及现有 SSH 主机别名，再确认另外三台的可达性。不要读取或输出私钥、口令、token。若缺少实际地址或权限，先完成所有不受阻塞的本地准备，再只向我询问缺少的信息。
+复用 Thor master、H800 和两台 5090 workers，恢复现有隔离配置而非重新 format。先下载并核实原题 Ref[8] 大图，执行前三阶段，依据实际 CandidatePairs 与各节点磁盘检查容量，再继续完整精确全用户 Top-10。完成独立验证、000–999 后缀、真实 JobHistory/截图、报告、代码和结果包，并同步仓库。
 
-你需要完成单节点验证、1 master + 3 workers 的 HDFS/YARN 集群、Shakespeare 小文件与合并文件 WordCount、Yelp 至少四种不同实际 mapper/reducer 组合、Q2 中图六阶段精确 Top-10、完整性与独立抽样验证、suffix 导出、真实截图/原始日志/JobHistory 和最终报告。大图 bonus 先评估容量，不能以必做结果冒充 bonus。
+现有 validate_medium.py 与 export_suffixes.py 会把全图/结果装入内存；大图需评估内存或增加流式/磁盘支持。RESUME_AFTER_BLOCKS 只恢复前三阶段，阶段 4–6 中断须明确检查恢复点，不删除已有成功结果。具体命令、验证标准、资源边界和最终验收均见新接续文档。
 
-继续复用仓库中已修复并验证的实现。历史结果属于 LocalJobRunner，不是四机性能；所有耗时从真实成功作业采集，未完成的保持 NOT MEASURED。先跑一轮完整链路；时间和资源允许时将 Q1 每组补到三次并保留所有运行。若缺 SID 后三位先导出全部 suffix，不要为此停下实验。
+缺少完整 SID 不阻塞计算与导出；姓名、SID、本人声明与签名留给用户核实。保留实验室替代云 VM、AI 协助和未取得教师正式批准的真实说明，不代签、不虚构许可。只有真实大图输入、作业和验证完成后才能勾选 bonus。
 
-不要修改 CUDA、GPU 驱动、系统默认 Java，也不要干扰其他人的作业或重新 format 既有 HDFS。使用本次独立目录和新输出路径，保留失败日志。每完成一阶段更新 docs/WORK_LOG.md、docs/ACCEPTANCE.md 和对应证据索引；将可公开的代码、汇总和最终报告提交到当前仓库，机器访问配置和私密信息保留本地。
+旧 H800_CODEX_HANDOFF.md 保留历史，不以其中“必做尚未执行”的表格判断当前进度。若遇到真实访问、数据或容量阻塞，先完成不依赖阻塞的部分，保存精确恢复点，再说明缺少什么。
