@@ -1,0 +1,27 @@
+{
+  "description": "Preserved original Nov6 24-page report before bonus changes",
+  "git_source_commit": "b6670cc6b0d1b43759ceae3969caa2a3de9c12bc",
+  "git_paths": [
+    "homework1/report/Homework1_Report.pdf",
+    "homework1/report/Homework1_Report_Draft.pdf",
+    "homework1/report/Homework1_Report_Draft.md"
+  ],
+  "private_backup_directory": ".local/bonus-20261107T061207Z/baseline-report",
+  "files": [
+    {
+      "file": "Homework1_Report_Draft.pdf",
+      "bytes": 1426796,
+      "sha256": "0cc1641580170bba3ff00a9dcd57b2996dbe09fd1d8f29250eb5757757aab903"
+    },
+    {
+      "file": "Homework1_Report_Draft.md",
+      "bytes": 27946,
+      "sha256": "dddfac2ad0dea6caffb722bd689dfcdaff58d930e670d51dbed32fd11f26ede1"
+    },
+    {
+      "file": "Homework1_Report.pdf",
+      "bytes": 1426796,
+      "sha256": "0cc1641580170bba3ff00a9dcd57b2996dbe09fd1d8f29250eb5757757aab903"
+    }
+  ]
+}

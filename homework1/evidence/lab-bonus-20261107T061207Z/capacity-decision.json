@@ -45,14 +45,14 @@
   "worker_space_before_bytes": {
     "h800_hdfs_home_free": 338900000000,
     "h800_shuffle_tmp_free": 407657111552,
-    "worker1_home_free": 657224351744,
-    "worker2_home_free": 456949596160
+    "rtx5090_a_home_free": 657224351744,
+    "rtx5090_b_home_free": 456949596160
   },
   "minimum_free_thresholds_bytes": {
     "h800_home": 188800000000,
     "h800_tmp": 95000000000,
-    "worker1_home": 201000000000,
-    "worker2_home": 201000000000
+    "rtx5090_a_home": 201000000000,
+    "rtx5090_b_home": 201000000000
   },
   "monitoring": "45s SSH filesystem and process snapshots + YARN REST, persisted JSONL; reevaluate at each stage transition."
 }

@@ -1,2 +1,2 @@
-{"host": "worker3", "role": "worker2", "uid": 1002, "conf": "/home/experiment-user/cisc8003/.local/conf/bonus-20261107T061207Z", "scratch": "/home/experiment-user/cisc8003/.local/bonus-20261107T061207Z/scratch", "vcores": 8, "memory_mb": 12288, "disk_free_bytes": 456949596160}
+{"host": "worker3", "role": "worker3", "uid": "redacted", "conf": "/home/experiment-user/cisc8003/.local/conf/bonus-20261107T061207Z", "scratch": "/home/experiment-user/cisc8003/.local/bonus-20261107T061207Z/scratch", "vcores": 8, "memory_mb": 12288, "disk_free_bytes": 456949596160}
 pid 1160330's current affinity list: 12-19

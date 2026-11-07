@@ -2,6 +2,7 @@
 """Render the editable report Markdown to a paginated, selectable-text PDF."""
 from pathlib import Path
 import argparse
+import datetime
 import re
 from html import escape
 from reportlab.lib import colors
@@ -16,6 +17,8 @@ ROOT = Path(__file__).resolve().parent
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--input', type=Path, default=ROOT/'Homework1_Report_Draft.md')
 parser.add_argument('--output', type=Path, default=ROOT/'Homework1_Report.pdf')
+parser.add_argument('--date', type=datetime.date.fromisoformat, default=datetime.date.today(),
+                    help='Report/footer date in YYYY-MM-DD format')
 args = parser.parse_args()
 pdfmetrics.registerFont(TTFont('DejaVu', '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'))
 pdfmetrics.registerFont(TTFont('DejaVuBold', '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'))
@@ -125,7 +128,7 @@ def page(canvas,doc):
     canvas.setFont('DejaVu',7.4);canvas.setFillColor(colors.HexColor('#667583'))
     canvas.drawString(45,h-28,'HOMEWORK 1 / FOUR-MACHINE LABORATORY EXPERIMENT')
     canvas.line(45,35,w-45,35)
-    canvas.drawString(45,23,'Hadoop 3.3.6 / Java 11 / HDFS + YARN | 6 Nov 2026')
+    canvas.drawString(45,23,'Hadoop 3.3.6 / Java 11 / HDFS + YARN | '+str(args.date.day)+args.date.strftime(' %b %Y'))
     canvas.drawRightString(w-45,23,str(doc.page))
     canvas.restoreState()
 

@@ -2,7 +2,7 @@
   "snapshot": "2026-11-07 large-graph bonus execution checkpoint",
   "scope": "Current repository bytes, including redacted real execution evidence. Byte verification is not itself a cluster benchmark.",
   "base_import_commit": "30d5420723ebbf5d4608c5141941e9a669b5bd89",
-  "updated_at_utc": "2026-11-07T06:40:48.000991+00:00",
+  "updated_at_utc": "2026-11-07T06:55:26.848132+00:00",
   "files": [
     {
       "path": ".gitattributes",
@@ -40,9 +40,19 @@
       "sha256": "fb1c71859cd85e96bc67d6a81ab9cf006130e0e6b46d9c4e294c93ae08771503"
     },
     {
+      "path": "docs/CODE_PACKAGE.md",
+      "bytes": 2455,
+      "sha256": "a325380ea8bd71a7585315fbcebbfa9e3124d9eb6034d0cf324bfb3989b2768c"
+    },
+    {
       "path": "docs/EVIDENCE_INDEX.md",
       "bytes": 4829,
       "sha256": "6a67cfe28513f33564bf25dd096b8df7b6617c0b62ac296a06a3031080167656"
+    },
+    {
+      "path": "docs/FINAL_SUBMISSION.md",
+      "bytes": 1780,
+      "sha256": "fb6f9c931d9d69e41e1f0770802433e7324e1901bd83e8a4511b5e5bea58f4ad"
     },
     {
       "path": "docs/H800_CODEX_HANDOFF.md",
@@ -61,8 +71,8 @@
     },
     {
       "path": "docs/WORK_LOG.md",
-      "bytes": 14693,
-      "sha256": "4d1c282350756539e955e1e4161d45149a173f19c3cf3674edaa8a6db8a2ab9c"
+      "bytes": 15654,
+      "sha256": "8b4d7321939479e0552ddff4c7bd88f4a698f2697d5862f2abeaa07b6c6a698c"
     },
     {
       "path": "docs/history/ORIGINAL_PACKAGE_README_2026-11-06.md",
@@ -1681,13 +1691,13 @@
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/README.md",
-      "bytes": 399,
-      "sha256": "cd2346c3c65cf9f69884e4440621a763e1da4161efe0fc2b6ce1c3ebb315c12c"
+      "bytes": 546,
+      "sha256": "749bf79cdd1dc6bb532fbd41049e2226d2c60c5ec577f5d3639406d6e28a6a2a"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-decision.json",
-      "bytes": 3000,
-      "sha256": "e341f39ce55e21469d765ccdcc3a761564c29eb6479b39189f6b00efeeb8e7df"
+      "bytes": 3008,
+      "sha256": "57f73c431c9dfaf241b348e7ea5edc7e7d7df959e224f88b12c10e5a3144c695"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/01_dedup/counters.json",
@@ -1770,6 +1780,11 @@
       "sha256": "3aacc6dbc6d205f96e37e4f5b32d1df114ce54bcadcf22e1bc5218d533cde195"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/community-logs/04_pairs.log",
+      "bytes": 9446,
+      "sha256": "860a67bcae2ccc2bbcdd5c262b86f77bdfc39bacbfa99b895e9d426416a0aadd"
+    },
+    {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/compression-pilot.json",
       "bytes": 1071,
       "sha256": "3d12ab24f80de07b883849052c78454a6f7a313099aa846ea611d2bb33270dd3"
@@ -1783,6 +1798,36 @@
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/input-statistics.json",
       "bytes": 91399,
       "sha256": "593d90b9d4f8d3bb9ca0dba0d8cea0d3d47bfb7c269b03b97e44b3ea9da8fc31"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/monitor.jsonl",
+      "bytes": 161210,
+      "sha256": "594a4357392d79e1d26b0c40f005ba20af974c295c39b360a7606d39ce6bec8e"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/process-monitor.jsonl",
+      "bytes": 118370,
+      "sha256": "8fb5a7c7c9f0911f421a01dec784c134b4d20b643272efe58df020da572dc9ea"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/04_pairs/counters.json",
+      "bytes": 10629,
+      "sha256": "71de29646ab0c28e07098a54444cecaf41d508bc79a2186cbb9f184140ae7084"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/04_pairs/job.json",
+      "bytes": 696,
+      "sha256": "e032716c0d15daeb24982956a97e84e05a679e2603ab81648fe52ea7e2700857"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/04_pairs/summary.json",
+      "bytes": 358,
+      "sha256": "8cc3a95acd3e2083ce0cac9b8992ee7e1489c030de97647aee87852577555f27"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/04_pairs/tasks.json",
+      "bytes": 22621,
+      "sha256": "9dd4c93af24e37107f9faed7d2b8e1afe92b805c73484bfc45f5547c27a70caa"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/01_dedup/counters.json",
@@ -1975,24 +2020,49 @@
       "sha256": "ceb61a3d2f1867bace7355609008df7b2a1137a1bf7dd512e66415e8c53b8d93"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/report-provenance.json",
+      "bytes": 896,
+      "sha256": "afb101fd253445a6a69a12d9b988dea21268e5394ed1548fcba20f5d6e204b4d"
+    },
+    {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-transition/gpu01.log",
-      "bytes": 320,
-      "sha256": "d2e9cf51a83c04a2d9634c92607681062230b77f19bc8371219c93e32517bcf7"
+      "bytes": 326,
+      "sha256": "3b70acace2b0b4d531f622a0f81e9bdfb438d9cf2b1bf71c390d4259ee466238"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-transition/gpu02.log",
-      "bytes": 321,
-      "sha256": "a0405d4247dbd1e3f70e104fce38271124090c5f0adf24cf89d963d8c10c90dc"
+      "bytes": 327,
+      "sha256": "964da6645cf67fd49948362c9c9a5ca2baf0b6dd2dbc930e61f010a0aa2652f8"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-transition/h800.log",
-      "bytes": 286,
-      "sha256": "c9a8f06a8555272fe50631550e894ba2213098c809039657650dbcb59f053a14"
+      "bytes": 295,
+      "sha256": "a9832dc2273eb26fc6b4ca24085ae2d1fa13a5310f3871adec179640aa1c11a3"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-transition/yarn-nodes.txt",
       "bytes": 1554,
       "sha256": "8d249019452abf1d1d5c24a503f747c3a933588c1f6f43c55549857d79336b2c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/run-manifest.json",
+      "bytes": 14280,
+      "sha256": "4bddd1924a01373766bceae255a1ef6cd9eba17e0224945e1ecfffcbad15168a"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/screenshots/bonus-pairs-running.png",
+      "bytes": 72670,
+      "sha256": "32a03adc02deaba0620a4ffe141f9d7f74c43b380048d531935c6367ff7c6ba1"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/screenshots/bonus-yarn-nodes.png",
+      "bytes": 141229,
+      "sha256": "ea13c93677a352e5129b1d6801fd6817b9e8707e3b3924750e67a51729c1108b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/source-redirects.json",
+      "bytes": 1024,
+      "sha256": "1a5c3e4caada22e88db7617229c6978842c43256f1e77c8275a5c7151fd01bec"
     },
     {
       "path": "homework1/report/Homework1_Report.pdf",
@@ -2011,8 +2081,8 @@
     },
     {
       "path": "homework1/report/build_report.py",
-      "bytes": 6686,
-      "sha256": "d7fb75a53e9681db22b8872008f61d42e72728a76ec631563946cda0ca8f9dae"
+      "bytes": 6903,
+      "sha256": "b47a1f3a6459b8beb16a28347766ff8ffef0d1f61431a16df4af192638a32947"
     },
     {
       "path": "homework1/results/data_access_status.json",
@@ -2198,6 +2268,11 @@
       "path": "scripts/compare_top10.py",
       "bytes": 2170,
       "sha256": "4eb74450260b8cc2bbf9437148525f69d36dc96b26acb707a5eec549efabc536"
+    },
+    {
+      "path": "scripts/package_submission.py",
+      "bytes": 4653,
+      "sha256": "141af6835dc2f0230d3fe74a721c3eb8fd92bf1244e72940e3fa34c1a7a75659"
     },
     {
       "path": "scripts/verify_repository.py",

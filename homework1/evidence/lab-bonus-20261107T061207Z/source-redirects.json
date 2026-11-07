@@ -1,0 +1,27 @@
+{
+  "observed_utc": "2026-11-07T06:46:01.466826+00:00",
+  "method": "GET Range bytes=0-0; read at most 1 byte; original complete download already hash checked",
+  "redirects": [
+    {
+      "status": 302,
+      "from": "https://www.dropbox.com/s/cbf4r2at8dmd9ms/gplus_combined.txt.gz?dl=1",
+      "to": "https://www.dropbox.com/scl/fi/hv9v7cgm0gm082ex9t5eo/gplus_combined.txt.gz?dl=1"
+    },
+    {
+      "status": 302,
+      "from": "https://www.dropbox.com/scl/fi/hv9v7cgm0gm082ex9t5eo/gplus_combined.txt.gz?dl=1",
+      "to": "https://*.dl.dropboxusercontent.com/[transient-download-path]"
+    }
+  ],
+  "final_url": "https://*.dl.dropboxusercontent.com/[transient-download-path]",
+  "status": 206,
+  "headers": {
+    "Content-Type": "application/binary",
+    "Content-Length": "1",
+    "Content-Range": "bytes 0-0/398930514",
+    "ETag": "1600765811696781d",
+    "Last-Modified": null
+  },
+  "read_bytes": 1,
+  "redaction": "Transient signed redirect path and query omitted; original complete chain retained privately."
+}
