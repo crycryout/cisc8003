@@ -1,0 +1,2 @@
+{"host": "worker2", "role": "worker1", "uid": 1011, "conf": "/home/experiment-user/cisc8003/.local/conf/bonus-20261107T061207Z", "scratch": "/home/experiment-user/cisc8003/.local/bonus-20261107T061207Z/scratch", "vcores": 8, "memory_mb": 12288, "disk_free_bytes": 657224351744}
+pid 227829's current affinity list: 12-19

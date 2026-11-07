@@ -1,0 +1,76 @@
+{
+  "tasks": {
+    "task": [
+      {
+        "startTime": 1794032457093,
+        "finishTime": 1794032460140,
+        "elapsedTime": 3047,
+        "progress": 100.0,
+        "id": "task_1793963521105_0027_m_000005",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0027_m_000005_0"
+      },
+      {
+        "startTime": 1794032462022,
+        "finishTime": 1794032463084,
+        "elapsedTime": 1062,
+        "progress": 100.0,
+        "id": "task_1793963521105_0027_r_000000",
+        "state": "SUCCEEDED",
+        "type": "REDUCE",
+        "successfulAttempt": "attempt_1793963521105_0027_r_000000_0"
+      },
+      {
+        "startTime": 1794032457088,
+        "finishTime": 1794032460093,
+        "elapsedTime": 3005,
+        "progress": 100.0,
+        "id": "task_1793963521105_0027_m_000004",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0027_m_000004_0"
+      },
+      {
+        "startTime": 1794032457092,
+        "finishTime": 1794032460207,
+        "elapsedTime": 3115,
+        "progress": 100.0,
+        "id": "task_1793963521105_0027_m_000003",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0027_m_000003_0"
+      },
+      {
+        "startTime": 1794032457092,
+        "finishTime": 1794032460059,
+        "elapsedTime": 2967,
+        "progress": 100.0,
+        "id": "task_1793963521105_0027_m_000002",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0027_m_000002_0"
+      },
+      {
+        "startTime": 1794032457093,
+        "finishTime": 1794032459960,
+        "elapsedTime": 2867,
+        "progress": 100.0,
+        "id": "task_1793963521105_0027_m_000001",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0027_m_000001_0"
+      },
+      {
+        "startTime": 1794032457094,
+        "finishTime": 1794032460026,
+        "elapsedTime": 2932,
+        "progress": 100.0,
+        "id": "task_1793963521105_0027_m_000000",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0027_m_000000_0"
+      }
+    ]
+  }
+}

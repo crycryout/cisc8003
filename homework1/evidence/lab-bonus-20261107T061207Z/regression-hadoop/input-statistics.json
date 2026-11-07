@@ -1,0 +1,212 @@
+{
+  "source_sha256": "0d7ffeb499e007b8739c4d708922e37073466ab480ea15663d72b582c8016f7a",
+  "format": "adjacency",
+  "edge_order": "follower-followee",
+  "source_file": "regression-input.txt",
+  "source_bytes": 4753,
+  "nonempty_noncomment_lines": 31,
+  "edge_records": 189,
+  "unique_directed_edges": 189,
+  "duplicate_edge_records": 0,
+  "users": 31,
+  "self_edges": 8,
+  "maximum_id_digits": 91,
+  "maximum_indegree": 11,
+  "maximum_outdegree": 10,
+  "candidate_pairs": 603,
+  "replicated_follower_ids_at_block_size_512": 189,
+  "degree_histograms": {
+    "indegree": {
+      "0": 2,
+      "2": 2,
+      "4": 6,
+      "5": 2,
+      "6": 3,
+      "7": 6,
+      "8": 3,
+      "9": 5,
+      "11": 2
+    },
+    "outdegree": {
+      "0": 1,
+      "3": 2,
+      "4": 4,
+      "5": 2,
+      "6": 10,
+      "7": 5,
+      "8": 3,
+      "9": 2,
+      "10": 2
+    }
+  },
+  "highest_degrees": {
+    "indegree": [
+      {
+        "user": "100000000000000000010",
+        "degree": 11
+      },
+      {
+        "user": "100000000000000000024",
+        "degree": 11
+      },
+      {
+        "user": "100000000000000000000",
+        "degree": 9
+      },
+      {
+        "user": "100000000000000000003",
+        "degree": 9
+      },
+      {
+        "user": "100000000000000000008",
+        "degree": 9
+      },
+      {
+        "user": "100000000000000000014",
+        "degree": 9
+      },
+      {
+        "user": "100000000000000000023",
+        "degree": 9
+      },
+      {
+        "user": "100000000000000000009",
+        "degree": 8
+      },
+      {
+        "user": "100000000000000000017",
+        "degree": 8
+      },
+      {
+        "user": "10000000000000000000000000000000000000000000000000000000000000000000123",
+        "degree": 8
+      },
+      {
+        "user": "100000000000000000002",
+        "degree": 7
+      },
+      {
+        "user": "100000000000000000004",
+        "degree": 7
+      },
+      {
+        "user": "100000000000000000005",
+        "degree": 7
+      },
+      {
+        "user": "100000000000000000007",
+        "degree": 7
+      },
+      {
+        "user": "100000000000000000019",
+        "degree": 7
+      },
+      {
+        "user": "100000000000000000022",
+        "degree": 7
+      },
+      {
+        "user": "2",
+        "degree": 6
+      },
+      {
+        "user": "100000000000000000006",
+        "degree": 6
+      },
+      {
+        "user": "1237940039285380274899124225",
+        "degree": 6
+      },
+      {
+        "user": "100000000000000000001",
+        "degree": 5
+      }
+    ],
+    "outdegree": [
+      {
+        "user": "100000000000000000015",
+        "degree": 10
+      },
+      {
+        "user": "100000000000000000022",
+        "degree": 10
+      },
+      {
+        "user": "2",
+        "degree": 9
+      },
+      {
+        "user": "100000000000000000002",
+        "degree": 9
+      },
+      {
+        "user": "10",
+        "degree": 8
+      },
+      {
+        "user": "100000000000000000003",
+        "degree": 8
+      },
+      {
+        "user": "100000000000000000012",
+        "degree": 8
+      },
+      {
+        "user": "100",
+        "degree": 7
+      },
+      {
+        "user": "100000000000000000013",
+        "degree": 7
+      },
+      {
+        "user": "100000000000000000014",
+        "degree": 7
+      },
+      {
+        "user": "100000000000000000020",
+        "degree": 7
+      },
+      {
+        "user": "1237940039285380274899124225",
+        "degree": 7
+      },
+      {
+        "user": "100000000000000000001",
+        "degree": 6
+      },
+      {
+        "user": "100000000000000000005",
+        "degree": 6
+      },
+      {
+        "user": "100000000000000000006",
+        "degree": 6
+      },
+      {
+        "user": "100000000000000000007",
+        "degree": 6
+      },
+      {
+        "user": "100000000000000000010",
+        "degree": 6
+      },
+      {
+        "user": "100000000000000000016",
+        "degree": 6
+      },
+      {
+        "user": "100000000000000000017",
+        "degree": 6
+      },
+      {
+        "user": "100000000000000000018",
+        "degree": 6
+      }
+    ]
+  },
+  "sqlite_cache_mib": 256,
+  "peak_rss_mib": 17.203125,
+  "elapsed_s": 0.0026143151335418224,
+  "implementation": "independent canonical source parser + SQLite unique directed edges"
+}

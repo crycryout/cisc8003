@@ -1,0 +1,46 @@
+{
+  "tasks": {
+    "task": [
+      {
+        "startTime": 1794033527270,
+        "finishTime": 1794033528482,
+        "elapsedTime": 1212,
+        "progress": 100.0,
+        "id": "task_1793963521105_0030_r_000000",
+        "state": "SUCCEEDED",
+        "type": "REDUCE",
+        "successfulAttempt": "attempt_1793963521105_0030_r_000000_0"
+      },
+      {
+        "startTime": 1794033523295,
+        "finishTime": 1794033524765,
+        "elapsedTime": 1470,
+        "progress": 100.0,
+        "id": "task_1793963521105_0030_m_000002",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0030_m_000002_0"
+      },
+      {
+        "startTime": 1794033523297,
+        "finishTime": 1794033524803,
+        "elapsedTime": 1506,
+        "progress": 100.0,
+        "id": "task_1793963521105_0030_m_000001",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0030_m_000001_0"
+      },
+      {
+        "startTime": 1794033523297,
+        "finishTime": 1794033524741,
+        "elapsedTime": 1444,
+        "progress": 100.0,
+        "id": "task_1793963521105_0030_m_000000",
+        "state": "SUCCEEDED",
+        "type": "MAP",
+        "successfulAttempt": "attempt_1793963521105_0030_m_000000_0"
+      }
+    ]
+  }
+}

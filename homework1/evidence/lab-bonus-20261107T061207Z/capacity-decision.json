@@ -1,0 +1,58 @@
+{
+  "decision": "PASS with measured-compression scenarios, intermediate replication 1 and continuous monitoring; not an unconditional compression bound",
+  "candidate_pair_records": 10984048711,
+  "users": 107614,
+  "max_distinct_unordered_positive_pairs": 5790332691,
+  "uncompressed_pair_bytes_per_record": 48,
+  "stage04_uncompressed_logical_bytes": 527234338128,
+  "stage04_uncompressed_three_replicas_bytes": 1581703014384,
+  "initial_hdfs_remaining_bytes": 1459986186240,
+  "preparation_hdfs_logical_bytes": 966119112,
+  "pilot_compressed_pair_bytes_range": [
+    4.33,
+    9.28
+  ],
+  "planning_pair_bytes_per_record": 16,
+  "planning_score_bytes_per_record": 12,
+  "planning_shuffle_bytes_per_record": 16,
+  "assumptions": [
+    "Do not extrapolate small compressed file size to pair volume; stage03 measured C used.",
+    "Stage04/05 use DefaultCodec and replication 1; source/preparation/final use replication 3. Loss of single-replica intermediate requires recomputation.",
+    "64 reducers bound an individual partition; block 512 from existing stage03 is unchanged.",
+    "Shuffle/merge peak factor 2.0 over all materialized shuffle; 20% node skew/reserve multiplier. One additional largest reducer retry budget per node, no speculative tasks.",
+    "H800 HDFS and YARN shuffle use separate filesystems; no deletion of old evidence or other users data.",
+    "16/12/16 bytes are planning scenarios, not mathematical upper bounds. If runtime exceeds these, reevaluate remaining partitions/disk before next stage."
+  ],
+  "hdfs_stage04_scenario_bytes": 175744779376,
+  "hdfs_stage05_max_unique_scenario_bytes": 69483992292,
+  "hdfs_per_worker_scenario_bytes": 81742923889,
+  "shuffle_stage05_global_materialized_scenario_bytes": 175744779376,
+  "shuffle_stage05_per_worker_peak_skew_bytes": 140595823500,
+  "largest_reducer_retry_scenario_bytes": 3295214613,
+  "shuffle_stage06_global_scenario_bytes": 185290646112,
+  "shuffle_stage06_per_worker_peak_skew_bytes": 148232516889,
+  "medium_reference": {
+    "candidate_pairs": 154933408,
+    "stage04_job_s": 38.374,
+    "stage05_job_s": 118.407,
+    "stage06_job_s": 112.363,
+    "stage04_file_output_bytes": 3493751693,
+    "stage05_materialized_shuffle_bytes": 784548896,
+    "stage05_local_bytes_written_cumulative": 2057240407,
+    "stage06_local_bytes_written_cumulative": 2090220277,
+    "warning": "Actual medium task throughput used only as a range guide; wider IDs and larger cluster allocation prevent a direct runtime promise."
+  },
+  "worker_space_before_bytes": {
+    "h800_hdfs_home_free": 338900000000,
+    "h800_shuffle_tmp_free": 407657111552,
+    "worker1_home_free": 657224351744,
+    "worker2_home_free": 456949596160
+  },
+  "minimum_free_thresholds_bytes": {
+    "h800_home": 188800000000,
+    "h800_tmp": 95000000000,
+    "worker1_home": 201000000000,
+    "worker2_home": 201000000000
+  },
+  "monitoring": "45s SSH filesystem and process snapshots + YARN REST, persisted JSONL; reevaluate at each stage transition."
+}

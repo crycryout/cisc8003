@@ -1,0 +1,15 @@
+{
+  "job_id": "job_1793963521105_0031",
+  "state": "SUCCEEDED",
+  "actual_mappers": 3,
+  "actual_reducers": 3,
+  "job_s": 8.186,
+  "failed_map_attempts": 0,
+  "failed_reduce_attempts": 0,
+  "map_max_s": 1.493,
+  "map_min_s": 1.383,
+  "map_avg_s": 1.4393333333333334,
+  "reduce_max_s": 1.164,
+  "reduce_min_s": 1.042,
+  "reduce_avg_s": 1.1053333333333333
+}

@@ -1,0 +1,26 @@
+{
+  "course_download": {
+    "assignment_dataset": "large",
+    "url": "https://www.dropbox.com/s/cbf4r2at8dmd9ms/gplus_combined.txt.gz?dl=1",
+    "compressed_bytes": 398930514,
+    "compressed_sha256": "492b7a63ec7816cac6aa0466be8521a0528cb1df2ca7f0b554ad746adc6bbbee",
+    "substitution": false
+  },
+  "files": [
+    {
+      "file": "course_large.txt.gz",
+      "bytes": 398930514,
+      "sha256": "492b7a63ec7816cac6aa0466be8521a0528cb1df2ca7f0b554ad746adc6bbbee"
+    },
+    {
+      "file": "course_large.txt",
+      "bytes": 1341774104,
+      "sha256": "c3b6e5fa980c688ef783cd6afabc0c17a635e5e7ad8f3edf8396907d3f1ab451"
+    }
+  ],
+  "gzip_integrity": "passed gzip -t and complete decompression",
+  "observed_format": "two-column decimal edge list",
+  "edge_order": "follower-followee",
+  "direction_source": "https://snap.stanford.edu/data/readme-Ego.txt",
+  "direction_scope": "explicit upstream convention, not auto-detection"
+}

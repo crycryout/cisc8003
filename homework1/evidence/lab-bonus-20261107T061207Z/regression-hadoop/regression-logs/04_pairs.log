@@ -1,0 +1,82 @@
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+packageJobJar: [/tmp/hadoop-unjar11115528363332285201/] [] /tmp/streamjob9709904396766722079.jar tmpDir=null
+2026-11-07 06:39:07,965 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /master:28032
+2026-11-07 06:39:08,073 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /master:28032
+2026-11-07 06:39:08,218 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/experiment-user/.staging/job_1793963521105_0032
+2026-11-07 06:39:08,478 INFO mapred.FileInputFormat: Total input files to process : 3
+2026-11-07 06:39:08,535 INFO mapreduce.JobSubmitter: number of splits:3
+2026-11-07 06:39:08,715 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1793963521105_0032
+2026-11-07 06:39:08,715 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-07 06:39:08,828 INFO conf.Configuration: resource-types.xml not found
+2026-11-07 06:39:08,828 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-11-07 06:39:08,867 INFO impl.YarnClientImpl: Submitted application application_1793963521105_0032
+2026-11-07 06:39:08,889 INFO mapreduce.Job: The url to track the job: http://master:28088/proxy/application_1793963521105_0032/
+2026-11-07 06:39:08,890 INFO mapreduce.Job: Running job: job_1793963521105_0032
+2026-11-07 06:39:12,948 INFO mapreduce.Job: Job job_1793963521105_0032 running in uber mode : false
+2026-11-07 06:39:12,949 INFO mapreduce.Job:  map 0% reduce 0%
+2026-11-07 06:39:16,010 INFO mapreduce.Job:  map 100% reduce 0%
+2026-11-07 06:39:20,041 INFO mapreduce.Job:  map 100% reduce 67%
+2026-11-07 06:39:21,049 INFO mapreduce.Job:  map 100% reduce 100%
+2026-11-07 06:39:21,062 INFO mapreduce.Job: Job job_1793963521105_0032 completed successfully
+2026-11-07 06:39:21,151 INFO mapreduce.Job: Counters: 54
+	File System Counters
+		FILE: Number of bytes read=1368
+		FILE: Number of bytes written=1686269
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=6415
+		HDFS: Number of bytes written=2137
+		HDFS: Number of read operations=24
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=6
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=3
+		Launched reduce tasks=3
+		Data-local map tasks=3
+		Total time spent by all maps in occupied slots (ms)=13857
+		Total time spent by all reduces in occupied slots (ms)=9867
+		Total time spent by all map tasks (ms)=4619
+		Total time spent by all reduce tasks (ms)=3289
+		Total vcore-milliseconds taken by all map tasks=4619
+		Total vcore-milliseconds taken by all reduce tasks=3289
+		Total megabyte-milliseconds taken by all map tasks=7094784
+		Total megabyte-milliseconds taken by all reduce tasks=5051904
+	Map-Reduce Framework
+		Map input records=70
+		Map output records=90
+		Map output bytes=8929
+		Map output materialized bytes=1724
+		Input split bytes=441
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=90
+		Reduce shuffle bytes=1724
+		Reduce input records=90
+		Reduce output records=634
+		Spilled Records=180
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=60
+		CPU time spent (ms)=2880
+		Physical memory (bytes) snapshot=2059702272
+		Virtual memory (bytes) snapshot=32205590528
+		Total committed heap usage (bytes)=4831838208
+		Peak Map Physical memory (bytes)=413851648
+		Peak Map Virtual memory (bytes)=5321515008
+		Peak Reduce Physical memory (bytes)=285081600
+		Peak Reduce Virtual memory (bytes)=5461524480
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=5974
+	File Output Format Counters 
+		Bytes Written=2137
+2026-11-07 06:39:21,151 INFO streaming.StreamJob: Output directory: /hw1/bonus-20261107T061207Z/regression-compressed/04_pairs

@@ -1,0 +1,10 @@
+Found 4 items
+-rw-r--r--   1 experiment-user supergroup          0 2026-11-07 06:39 /hw1/bonus-20261107T061207Z/regression-compressed/04_pairs/_SUCCESS
+-rw-r--r--   1 experiment-user supergroup        653 2026-11-07 06:39 /hw1/bonus-20261107T061207Z/regression-compressed/04_pairs/part-00000.deflate
+-rw-r--r--   1 experiment-user supergroup        717 2026-11-07 06:39 /hw1/bonus-20261107T061207Z/regression-compressed/04_pairs/part-00001.deflate
+-rw-r--r--   1 experiment-user supergroup        767 2026-11-07 06:39 /hw1/bonus-20261107T061207Z/regression-compressed/04_pairs/part-00002.deflate
+Found 4 items
+-rw-r--r--   1 experiment-user supergroup          0 2026-11-07 06:39 /hw1/bonus-20261107T061207Z/regression-compressed/05_scores/_SUCCESS
+-rw-r--r--   1 experiment-user supergroup        500 2026-11-07 06:39 /hw1/bonus-20261107T061207Z/regression-compressed/05_scores/part-00000.deflate
+-rw-r--r--   1 experiment-user supergroup        551 2026-11-07 06:39 /hw1/bonus-20261107T061207Z/regression-compressed/05_scores/part-00001.deflate
+-rw-r--r--   1 experiment-user supergroup        510 2026-11-07 06:39 /hw1/bonus-20261107T061207Z/regression-compressed/05_scores/part-00002.deflate

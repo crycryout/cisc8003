@@ -1,0 +1,34 @@
+{
+  "scope": "Capacity-only sampled exact pair records; not ranking/bonus validation",
+  "codec": "zlib default level (Hadoop DefaultCodec equivalent)",
+  "samples": [
+    {
+      "stratum": "low",
+      "selected_followees": 25,
+      "pairs": 509,
+      "logical_bytes": 24432,
+      "zlib_bytes": 3342,
+      "compressed_bytes_per_pair": 6.56581532416503,
+      "elapsed_s": 0.0011800790671259165
+    },
+    {
+      "stratum": "middle",
+      "selected_followees": 25,
+      "pairs": 12239,
+      "logical_bytes": 587472,
+      "zlib_bytes": 53045,
+      "compressed_bytes_per_pair": 4.3340959228695155,
+      "elapsed_s": 0.018088411772623658
+    },
+    {
+      "stratum": "high",
+      "selected_followees": 35,
+      "pairs": 1763389,
+      "logical_bytes": 84642672,
+      "zlib_bytes": 16351419,
+      "compressed_bytes_per_pair": 9.272723715527317,
+      "elapsed_s": 3.2789418960455805
+    }
+  ],
+  "limitation": "Sampling within followee lists is not an upper bound; capacity also budgets uncompressed worst case and 10-16 bytes per pair shuffle scenarios."
+}

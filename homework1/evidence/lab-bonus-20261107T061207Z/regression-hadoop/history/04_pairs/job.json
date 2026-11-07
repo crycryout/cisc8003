@@ -1,0 +1,28 @@
+{
+  "job": {
+    "submitTime": 1794033548848,
+    "startTime": 1794033551090,
+    "finishTime": 1794033559241,
+    "id": "job_1793963521105_0032",
+    "name": "hw1-04_pairs",
+    "queue": "default",
+    "user": "experiment-user",
+    "state": "SUCCEEDED",
+    "mapsTotal": 3,
+    "mapsCompleted": 3,
+    "reducesTotal": 3,
+    "reducesCompleted": 3,
+    "uberized": false,
+    "diagnostics": "",
+    "avgMapTime": 1539,
+    "avgReduceTime": 146,
+    "avgShuffleTime": 940,
+    "avgMergeTime": 9,
+    "failedReduceAttempts": 0,
+    "killedReduceAttempts": 0,
+    "successfulReduceAttempts": 3,
+    "failedMapAttempts": 0,
+    "killedMapAttempts": 0,
+    "successfulMapAttempts": 3
+  }
+}

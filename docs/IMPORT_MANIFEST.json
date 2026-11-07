@@ -1,8 +1,8 @@
 {
-  "snapshot": "2026-11-07 bonus handoff documentation; measured experiment evidence unchanged",
+  "snapshot": "2026-11-07 large-graph bonus execution checkpoint",
   "scope": "Current repository bytes, including redacted real execution evidence. Byte verification is not itself a cluster benchmark.",
   "base_import_commit": "30d5420723ebbf5d4608c5141941e9a669b5bd89",
-  "updated_at_utc": "2026-11-07T05:57:52.849382+00:00",
+  "updated_at_utc": "2026-11-07T06:40:48.000991+00:00",
   "files": [
     {
       "path": ".gitattributes",
@@ -61,8 +61,8 @@
     },
     {
       "path": "docs/WORK_LOG.md",
-      "bytes": 11433,
-      "sha256": "363a3223286ac2e906db7f9321ecc730b065f78ef07c46ba1146d1fbeb6bdde2"
+      "bytes": 14693,
+      "sha256": "4d1c282350756539e955e1e4161d45149a173f19c3cf3674edaa8a6db8a2ab9c"
     },
     {
       "path": "docs/history/ORIGINAL_PACKAGE_README_2026-11-06.md",
@@ -1680,6 +1680,321 @@
       "sha256": "bc77c0c7ad851da1a79fdf02279b18b68ad2471d6c6ad3a3e045cad1ebeb3c28"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/README.md",
+      "bytes": 399,
+      "sha256": "cd2346c3c65cf9f69884e4440621a763e1da4161efe0fc2b6ce1c3ebb315c12c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-decision.json",
+      "bytes": 3000,
+      "sha256": "e341f39ce55e21469d765ccdcc3a761564c29eb6479b39189f6b00efeeb8e7df"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/01_dedup/counters.json",
+      "bytes": 10647,
+      "sha256": "3889500013a40231cbf5755211402015fadcc0bc5401adc42ae63f604d702eab"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/01_dedup/job.json",
+      "bytes": 695,
+      "sha256": "0a1650e323bb24142521c8f4ce89cabfb94d2a873fa5144d50790f59296171d1"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/01_dedup/summary.json",
+      "bytes": 349,
+      "sha256": "5f076d8eabbfaed8ab8fbaf5b800f99266c2d52042c3a91c9be9b2cc8abac54b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/01_dedup/tasks.json",
+      "bytes": 5161,
+      "sha256": "be77f8406cb285bc630605573840d261899fc5866a13235cd57bf5e8a339981c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/02_universe/counters.json",
+      "bytes": 10425,
+      "sha256": "6e12d99790b7cbf036bfb6763a424c842e1f504834604f49c52c8de4379a981c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/02_universe/job.json",
+      "bytes": 688,
+      "sha256": "36da406854e69088f4b3238b0e2407e56fc7dfa9fcd0e91c999b171a5b5f5af0"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/02_universe/summary.json",
+      "bytes": 342,
+      "sha256": "a7a55de68dd096b320403b1bfb8ce064134444cadf9ac0540ce13bcd1560b41d"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/02_universe/tasks.json",
+      "bytes": 2268,
+      "sha256": "7571aa9985c5a670abdffe2aec8a3665613bc675c27ea97347f402ffe1bb9ed4"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/03_blocks/counters.json",
+      "bytes": 11399,
+      "sha256": "99960db10b6f1cbbc7aec48077e63f8a53038b5f1786e5aa64a451a73070911d"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/03_blocks/job.json",
+      "bytes": 692,
+      "sha256": "afffbcc08b7aabaabef88cbe617ba00d6c7211b8ef98b8b5e8314a0b7d0f094a"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/03_blocks/summary.json",
+      "bytes": 345,
+      "sha256": "629114134f618ae1de2f74c071d8d0ded7542dcf2035d3f0ed6e3adc4eeb32a0"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/03_blocks/tasks.json",
+      "bytes": 3880,
+      "sha256": "ea4ad476814caa3a2292d28a31478986b72f8b384ddf48ac533157686f76b06b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/timings.csv",
+      "bytes": 497,
+      "sha256": "14905959f36bd499fa21ecd288cfba6edc24c5d859de2f8c97cd238b96f633c7"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/community-logs/01_dedup.log",
+      "bytes": 5153,
+      "sha256": "f43473002aaf2535b3f877268aa983af846b3d4f5c6dbe646be322728177a4a0"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/community-logs/02_universe.log",
+      "bytes": 3967,
+      "sha256": "2da3f773fb5d50731ddc15422268dbdc4eceb7e6fe54ae6694e68189bcb65f84"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/community-logs/03_blocks.log",
+      "bytes": 4458,
+      "sha256": "3aacc6dbc6d205f96e37e4f5b32d1df114ce54bcadcf22e1bc5218d533cde195"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/compression-pilot.json",
+      "bytes": 1071,
+      "sha256": "3d12ab24f80de07b883849052c78454a6f7a313099aa846ea611d2bb33270dd3"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/input-manifest.json",
+      "bytes": 935,
+      "sha256": "bfd7b3e0119d13a340badca7116d060a902137c06bd36f381ca6af995543e69b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/input-statistics.json",
+      "bytes": 91399,
+      "sha256": "593d90b9d4f8d3bb9ca0dba0d8cea0d3d47bfb7c269b03b97e44b3ea9da8fc31"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/01_dedup/counters.json",
+      "bytes": 10425,
+      "sha256": "5cbd510626401de695331905daef5657faf84ed193f4353345fc5617dc2e1b58"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/01_dedup/job.json",
+      "bytes": 686,
+      "sha256": "e05d646239ed8606418a7331afafeb9a1bd4fca27434ebca61c1b49f57b38ad4"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/01_dedup/summary.json",
+      "bytes": 329,
+      "sha256": "abcb13d9ac803dca4922b40ff61a66b5fccdc5f780498ff9bbfb8a5380033023"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/01_dedup/tasks.json",
+      "bytes": 1638,
+      "sha256": "1324572cee716394da8954282268ae7ffa0558e0f77dc7dee736f023435e1ff1"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/02_universe/counters.json",
+      "bytes": 10388,
+      "sha256": "883e25126a8703db27b3c619f1d11271ce45e0a39d82f8c8f87bc4772793dbd8"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/02_universe/job.json",
+      "bytes": 690,
+      "sha256": "70958c76fdbccd6c70d74b74a6f87ca786385f852802639ce1e145271dce828a"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/02_universe/summary.json",
+      "bytes": 342,
+      "sha256": "fbdb45b3c16978f3d2f497c6a336388102fe59c4d44a1f9a4974e91ee4c23b6b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/02_universe/tasks.json",
+      "bytes": 1314,
+      "sha256": "20730be8b7f0f26d749144941721d3db90c456329caa2fa5a7d294f6095a3a57"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/03_blocks/counters.json",
+      "bytes": 11178,
+      "sha256": "8c34cae096cd4eeb160c42531d68bc46ffefc87047b31f7d3f27c97833d0a6bb"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/03_blocks/job.json",
+      "bytes": 687,
+      "sha256": "c23e80621c34d93190c37fd0d28e8e78e4e18845f2dd17de8dad505460b6d357"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/03_blocks/summary.json",
+      "bytes": 355,
+      "sha256": "78639489d2129a02b078f4cd4d9f682bab3d58cf9482cf2241a0eec6414e7364"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/03_blocks/tasks.json",
+      "bytes": 1956,
+      "sha256": "68d3c4c80da9674771b0af0535dbf9cb0009a8ac48091653b4d47ae4819d9ea7"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/04_pairs/counters.json",
+      "bytes": 10404,
+      "sha256": "387cf521998e0c554cb08f6f5c6e0e3985e2c2f5185e07ca045a34c22826764d"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/04_pairs/job.json",
+      "bytes": 685,
+      "sha256": "1f161730ea4517311a08bd4e3149c56c574e91161da3b763d42a900906c895ec"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/04_pairs/summary.json",
+      "bytes": 355,
+      "sha256": "b6ca43cec36c3e7f5e439373b8eb5d53993c5032af3b7daaab249fb50624419f"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/04_pairs/tasks.json",
+      "bytes": 1956,
+      "sha256": "43428950dac136f49ef1967bbb2b20b759507dc108e8fb58bce9ec7cf1379e26"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/05_scores/counters.json",
+      "bytes": 10425,
+      "sha256": "29a90f9bdd5f78dfd8f10f0f34c1a1b7a7dab65e9d8a8b305558ff0e92e482a7"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/05_scores/job.json",
+      "bytes": 687,
+      "sha256": "685be3b9a95cf2d101bc2a62d9e074b1c62182ed0f87102321e0fea8dd65bbab"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/05_scores/summary.json",
+      "bytes": 354,
+      "sha256": "d7c7bc36a1a10b6a924b2028b34bffa346a908577299edc75c5498eb3e0b3efa"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/05_scores/tasks.json",
+      "bytes": 1956,
+      "sha256": "c6acddd82f9b68c23cfa5502e096954655b61b37064270a11dc9cfec0464321b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/06_top10/counters.json",
+      "bytes": 10416,
+      "sha256": "b7658ba53d2f7b2c7b1ce52d200e2dfab5750489581a65e8fd322b220e16683a"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/06_top10/job.json",
+      "bytes": 686,
+      "sha256": "f35c5eae62de9fa00c41f98dac649843542b6abef942220452865d7930f62dc7"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/06_top10/summary.json",
+      "bytes": 342,
+      "sha256": "de859bcd057078e40ccae6365bb3a7210515d2655fc7826aea03f87e38b6f27a"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/06_top10/tasks.json",
+      "bytes": 1956,
+      "sha256": "6209321306009cf07583a3a014636eba8fc82d75793bc8b8ebd033c2420d55d2"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/manifest.json",
+      "bytes": 2426,
+      "sha256": "ffd19028c8b1cbf8519dc8ac6057001794f0e3c87094e3122224d0aba6df64c0"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/timings.csv",
+      "bytes": 828,
+      "sha256": "dbe47e6c8f0014e0b82777562ca7dc336d191db4cb1f5353550be32719614f67"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/input-statistics.json",
+      "bytes": 4234,
+      "sha256": "245efd0f13e83d4a77510649f79ab9816434a1b3b40f3d6b11d768c6a771f7de"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/regression-layout.txt",
+      "bytes": 1196,
+      "sha256": "36da1fe715c78cae0b55d270c7acad8eca9e42cccf054f61f27384b701e51821"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/regression-logs/01_dedup.log",
+      "bytes": 4037,
+      "sha256": "cd9750a4be15065095e380830edbe5adeb219bee8793672f5859a3ed5f359e46"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/regression-logs/02_universe.log",
+      "bytes": 3961,
+      "sha256": "96d2be6825dfdeaea406681c08695a1ceae4a2179853321384f158ccbe17682a"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/regression-logs/03_blocks.log",
+      "bytes": 4111,
+      "sha256": "1e5c32832f07b3025787568b365f33c18a76526114d4ee4518a0e1b2da3d1e85"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/regression-logs/04_pairs.log",
+      "bytes": 4028,
+      "sha256": "da56dca4a460bccc53cfd5538fc41040bdfd8966e6154349d9e22b7243c16bf4"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/regression-logs/05_scores.log",
+      "bytes": 4038,
+      "sha256": "b8e13b80f59763c882b08b7f487d09b126c49a1bb808a732d860fd5977ffb080"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/regression-logs/06_top10.log",
+      "bytes": 4196,
+      "sha256": "cf95ca4cf3eaff12e5223844972ef1658cda7c573ee0ea50ecad78966615c391"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/regression-output.txt",
+      "bytes": 6649,
+      "sha256": "c186384f9e5d07965190af55c890a7af7c238438301816848f95fd7cb120b4b7"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/validation.json",
+      "bytes": 4403,
+      "sha256": "a2069267883be1eb981f9fb4ea7f5c26f782c8a39f5daf56f4d978ab8359ab53"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-medium/suffix-comparison.json",
+      "bytes": 114,
+      "sha256": "07ca6507863d6c6b26fd78ebf534f19f776fb127fd359a4b67ff816e589205b0"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-medium/validation.json",
+      "bytes": 21015,
+      "sha256": "ceb61a3d2f1867bace7355609008df7b2a1137a1bf7dd512e66415e8c53b8d93"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-transition/gpu01.log",
+      "bytes": 320,
+      "sha256": "d2e9cf51a83c04a2d9634c92607681062230b77f19bc8371219c93e32517bcf7"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-transition/gpu02.log",
+      "bytes": 321,
+      "sha256": "a0405d4247dbd1e3f70e104fce38271124090c5f0adf24cf89d963d8c10c90dc"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-transition/h800.log",
+      "bytes": 286,
+      "sha256": "c9a8f06a8555272fe50631550e894ba2213098c809039657650dbcb59f053a14"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-transition/yarn-nodes.txt",
+      "bytes": 1554,
+      "sha256": "8d249019452abf1d1d5c24a503f747c3a933588c1f6f43c55549857d79336b2c"
+    },
+    {
       "path": "homework1/report/Homework1_Report.pdf",
       "bytes": 1426796,
       "sha256": "0cc1641580170bba3ff00a9dcd57b2996dbe09fd1d8f29250eb5757757aab903"
@@ -1815,6 +2130,11 @@
       "sha256": "7f2fd4ec4fd2bd3659ca0ef30efd062393d68b6fb18f4e3fb5565ac69c4b4510"
     },
     {
+      "path": "homework1/src/graph_audit.py",
+      "bytes": 19367,
+      "sha256": "346997f73ca0b4997dd48ddd1543d426f55130057d3e8fedc52ef4ec17ec4b3f"
+    },
+    {
       "path": "homework1/src/local_demo.py",
       "bytes": 997,
       "sha256": "2652c7d2e0d84929e90a79f6a137de70dfa8f8b441052c1a4bf72ed9956322ab"
@@ -1831,8 +2151,8 @@
     },
     {
       "path": "homework1/src/run_community.sh",
-      "bytes": 5074,
-      "sha256": "a2566b3841e8c23a4dd2e32c0659d4cd33f216d1299e83dcffb588cb4fe4a96a"
+      "bytes": 7070,
+      "sha256": "fad4f81fcac70782c276c3fe50bab5eeeedaa24ddeb92892d545e0258e8fcb5f"
     },
     {
       "path": "homework1/src/run_wordcount.py",
@@ -1850,9 +2170,19 @@
       "sha256": "eeb90c623834e9ab882cebf0dd1607b6d0d6bd5b267f36adfb42dbe5aa96510a"
     },
     {
+      "path": "homework1/tests/test_community_runner.py",
+      "bytes": 4718,
+      "sha256": "c54948691b0d8b2310e2ba8253bb0a31efee2f1d91d0d803b19f1ae567c606b7"
+    },
+    {
       "path": "homework1/tests/test_fetch_yelp.py",
       "bytes": 3433,
       "sha256": "4cf7480f5cdb0af2168b6d4abf70823079cf5a41ff1498a69d7d02e94e521053"
+    },
+    {
+      "path": "homework1/tests/test_graph_audit.py",
+      "bytes": 6570,
+      "sha256": "6979324d88ea93a609e6d4e4f8142827c6c6dce5fab3622c53d518b0156aab86"
     },
     {
       "path": "homework1/tests/test_metrics.py",

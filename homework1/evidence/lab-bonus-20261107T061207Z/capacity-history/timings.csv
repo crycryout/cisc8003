@@ -1,0 +1,4 @@
+job_id,state,actual_mappers,actual_reducers,job_s,failed_map_attempts,failed_reduce_attempts,map_max_s,map_min_s,map_avg_s,reduce_max_s,reduce_min_s,reduce_avg_s,stage
+job_1793963521105_0026,SUCCEEDED,10,6,53.216,0,0,41.71,24.474,32.2531,23.906,17.433,21.427666666666667,01_dedup
+job_1793963521105_0027,SUCCEEDED,6,1,8.161,0,0,3.115,2.867,2.9888333333333335,1.062,1.062,1.062,02_universe
+job_1793963521105_0028,SUCCEEDED,6,6,26.131,0,0,12.34,8.894,11.055333333333333,11.384,4.979,8.4125,03_blocks

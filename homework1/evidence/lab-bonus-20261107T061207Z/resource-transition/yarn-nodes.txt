@@ -1,0 +1,27 @@
+Picked up JAVA_TOOL_OPTIONS: -Djdk.net.hosts.file=/home/experiment-user/cisc8003/.local/hosts
+2026-11-07 06:38:56,942 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /master:28032
+2026-11-07 06:38:57,161 INFO conf.Configuration: resource-types.xml not found
+2026-11-07 06:38:57,162 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+Total Nodes:3
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+worker3:28041	        RUNNING	worker3:28042	                           0
+Detailed Node Information :
+	Configured Resources : <memory:12288, vCores:8>
+	Allocated Resources : <memory:0, vCores:0>
+	Resource Utilization by Node : PMem:40286 MB, VMem:43376 MB, VCores:0.06997667
+	Resource Utilization by Containers : PMem:0 MB, VMem:0 MB, VCores:0.0
+	Node-Labels : 
+worker1:28041	        RUNNING	worker1:28042	                           0
+Detailed Node Information :
+	Configured Resources : <memory:12288, vCores:8>
+	Allocated Resources : <memory:0, vCores:0>
+	Resource Utilization by Node : PMem:156293 MB, VMem:156644 MB, VCores:1.1558961
+	Resource Utilization by Containers : PMem:0 MB, VMem:0 MB, VCores:0.0
+	Node-Labels : 
+worker2:28041	        RUNNING	worker2:28042	                           4
+Detailed Node Information :
+	Configured Resources : <memory:12288, vCores:8>
+	Allocated Resources : <memory:6144, vCores:4>
+	Resource Utilization by Node : PMem:8018 MB, VMem:8018 MB, VCores:1.91
+	Resource Utilization by Containers : PMem:0 MB, VMem:0 MB, VCores:0.0
+	Node-Labels : 

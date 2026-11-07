@@ -1,0 +1,361 @@
+{
+  "jobCounters": {
+    "id": "job_1793963521105_0033",
+    "counterGroup": [
+      {
+        "counterGroupName": "org.apache.hadoop.mapreduce.FileSystemCounter",
+        "counter": [
+          {
+            "name": "FILE_BYTES_READ",
+            "totalCounterValue": 1994,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 1994
+          },
+          {
+            "name": "FILE_BYTES_WRITTEN",
+            "totalCounterValue": 1688826,
+            "mapCounterValue": 845014,
+            "reduceCounterValue": 843812
+          },
+          {
+            "name": "FILE_READ_OPS",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "FILE_LARGE_READ_OPS",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "FILE_WRITE_OPS",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "HDFS_BYTES_READ",
+            "totalCounterValue": 2599,
+            "mapCounterValue": 2599,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "HDFS_BYTES_WRITTEN",
+            "totalCounterValue": 1561,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 1561
+          },
+          {
+            "name": "HDFS_READ_OPS",
+            "totalCounterValue": 24,
+            "mapCounterValue": 9,
+            "reduceCounterValue": 15
+          },
+          {
+            "name": "HDFS_LARGE_READ_OPS",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "HDFS_WRITE_OPS",
+            "totalCounterValue": 6,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 6
+          },
+          {
+            "name": "HDFS_BYTES_READ_EC",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          }
+        ]
+      },
+      {
+        "counterGroupName": "org.apache.hadoop.mapreduce.JobCounter",
+        "counter": [
+          {
+            "name": "TOTAL_LAUNCHED_MAPS",
+            "totalCounterValue": 3,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "TOTAL_LAUNCHED_REDUCES",
+            "totalCounterValue": 3,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "DATA_LOCAL_MAPS",
+            "totalCounterValue": 3,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "SLOTS_MILLIS_MAPS",
+            "totalCounterValue": 11526,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "SLOTS_MILLIS_REDUCES",
+            "totalCounterValue": 9642,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "MILLIS_MAPS",
+            "totalCounterValue": 3842,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "MILLIS_REDUCES",
+            "totalCounterValue": 3214,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "VCORES_MILLIS_MAPS",
+            "totalCounterValue": 3842,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "VCORES_MILLIS_REDUCES",
+            "totalCounterValue": 3214,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "MB_MILLIS_MAPS",
+            "totalCounterValue": 5901312,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "MB_MILLIS_REDUCES",
+            "totalCounterValue": 4936704,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          }
+        ]
+      },
+      {
+        "counterGroupName": "org.apache.hadoop.mapreduce.TaskCounter",
+        "counter": [
+          {
+            "name": "MAP_INPUT_RECORDS",
+            "totalCounterValue": 634,
+            "mapCounterValue": 634,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "MAP_OUTPUT_RECORDS",
+            "totalCounterValue": 634,
+            "mapCounterValue": 634,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "MAP_OUTPUT_BYTES",
+            "totalCounterValue": 28706,
+            "mapCounterValue": 28706,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "MAP_OUTPUT_MATERIALIZED_BYTES",
+            "totalCounterValue": 2887,
+            "mapCounterValue": 2887,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "SPLIT_RAW_BYTES",
+            "totalCounterValue": 462,
+            "mapCounterValue": 462,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "COMBINE_INPUT_RECORDS",
+            "totalCounterValue": 634,
+            "mapCounterValue": 634,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "COMBINE_OUTPUT_RECORDS",
+            "totalCounterValue": 525,
+            "mapCounterValue": 525,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "REDUCE_INPUT_GROUPS",
+            "totalCounterValue": 368,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 368
+          },
+          {
+            "name": "REDUCE_SHUFFLE_BYTES",
+            "totalCounterValue": 2887,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 2887
+          },
+          {
+            "name": "REDUCE_INPUT_RECORDS",
+            "totalCounterValue": 525,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 525
+          },
+          {
+            "name": "REDUCE_OUTPUT_RECORDS",
+            "totalCounterValue": 368,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 368
+          },
+          {
+            "name": "SPILLED_RECORDS",
+            "totalCounterValue": 1050,
+            "mapCounterValue": 525,
+            "reduceCounterValue": 525
+          },
+          {
+            "name": "SHUFFLED_MAPS",
+            "totalCounterValue": 9,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 9
+          },
+          {
+            "name": "FAILED_SHUFFLE",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "MERGED_MAP_OUTPUTS",
+            "totalCounterValue": 9,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 9
+          },
+          {
+            "name": "GC_TIME_MILLIS",
+            "totalCounterValue": 44,
+            "mapCounterValue": 25,
+            "reduceCounterValue": 19
+          },
+          {
+            "name": "CPU_MILLISECONDS",
+            "totalCounterValue": 3350,
+            "mapCounterValue": 1840,
+            "reduceCounterValue": 1510
+          },
+          {
+            "name": "PHYSICAL_MEMORY_BYTES",
+            "totalCounterValue": 2083409920,
+            "mapCounterValue": 1245011968,
+            "reduceCounterValue": 838397952
+          },
+          {
+            "name": "VIRTUAL_MEMORY_BYTES",
+            "totalCounterValue": 32202014720,
+            "mapCounterValue": 15824257024,
+            "reduceCounterValue": 16377757696
+          },
+          {
+            "name": "COMMITTED_HEAP_BYTES",
+            "totalCounterValue": 4831838208,
+            "mapCounterValue": 2415919104,
+            "reduceCounterValue": 2415919104
+          },
+          {
+            "name": "MAP_PHYSICAL_MEMORY_BYTES_MAX",
+            "totalCounterValue": 426905600,
+            "mapCounterValue": 426905600,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "MAP_VIRTUAL_MEMORY_BYTES_MAX",
+            "totalCounterValue": 5387726848,
+            "mapCounterValue": 5387726848,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "REDUCE_PHYSICAL_MEMORY_BYTES_MAX",
+            "totalCounterValue": 286818304,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 286818304
+          },
+          {
+            "name": "REDUCE_VIRTUAL_MEMORY_BYTES_MAX",
+            "totalCounterValue": 5461803008,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 5461803008
+          }
+        ]
+      },
+      {
+        "counterGroupName": "Shuffle Errors",
+        "counter": [
+          {
+            "name": "BAD_ID",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "CONNECTION",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "IO_ERROR",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "WRONG_LENGTH",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "WRONG_MAP",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          },
+          {
+            "name": "WRONG_REDUCE",
+            "totalCounterValue": 0,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 0
+          }
+        ]
+      },
+      {
+        "counterGroupName": "org.apache.hadoop.mapreduce.lib.input.FileInputFormatCounter",
+        "counter": [
+          {
+            "name": "BYTES_READ",
+            "totalCounterValue": 2137,
+            "mapCounterValue": 2137,
+            "reduceCounterValue": 0
+          }
+        ]
+      },
+      {
+        "counterGroupName": "org.apache.hadoop.mapreduce.lib.output.FileOutputFormatCounter",
+        "counter": [
+          {
+            "name": "BYTES_WRITTEN",
+            "totalCounterValue": 1561,
+            "mapCounterValue": 0,
+            "reduceCounterValue": 1561
+          }
+        ]
+      }
+    ]
+  }
+}
