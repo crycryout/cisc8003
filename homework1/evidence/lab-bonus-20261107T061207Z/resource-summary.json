@@ -1,0 +1,83 @@
+{
+  "sampling_interval_s": 45,
+  "scope": "Observed samples; may miss transient extrema. Filesystem free includes shared-host changes. Task RSS is process VmHWM, not aggregate task lifetime memory.",
+  "monitor_samples": 134,
+  "process_samples": 127,
+  "first_utc": "2026-11-07T06:41:30.725134+00:00",
+  "last_utc": "2026-11-07T08:20:36.212473+00:00",
+  "worker_profile": {
+    "initial": {
+      "vcores_each": 8,
+      "yarn_memory_mib_each": 12288
+    },
+    "current": {
+      "h800": {
+        "vcores": 24,
+        "yarn_memory_mib": 36864,
+        "affinity": "72-95"
+      },
+      "rtx5090_a": {
+        "vcores": 8,
+        "yarn_memory_mib": 12288,
+        "affinity": "12-19"
+      },
+      "rtx5090_b": {
+        "vcores": 8,
+        "yarn_memory_mib": 12288,
+        "affinity": "12-19"
+      }
+    },
+    "task_memory_mib": 1536,
+    "task_heap_mib": 768,
+    "h800_shuffle_on_separate_filesystem": true,
+    "online_update_utc": "2026-11-07T07:23:02.520236+00:00",
+    "no_node_restart_during_online_update": true
+  },
+  "minimum_filesystem_free_bytes": {
+    "worker1": {
+      "home": 322651627520,
+      "tmp": 357241344000
+    },
+    "worker2": {
+      "home": 609961381888,
+      "tmp": 33419554816
+    },
+    "worker3": {
+      "home": 416475164672,
+      "tmp": 33402834944
+    },
+    "master": {
+      "home": 448248967168,
+      "tmp": 448248967168
+    }
+  },
+  "maximum_process_hwm_mib": {
+    "worker1": {
+      "community.py": 13.48,
+      "YarnChild": 1106.605,
+      "MRAppMaster": 940.297,
+      "NodeManager": 658.309,
+      "DataNode": 526.297
+    },
+    "worker2": {
+      "community.py": 16.98,
+      "YarnChild": 990.754,
+      "MRAppMaster": 629.477,
+      "NodeManager": 607.578,
+      "DataNode": 537.195
+    },
+    "worker3": {
+      "community.py": 16.977,
+      "YarnChild": 991.988,
+      "MRAppMaster": 530.68,
+      "NodeManager": 607.582,
+      "DataNode": 517.996
+    },
+    "master": {
+      "NameNode": 568.781,
+      "ResourceManager": 649.348,
+      "JobHistoryServer": 602.203
+    }
+  },
+  "maximum_allocated_containers": 40
+}

@@ -72,7 +72,10 @@ for ((index=START_STAGE-1; index<6; index++)); do
   [[ ! -e "$LOG_DIR/${STAGES[index]}.log" ]] || { echo "Existing stage log must be archived before retry: ${STAGES[index]}" >&2; exit 2; }
   if [[ ${STOP_AFTER_BLOCKS:-0} == 1 && $index == 2 ]]; then break; fi
 done
-COMMON=(-D mapreduce.output.fileoutputformat.compress=false -D mapreduce.map.output.compress=true
+# Wide map partitions can burst beyond a small reducer heap during shuffle.
+# Keep fetched map output on disk; the exact key/sum/sort semantics are unchanged.
+COMMON=(-D mapreduce.reduce.shuffle.memory.limit.percent=0.0
+  -D mapreduce.output.fileoutputformat.compress=false -D mapreduce.map.output.compress=true
   -D mapreduce.map.output.compress.codec=org.apache.hadoop.io.compress.DefaultCodec
   -D mapreduce.map.speculative=false -D mapreduce.reduce.speculative=false
   -D mapreduce.map.memory.mb="$TASK_MEMORY" -D mapreduce.map.java.opts="-Xmx${TASK_HEAP}m"

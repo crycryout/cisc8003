@@ -1,0 +1,17 @@
+{
+  "jobs": {
+    "job_1793963521105_0036": {
+      "mapreduce.reduce.shuffle.memory.limit.percent": "0.25",
+      "mapreduce.reduce.shuffle.input.buffer.percent": "0.7",
+      "mapreduce.reduce.java.opts": "-Xmx768m",
+      "mapreduce.reduce.memory.mb": "1536"
+    },
+    "job_1793963521105_0037": {
+      "mapreduce.reduce.shuffle.memory.limit.percent": "0.25",
+      "mapreduce.reduce.shuffle.input.buffer.percent": "0.7",
+      "mapreduce.reduce.java.opts": "-Xmx768m",
+      "mapreduce.reduce.memory.mb": "1536"
+    }
+  },
+  "scope": "Measured frozen large-run properties, distinct from the subsequently guarded submission runner"
+}

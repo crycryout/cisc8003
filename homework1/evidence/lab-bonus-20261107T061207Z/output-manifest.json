@@ -1,0 +1,24 @@
+{
+  "run": "bonus-20261107T061207Z",
+  "full_output": {
+    "file": "large_all_users_top10.txt",
+    "bytes": 26042588,
+    "sha256": "8fa379b42403b5ffe9f4d0541d9d1ab955d4418d0c2e800bb7c1d494a2b1587d",
+    "rows": 107614
+  },
+  "artifacts": [
+    {
+      "path": "artifacts/large_all_users_top10_lab-bonus-20261107T061207Z.txt.gz",
+      "bytes": 7075298,
+      "sha256": "244d92ab2dd7ebf3af4ff9e65defbb7ac760fbc47e75c8d9d2c8d74a451f16a1",
+      "origin": "Actual four-physical-host HDFS/YARN bonus bonus-20261107T061207Z"
+    },
+    {
+      "path": "artifacts/large_by_suffix_lab-bonus-20261107T061207Z.tar.gz",
+      "bytes": 7111984,
+      "sha256": "861268bce453bdcbd880d7c058e23b97cf1d7e591e48ea1e6541e4ed2f52a629",
+      "origin": "Actual four-physical-host HDFS/YARN bonus bonus-20261107T061207Z"
+    }
+  ],
+  "archive_verification": "Full gzip decompression hash and every one of 1000 tar member hashes/bytes/neutral UID metadata verified."
+}

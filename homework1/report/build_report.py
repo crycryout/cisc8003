@@ -11,7 +11,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle, Preformatted, Image
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle, Preformatted, Image, KeepTogether
 
 ROOT = Path(__file__).resolve().parent
 parser = argparse.ArgumentParser(description=__doc__)
@@ -74,7 +74,7 @@ while i < len(lines):
         while i < len(lines) and not lines[i].startswith('```'):
             code.append(lines[i]); i += 1
         i += 1
-        story.append(Preformatted('\n'.join(code),styles['code']))
+        story.append(KeepTogether([Preformatted('\n'.join(code),styles['code'])]))
         continue
     if line.startswith('|'):
         rows = []

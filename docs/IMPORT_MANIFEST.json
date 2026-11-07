@@ -1,8 +1,8 @@
 {
-  "snapshot": "2026-11-07 large-graph bonus execution checkpoint",
+  "snapshot": "2026-11-07 completed mandatory and course large-graph bonus, independent validation and final report",
   "scope": "Current repository bytes, including redacted real execution evidence. Byte verification is not itself a cluster benchmark.",
   "base_import_commit": "30d5420723ebbf5d4608c5141941e9a669b5bd89",
-  "updated_at_utc": "2026-11-07T07:29:31.399191+00:00",
+  "updated_at_utc": "2026-11-07T08:46:00.617053+00:00",
   "files": [
     {
       "path": ".gitattributes",
@@ -16,18 +16,18 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 3839,
-      "sha256": "5f4f06419394fca9a3dc169a6fb770f3e5c58a292f4860cfab529ee22432f646"
+      "bytes": 3850,
+      "sha256": "e5f13f18335ab7d78f107c440d2af7afe17ae80fc4cbd7e8cd714af146ee0876"
     },
     {
       "path": "README.md",
-      "bytes": 3079,
-      "sha256": "007cb810b115d24148b53cad120d8727d7dc6cae015a4cc3237f9f16132657d4"
+      "bytes": 3780,
+      "sha256": "827dbe2deea954415841b76bb4a7949a238891e32532f8fb58c32eb7bebb672d"
     },
     {
       "path": "docs/ACCEPTANCE.md",
-      "bytes": 2295,
-      "sha256": "c0f6f3201171fa0d11a5d36353c27d3b9fc9fbd36c88fee913b6206040c82820"
+      "bytes": 2745,
+      "sha256": "72bce3053ff2f4a8a726de32f70f03f0ae84f5bd9556943cd5fe1a72bb558078"
     },
     {
       "path": "docs/ASSIGNMENT_REQUIREMENTS.md",
@@ -36,18 +36,18 @@
     },
     {
       "path": "docs/BONUS_COMPLETION_HANDOFF.md",
-      "bytes": 16514,
-      "sha256": "fb1c71859cd85e96bc67d6a81ab9cf006130e0e6b46d9c4e294c93ae08771503"
+      "bytes": 16746,
+      "sha256": "0e8f6064243585bc683452d0060e57e1e01e54eea8ae72eec4e22335b55b9709"
     },
     {
       "path": "docs/CODE_PACKAGE.md",
-      "bytes": 2455,
-      "sha256": "a325380ea8bd71a7585315fbcebbfa9e3124d9eb6034d0cf324bfb3989b2768c"
+      "bytes": 2600,
+      "sha256": "44ee293b5f65f2555f4b3abd7300372691ba3ec75d6102abfca11c0a626577c9"
     },
     {
       "path": "docs/EVIDENCE_INDEX.md",
-      "bytes": 4829,
-      "sha256": "6a67cfe28513f33564bf25dd096b8df7b6617c0b62ac296a06a3031080167656"
+      "bytes": 6658,
+      "sha256": "ef7986795f7b3e27ddcca14d6ea73616d80953d64c7a4b7cb4c8d57b51c58a33"
     },
     {
       "path": "docs/FINAL_SUBMISSION.md",
@@ -61,18 +61,18 @@
     },
     {
       "path": "docs/LAB_EXECUTION.md",
-      "bytes": 4025,
-      "sha256": "1c73b70f75a7bce5ac48b5dd68c4493fb30ee34f6b8643f2359104b025ff4f27"
+      "bytes": 6260,
+      "sha256": "be9e26972e416c5bd1b88b155ddf6a0b0d4f3f4e23a7ee36cbb39e5593e27373"
     },
     {
       "path": "docs/NEXT_CODEX_PROMPT.md",
-      "bytes": 1727,
-      "sha256": "ec02c860be05bc5c6134b4aaeb1aab5d0702229037fbbe5a83e71d3264657318"
+      "bytes": 555,
+      "sha256": "1b8978df9378d3d4b5879512e233e1d108ed3489731b7c243f807a1b881f1f38"
     },
     {
       "path": "docs/WORK_LOG.md",
-      "bytes": 16466,
-      "sha256": "9d4c8048e1d2edb1f78ff326e59a4425466560541c4a5e0a8fd846948ee5c8f3"
+      "bytes": 20628,
+      "sha256": "4ac41b2fb7cd9f1ffee8674399c478626beab9fcb5f9626152c1a88fde7e0782"
     },
     {
       "path": "docs/history/ORIGINAL_PACKAGE_README_2026-11-06.md",
@@ -85,14 +85,24 @@
       "sha256": "9a33ef1b3a328ee3bf1193156e947c294947146b101d7e9b9467a13e970b190a"
     },
     {
+      "path": "homework1/artifacts/large_all_users_top10_lab-bonus-20261107T061207Z.txt.gz",
+      "bytes": 7075298,
+      "sha256": "244d92ab2dd7ebf3af4ff9e65defbb7ac760fbc47e75c8d9d2c8d74a451f16a1"
+    },
+    {
+      "path": "homework1/artifacts/large_by_suffix_lab-bonus-20261107T061207Z.tar.gz",
+      "bytes": 7111984,
+      "sha256": "861268bce453bdcbd880d7c058e23b97cf1d7e591e48ea1e6541e4ed2f52a629"
+    },
+    {
       "path": "homework1/artifacts/local_hadoop_logs_2026-11-03.tar.gz",
       "bytes": 358450,
       "sha256": "5f25af668b7ee12c3dc58a9afd54b8f39917607f6df8ca9b8bb257fb2f7c25a3"
     },
     {
       "path": "homework1/artifacts/manifest.json",
-      "bytes": 1119,
-      "sha256": "fc89068df9ae77fe996b0955f6f2dfb8589da698286379e1a6d2f9c1b47cac6b"
+      "bytes": 2237,
+      "sha256": "65c61c2d4122743eabb3eb9d1b61430f014d9ded4885ced058f673df3e4606c7"
     },
     {
       "path": "homework1/artifacts/medium_all_users_top10.txt.gz",
@@ -1691,13 +1701,18 @@
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/README.md",
-      "bytes": 546,
-      "sha256": "749bf79cdd1dc6bb532fbd41049e2226d2c60c5ec577f5d3639406d6e28a6a2a"
+      "bytes": 799,
+      "sha256": "35c4ddc773e26db2ca9289ae957ec5da8981b5ecb8255e4ead614f71372eeee6"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-decision.json",
       "bytes": 3008,
       "sha256": "57f73c431c9dfaf241b348e7ea5edc7e7d7df959e224f88b12c10e5a3144c695"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-final-stage-check.json",
+      "bytes": 2191,
+      "sha256": "18372660a7c9fca94b8d20e8254d15f886eedb5e92b2a6f3d1dea124e9f86485"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/capacity-history/01_dedup/counters.json",
@@ -1765,6 +1780,11 @@
       "sha256": "14905959f36bd499fa21ecd288cfba6edc24c5d859de2f8c97cd238b96f633c7"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/cluster-final.json",
+      "bytes": 731,
+      "sha256": "5b7054ea4358a7385e6bf20dc20060dc5b3d917eadc5c31845502684428206d1"
+    },
+    {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/community-logs/01_dedup.log",
       "bytes": 5153,
       "sha256": "f43473002aaf2535b3f877268aa983af846b3d4f5c6dbe646be322728177a4a0"
@@ -1785,9 +1805,224 @@
       "sha256": "860a67bcae2ccc2bbcdd5c262b86f77bdfc39bacbfa99b895e9d426416a0aadd"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/community-logs/05_scores.log",
+      "bytes": 18971,
+      "sha256": "fb0b8e7bd5afbf6beddec551857723f0cb87fa7c0db4173acf0c19b31c851b4e"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/community-logs/06_top10.log",
+      "bytes": 15778,
+      "sha256": "1b687c5128230a771cae17eaea6adcbaed91fd3254a0dd3d7dda69a50f4c12e9"
+    },
+    {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/compression-pilot.json",
       "bytes": 1071,
       "sha256": "3d12ab24f80de07b883849052c78454a6f7a313099aa846ea611d2bb33270dd3"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/failed-attempts/container_000104/stderr.log",
+      "bytes": 335,
+      "sha256": "ab22db0ba796e28557412b4d2ac9aa953959b0ad54f36585eb6f74346ae3222c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/failed-attempts/container_000104/syslog.log",
+      "bytes": 136584,
+      "sha256": "3ebc7096afd8462f5a70f33dd84b7beecbea0fba9dbcd07213ff6ed1003b9f25"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/failed-attempts/container_000113/stderr.log",
+      "bytes": 94,
+      "sha256": "82ee2342834d8169f21709be18c1a404a90d6837acadc73bf29eecfa74a7b563"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/failed-attempts/container_000113/syslog.log",
+      "bytes": 176269,
+      "sha256": "8f9d1c6e15411274464569b800ae1954480e754ba49b4b30527b4dbfe1430c4d"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/failed-attempts/job_1793963521105_0036-failed.json",
+      "bytes": 3945,
+      "sha256": "d6c9eb62236dd2551ea9f2a348f98b20c40a74bf3e6df95299718ebdee38e192"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/failed-attempts/job_1793963521105_0036-live-reduce-attempts.json",
+      "bytes": 61632,
+      "sha256": "e77b360f302409f1a59b06ec3653a4f38fbdaad1f35584e3a796dd4558cf2efb"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/final-checks.json",
+      "bytes": 855,
+      "sha256": "0e0b373b2785798b50caec6a508ae31fb3322a9a40486c03489cc69e68687a3f"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/hdfs-output-layout.txt",
+      "bytes": 220,
+      "sha256": "ec8c7fb58415502559e617262d8cfcd9d8db7009336e754f5d54c877557e3908"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/01_dedup/attempts.json",
+      "bytes": 11983,
+      "sha256": "05e18f60b1b8aa8b50e0db9c2a6c8cb9e8ba4a70a542eabc05314dbe9d03e390"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/01_dedup/counters.json",
+      "bytes": 10647,
+      "sha256": "3889500013a40231cbf5755211402015fadcc0bc5401adc42ae63f604d702eab"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/01_dedup/job.json",
+      "bytes": 695,
+      "sha256": "0a1650e323bb24142521c8f4ce89cabfb94d2a873fa5144d50790f59296171d1"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/01_dedup/summary.json",
+      "bytes": 349,
+      "sha256": "5f076d8eabbfaed8ab8fbaf5b800f99266c2d52042c3a91c9be9b2cc8abac54b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/01_dedup/tasks.json",
+      "bytes": 5161,
+      "sha256": "be77f8406cb285bc630605573840d261899fc5866a13235cd57bf5e8a339981c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/02_universe/attempts.json",
+      "bytes": 4860,
+      "sha256": "b5d32dc53b60a0d637e33623def27ac7f4e4bd898b8925325c87ea6ca1572bf8"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/02_universe/counters.json",
+      "bytes": 10425,
+      "sha256": "6e12d99790b7cbf036bfb6763a424c842e1f504834604f49c52c8de4379a981c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/02_universe/job.json",
+      "bytes": 688,
+      "sha256": "36da406854e69088f4b3238b0e2407e56fc7dfa9fcd0e91c999b171a5b5f5af0"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/02_universe/summary.json",
+      "bytes": 342,
+      "sha256": "a7a55de68dd096b320403b1bfb8ce064134444cadf9ac0540ce13bcd1560b41d"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/02_universe/tasks.json",
+      "bytes": 2268,
+      "sha256": "7571aa9985c5a670abdffe2aec8a3665613bc675c27ea97347f402ffe1bb9ed4"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/03_blocks/attempts.json",
+      "bytes": 9306,
+      "sha256": "5f2b05e7f28094edf694b6fe28e65e9c800daabf50656e759e9f09668cfacb43"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/03_blocks/counters.json",
+      "bytes": 11399,
+      "sha256": "99960db10b6f1cbbc7aec48077e63f8a53038b5f1786e5aa64a451a73070911d"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/03_blocks/job.json",
+      "bytes": 692,
+      "sha256": "afffbcc08b7aabaabef88cbe617ba00d6c7211b8ef98b8b5e8314a0b7d0f094a"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/03_blocks/summary.json",
+      "bytes": 345,
+      "sha256": "629114134f618ae1de2f74c071d8d0ded7542dcf2035d3f0ed6e3adc4eeb32a0"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/03_blocks/tasks.json",
+      "bytes": 3880,
+      "sha256": "ea4ad476814caa3a2292d28a31478986b72f8b384ddf48ac533157686f76b06b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/04_pairs/attempts.json",
+      "bytes": 61149,
+      "sha256": "bb6a6d53a64f2aaca8195fdb53f8bdced5076c41fff45b9bf6e888aa854e40d8"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/04_pairs/counters.json",
+      "bytes": 10629,
+      "sha256": "71de29646ab0c28e07098a54444cecaf41d508bc79a2186cbb9f184140ae7084"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/04_pairs/job.json",
+      "bytes": 696,
+      "sha256": "e032716c0d15daeb24982956a97e84e05a679e2603ab81648fe52ea7e2700857"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/04_pairs/summary.json",
+      "bytes": 358,
+      "sha256": "8cc3a95acd3e2083ce0cac9b8992ee7e1489c030de97647aee87852577555f27"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/04_pairs/tasks.json",
+      "bytes": 22621,
+      "sha256": "9dd4c93af24e37107f9faed7d2b8e1afe92b805c73484bfc45f5547c27a70caa"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/05_scores/attempts.json",
+      "bytes": 104305,
+      "sha256": "e9186910f8da2db8e3943121594804f53d0550b562bbd24e8ed0c0c310079eb8"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/05_scores/counters.json",
+      "bytes": 11146,
+      "sha256": "958291aa42285c8a82eb57fda290e0fe2738c0a424a2bc640ba51f2eeb9f18ae"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/05_scores/job.json",
+      "bytes": 701,
+      "sha256": "e216be59df59c19524d29128e4b2e5c47e504b2b4933892d98106d6c7c92a3a5"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/05_scores/summary.json",
+      "bytes": 360,
+      "sha256": "384b84ed8cbc88ab43b84478d1f1d11f84efc9e96232980711957fee9062c1da"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/05_scores/tasks.json",
+      "bytes": 41274,
+      "sha256": "71958a421a8b9c4127cc44257e3bb3424fa2ef86eeeca311f6f9aad7a230ccb1"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/06_top10/attempts.json",
+      "bytes": 100444,
+      "sha256": "3085c6ebf1e92051dff0c5f84a9bf1a0b795cb42288e4770f7082a067fdf8ed5"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/06_top10/counters.json",
+      "bytes": 10874,
+      "sha256": "0d6cd4119dc8980b52c3da1644c14660d629a5acd4de5624816a6e14584a4adf"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/06_top10/job.json",
+      "bytes": 702,
+      "sha256": "38e1e5cc85467c230ddc96e9c43cc78a445139dcec53e65c3f24f69df611cba8"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/06_top10/summary.json",
+      "bytes": 347,
+      "sha256": "a7b15d7679395945cf40034c3cc1f31f2774e4355192ca870a0b85dfdcc4420c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/06_top10/tasks.json",
+      "bytes": 41167,
+      "sha256": "0af3e5cf1d5072a9219c369a9434e7758839684b0821cec6fe8b853cac1cdcc4"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/manifest.json",
+      "bytes": 2450,
+      "sha256": "6416df98099ca8e9ff2c56a3d74187dca47d9c95f9c9ff63e622c48f7338a823"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/history/timings.csv",
+      "bytes": 852,
+      "sha256": "0a0e71a0b52295bac8d900b034c8b74e804496ecd69c76ab9a0c13fdbe0bbb16"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/input-identifiers.json",
+      "bytes": 427,
+      "sha256": "4407927589453e800e5d12b870cfb5eaca9e2120056d2354c7c5a1cf55a64a5d"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/input-manifest.json",
@@ -1801,13 +2036,18 @@
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/live-monitor.jsonl",
-      "bytes": 1835423,
-      "sha256": "94884fa0a7de2011d55b04d44d02395f273f1dd30091f01ec4ccac0b151770ff"
+      "bytes": 4518523,
+      "sha256": "3d5ec84e9b8a0fd3c82bfbf4a094c3c4d6f4206cd42a1eeca8feb645629fe89c"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/measured-shuffle-configuration.json",
+      "bytes": 638,
+      "sha256": "eb17dcf73c0aa63af024cfa1f9997c17affa5eab6da94a1a54a72c766e90d83c"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/monitor.jsonl",
-      "bytes": 632347,
-      "sha256": "c9ef6a39bd0dfb08d608c75f539b376708cb03fb65175c5a645d48f9d6ea0b6c"
+      "bytes": 1246475,
+      "sha256": "8c4f5a7a5e7482fc201d40de546bc5fcd0674a42be73b26d9b6191f03b4ce6a6"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/online-resource-update.json",
@@ -1815,9 +2055,24 @@
       "sha256": "5576e945778f3b6e9257509365272ef2e8ddb3f80ef291a3d9221e1bb8102281"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/output-manifest.json",
+      "bytes": 951,
+      "sha256": "ff035e7ce4105232c49700c4b87451745d9252f3333c7a116401b8184e75f70b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/pipeline-invariants.json",
+      "bytes": 1461,
+      "sha256": "81c8a21b83d1c1832f162b794cb81f6a3db6aebd41facfce2ac6faf38834612b"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/postprocess-failures/attempt01.log",
+      "bytes": 912,
+      "sha256": "76e025ff361a6b4d514d258f53865b251f8953113b6c47f489e42e27e3c14460"
+    },
+    {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/process-monitor.jsonl",
-      "bytes": 669774,
-      "sha256": "14eeead6c207bade3a8d5045388b89b510c9680a28760a52b667c31585ea7bf2"
+      "bytes": 1646841,
+      "sha256": "56cffa8b32f77c5a0059225a0cd2a9b8449dda1f22fab95d98b2cbb520f741f9"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/04_pairs/counters.json",
@@ -1838,6 +2093,26 @@
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/04_pairs/tasks.json",
       "bytes": 22621,
       "sha256": "9dd4c93af24e37107f9faed7d2b8e1afe92b805c73484bfc45f5547c27a70caa"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/05_scores/counters.json",
+      "bytes": 11146,
+      "sha256": "958291aa42285c8a82eb57fda290e0fe2738c0a424a2bc640ba51f2eeb9f18ae"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/05_scores/job.json",
+      "bytes": 701,
+      "sha256": "e216be59df59c19524d29128e4b2e5c47e504b2b4933892d98106d6c7c92a3a5"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/05_scores/summary.json",
+      "bytes": 360,
+      "sha256": "384b84ed8cbc88ab43b84478d1f1d11f84efc9e96232980711957fee9062c1da"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/progress-history/05_scores/tasks.json",
+      "bytes": 41274,
+      "sha256": "71958a421a8b9c4127cc44257e3bb3424fa2ef86eeeca311f6f9aad7a230ccb1"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-hadoop/history/01_dedup/counters.json",
@@ -2040,9 +2315,59 @@
       "sha256": "ceb61a3d2f1867bace7355609008df7b2a1137a1bf7dd512e66415e8c53b8d93"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-shuffle-guard/06_top10.log",
+      "bytes": 4393,
+      "sha256": "c1251ae2ea9388843700401186eeaf71a62433c233d6d770490551f6d4d84bc5"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-shuffle-guard/configuration-allowlist.json",
+      "bytes": 568,
+      "sha256": "6e3b48bdcc452d4d8122e1483fa4516e73cdfab53e76ebfe9469db5feff360fb"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-shuffle-guard/history/counters.json",
+      "bytes": 10419,
+      "sha256": "32e33b45cfa70816c10dae4e1666d449a5ceb02e8fdd28d6b2c330a959ff221d"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-shuffle-guard/history/job.json",
+      "bytes": 687,
+      "sha256": "20a2eeedfbb8ea4dd5d49e0c927fa5076d430eb97466a115a4b8988a2a8fb8a4"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-shuffle-guard/history/summary.json",
+      "bytes": 342,
+      "sha256": "153fdd0de864be57aec6d85cc19ec56569a4c32b5c02577625b2eae0c86e640f"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-shuffle-guard/history/tasks.json",
+      "bytes": 1956,
+      "sha256": "9fb383df2f0115685b3de02b17f96a637e0ffd597ac08e8f2b80a0230d8d8bc8"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-shuffle-guard/output.txt",
+      "bytes": 6649,
+      "sha256": "c186384f9e5d07965190af55c890a7af7c238438301816848f95fd7cb120b4b7"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/regression-shuffle-guard/validation.json",
+      "bytes": 4401,
+      "sha256": "0a2c6f30e5c376eac2de80cff2cd9a7cc04d2185ac0016767991162c85ab27f4"
+    },
+    {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/report-provenance.json",
       "bytes": 896,
       "sha256": "afb101fd253445a6a69a12d9b988dea21268e5394ed1548fcba20f5d6e204b4d"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/repository-tests.log",
+      "bytes": 2479,
+      "sha256": "18b8c7c23a34c126c7223b834b105d4da4047398424eb6d44dd76ddfe300a8db"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-summary.json",
+      "bytes": 2080,
+      "sha256": "1e3d214626a33cb900a405800ea6de472343977adb7c12d55bb541f88879efd9"
     },
     {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/resource-transition/gpu01.log",
@@ -2075,6 +2400,16 @@
       "sha256": "32a03adc02deaba0620a4ffe141f9d7f74c43b380048d531935c6367ff7c6ba1"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/screenshots/bonus-top10-history.png",
+      "bytes": 115672,
+      "sha256": "047effc20fb1ee57525fcd64cb689dd8adef0c0b2be569978781e574c9236d6e"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/screenshots/bonus-yarn-nodes-final.png",
+      "bytes": 140746,
+      "sha256": "826574b436a964bc48de211027b07d7017ee58fe052de4871bb789943d81292f"
+    },
+    {
       "path": "homework1/evidence/lab-bonus-20261107T061207Z/screenshots/bonus-yarn-nodes.png",
       "bytes": 141229,
       "sha256": "ea13c93677a352e5129b1d6801fd6817b9e8707e3b3924750e67a51729c1108b"
@@ -2085,24 +2420,34 @@
       "sha256": "1a5c3e4caada22e88db7617229c6978842c43256f1e77c8275a5c7151fd01bec"
     },
     {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/suffix-manifest.json",
+      "bytes": 162103,
+      "sha256": "f5447f673c9436f95d7d1c010aca1a08cc02663768df310a80fa9a6dc58a9ed2"
+    },
+    {
+      "path": "homework1/evidence/lab-bonus-20261107T061207Z/validation.json",
+      "bytes": 34937,
+      "sha256": "21c3559a8a99a4151f3ee441037b0fd4a9cb7a36e1f80313fb7d2755a0705202"
+    },
+    {
       "path": "homework1/report/Homework1_Report.pdf",
-      "bytes": 1426796,
-      "sha256": "0cc1641580170bba3ff00a9dcd57b2996dbe09fd1d8f29250eb5757757aab903"
+      "bytes": 1743354,
+      "sha256": "f640fc46cc3d0687e42a76d5d4d6fc88af5dbc8a21eacbbc5923fe37d11940c1"
     },
     {
       "path": "homework1/report/Homework1_Report_Draft.md",
-      "bytes": 27946,
-      "sha256": "dddfac2ad0dea6caffb722bd689dfcdaff58d930e670d51dbed32fd11f26ede1"
+      "bytes": 43672,
+      "sha256": "e09df83f6cc99f2cc9723ee55fb1920f7f36b9cacded3572023bbb80f109d6fa"
     },
     {
       "path": "homework1/report/Homework1_Report_Draft.pdf",
-      "bytes": 1426796,
-      "sha256": "0cc1641580170bba3ff00a9dcd57b2996dbe09fd1d8f29250eb5757757aab903"
+      "bytes": 1743354,
+      "sha256": "f640fc46cc3d0687e42a76d5d4d6fc88af5dbc8a21eacbbc5923fe37d11940c1"
     },
     {
       "path": "homework1/report/build_report.py",
-      "bytes": 6903,
-      "sha256": "b47a1f3a6459b8beb16a28347766ff8ffef0d1f61431a16df4af192638a32947"
+      "bytes": 6933,
+      "sha256": "55a59667dc71cb675ceffe1cda7fc616d52425529c5c6997d163aaad804329dd"
     },
     {
       "path": "homework1/results/data_access_status.json",
@@ -2241,8 +2586,8 @@
     },
     {
       "path": "homework1/src/run_community.sh",
-      "bytes": 7070,
-      "sha256": "fad4f81fcac70782c276c3fe50bab5eeeedaa24ddeb92892d545e0258e8fcb5f"
+      "bytes": 7284,
+      "sha256": "e7cef55e8310260d332ab0f0acd7d65fdd7f6767b325d0d7b59bb1c2834803aa"
     },
     {
       "path": "homework1/src/run_wordcount.py",
@@ -2291,8 +2636,8 @@
     },
     {
       "path": "scripts/package_submission.py",
-      "bytes": 4653,
-      "sha256": "141af6835dc2f0230d3fe74a721c3eb8fd92bf1244e72940e3fa34c1a7a75659"
+      "bytes": 4763,
+      "sha256": "f3169ba75ef7858200fdf23983c13c72be4fd0cc690bdd16d77c0dda3df524f0"
     },
     {
       "path": "scripts/verify_repository.py",

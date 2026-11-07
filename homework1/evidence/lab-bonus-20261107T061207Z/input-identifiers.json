@@ -1,0 +1,11 @@
+{
+  "identifier_digit_histogram": {
+    "21": 107614
+  },
+  "nonempty_outgoing_neighborhood_users": 72271,
+  "zero_outdegree_users": 35343,
+  "maximum_distinct_positive_unordered_pairs": 2611512585,
+  "reason": "A positive common-followee score requires both outgoing neighborhoods to be nonempty.",
+  "sqlite_quick_check": "ok",
+  "scope": "Additional independent source-index audit; ranking verification remains separate."
+}

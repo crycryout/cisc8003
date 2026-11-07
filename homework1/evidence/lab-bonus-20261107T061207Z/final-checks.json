@@ -1,0 +1,16 @@
+{
+  "repository_tests": 28,
+  "repository_tests_passed": true,
+  "shell_syntax_scripts": 12,
+  "shell_syntax_passed": true,
+  "large_record_chain_invariants_passed": true,
+  "old_nov6_evidence_unchanged": true,
+  "report_pages": 32,
+  "report_alias_identical": true,
+  "report_sha256": "f640fc46cc3d0687e42a76d5d4d6fc88af5dbc8a21eacbbc5923fe37d11940c1",
+  "pdf_visual_review": "New input/capacity, actual six-job table, verification and genuine service screenshot pages reviewed; no clipping; footer7Nov2026.",
+  "artifact_manifest_hashes_verified": true,
+  "large_gzip_and_all_1000_tar_members_verified": true,
+  "public_access_identifiers_private_key_and_signed_source_redirect_scan_passed": true,
+  "scope": "Code/regression/artifact checks supplement real completed YARN jobs and independent graph verification; not replacement benchmark evidence."
+}

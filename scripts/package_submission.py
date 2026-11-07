@@ -61,6 +61,8 @@ def main():
                  'homework1/report/Homework1_Report_Draft.md', 'homework1/report/build_report.py',
                  'homework1/data/figure_numeric.txt', 'homework1/data/hadoop_regression.txt'):
         files[name] = ROOT / name
+    files['REPOSITORY_README.md'] = ROOT / 'README.md'
+    files['README.md'] = ROOT / 'docs/CODE_PACKAGE.md'
     for run in ('lab-20261106T110350Z', 'lab-' + a.run):
         for source in (ROOT / 'homework1/evidence' / run).rglob('*'):
             if source.is_file():

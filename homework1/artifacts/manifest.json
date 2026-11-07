@@ -22,6 +22,30 @@
       "sha256": "5f25af668b7ee12c3dc58a9afd54b8f39917607f6df8ca9b8bb257fb2f7c25a3",
       "log_files": 28,
       "origin": "Unmodified historical LocalJobRunner logs; not lab-cluster evidence"
+    },
+    {
+      "path": "artifacts/medium_all_users_top10_lab-20261106T110350Z.txt.gz",
+      "bytes": 2933522,
+      "sha256": "8e484321812299e827135984ceffc034acf7b386aca0abdc38740ce9bea52acd",
+      "origin": "Actual Nov6 four-physical-host HDFS/YARN; unchanged baseline"
+    },
+    {
+      "path": "artifacts/medium_by_suffix_lab-20261106T110350Z.tar.gz",
+      "bytes": 3082201,
+      "sha256": "2b7d70b3e37423c2b62f4fda3676233e31cf3983e09488858079904b0efa9830",
+      "origin": "Actual Nov6 four-physical-host HDFS/YARN; unchanged baseline"
+    },
+    {
+      "path": "artifacts/large_all_users_top10_lab-bonus-20261107T061207Z.txt.gz",
+      "bytes": 7075298,
+      "sha256": "244d92ab2dd7ebf3af4ff9e65defbb7ac760fbc47e75c8d9d2c8d74a451f16a1",
+      "origin": "Actual four-physical-host HDFS/YARN bonus bonus-20261107T061207Z"
+    },
+    {
+      "path": "artifacts/large_by_suffix_lab-bonus-20261107T061207Z.tar.gz",
+      "bytes": 7111984,
+      "sha256": "861268bce453bdcbd880d7c058e23b97cf1d7e591e48ea1e6541e4ed2f52a629",
+      "origin": "Actual four-physical-host HDFS/YARN bonus bonus-20261107T061207Z"
     }
   ]
 }

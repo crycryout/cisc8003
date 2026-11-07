@@ -1,4 +1,4 @@
-> 当前状态：2026-11-06 必做四机实验与报告已实际完成，见 `docs/LAB_EXECUTION.md`、`docs/ACCEPTANCE.md` 和本次 evidence。下方为接续时规则；不要重新 format 已有 NameNode，也不要覆盖已有实测输出。
+> 当前状态：2026-11-07 必做四机实验、大图bonus、独立验证及报告已完成，见 docs/LAB_EXECUTION.md、docs/ACCEPTANCE.md 和 lab-bonus-20261107T061207Z。历史接续文档不代表当前未执行；不要重跑或format已有结果。
 
 # Codex 接续规则
 

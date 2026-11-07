@@ -53,3 +53,15 @@ tar 内路径以 `results/` 开头。解压到独立的本地目录查阅，避�
 本次全量答案 `artifacts/medium_all_users_top10_lab-20261106T110350Z.txt.gz` 和全部 1000 个后缀 `artifacts/medium_by_suffix_lab-20261106T110350Z.tar.gz` 为真实四机新结果，不能与初始本地归档混称。大小/哈希在 `result-artifacts.json`；tar 不含本机账号 UID/用户名元数据。
 
 公开 JSON、终端日志和真实页面截图只替换/遮蔽私网地址、主机访问名称和账号标识，保留 job ID、时间、计数器、状态和结果。未经脱敏的原始记录、完整配置/命令和 preflight 仍在忽略的 `.local/` 与本次 `results/lab-*/`，不提交私钥、登录配置、原始 Yelp 或庞大中间文件。
+
+## 2026-11-07 大图 bonus 的独立证据
+
+根目录 `homework1/evidence/lab-bonus-20261107T061207Z/`：input-manifest、source-redirects、input-statistics记录原题输入资格、方向、hash及实测规模；capacity-history保留前三阶段，capacity-decision/compression-pilot记录展开前预算；history保存实际六阶段job/tasks/attempts/counters和timings.csv。community-logs恰为六个成功阶段日志。
+
+validation.json全量核对107,614用户集合/格式/候选合法性，并独立精确重算1064个用户，零排名差异；sample_groups保存seed20261107的1,000随机及定向ID，范围不是独立重算全体排名。suffix-manifest逐个记录000–999的行数、字节和SHA，并核验与源用户集合相同。output-manifest记录全量及两个压缩归档。resource-summary/monitor/process-monitor/live-monitor保留45秒观测和counters，资源峰值表述为观测值。screenshots来自真实Hadoop页面，访问标签已遮蔽。
+
+1064抽样和中图回归是独立实现验证；小图真实压缩回归另在regression-hadoop，不计入大图性能。report-provenance记录原Nov6 24页PDF哈希/源commit，保留Git历史与私密备份。resource-transition的role标签统一为报告中的worker1=H800、worker2/3=两台5090；真实UID/账号/地址保留本地。
+
+旧 `evidence/lab-20261106T110350Z/input-manifest.json` 是Yelp仍下载时的早期快照；最终完整Yelp状态及hash见同run的 `yelp-input-manifest.json`，没有改写早期原始证据。所有Nov6证据字节保持不变。
+
+最终 `final-checks.json` 和 `repository-tests.log` 记录32页PDF视觉/别名检查、28项测试、12个Shell语法、归档/隐私检查；`cluster-final.json` 为3DN/3NM/38已完成apps（0失败apps），与两次已恢复失败attempt区别记录。

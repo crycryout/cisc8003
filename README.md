@@ -11,6 +11,7 @@
 | Q1(b) | Shakespeare 两种输入各 3 次；中位数 76.364 / 8.430 s，merged 快 9.06 倍；六次词频一致 |
 | Q1(c) | 完整 5,341,868,833-byte Yelp；实际 6/1、6/3、12/1、12/3 四组均成功，七项时间齐全、输出一致；四组各 3 次全部成功 |
 | Q2(a) | 中图六个 YARN jobs 成功；81,306 用户，1,000 独立抽样零误差、全量参考排名零差异；全部 1,000 个 suffix 已导出 |
+| Q2(b) bonus | 原题 Ref[8] 大图六阶段成功，107,614 用户、13,673,453 唯一有向边；全量覆盖/格式检查和 1064 用户独立精确重算零差异；全部1,000 suffix 已导出 |
 
 本次证据根：[homework1/evidence/lab-20261106T110350Z](homework1/evidence/lab-20261106T110350Z/)。计时来自成功 JobHistory 的 job/task 时间；没有使用历史 LocalJobRunner 数据填充四机性能表。实际主机分配、共享负载和环境差异在报告中如实说明。
 
@@ -32,6 +33,8 @@ python3 -m unittest discover -s homework1/tests -v
 
 [部署与重复实验](homework1/cluster/LAB_E2E.md)使用独立配置、端口、PID、日志和数据目录。新实验选择新输出根；已有 NameNode 不重新 format。源码保持精确共同关注数 Top-10，未用近似或提前按 SID 过滤。
 
-报告披露了实验室硬件替代课程云 VM/课程集群的选择，以及 AI 协助。大图 bonus 未完成，不将中图算作 bonus。姓名、SID、声明和签名留给学生本人核实填写。
+报告披露了实验室硬件替代课程云 VM/课程集群的选择，以及 AI 协助。大图 bonus 使用单独 run、容量决策、JobHistory 和独立验证，见 [bonus证据](homework1/evidence/lab-bonus-20261107T061207Z/)。姓名、SID、声明和签名留给学生本人核实填写。
 
-下一步：服务器 Codex 按 [大图 bonus 接续任务](docs/BONUS_COMPLETION_HANDOFF.md) 补完加分题与最终提交包。必做实验无需重跑；本人信息与签名仍待核实填写。
+提交前按 [本人操作清单](docs/FINAL_SUBMISSION.md) 核实身份、学号后缀和声明。必做实验与 bonus 均已计算完成；课程平台上传须本人完成。
+
+大图 [全量Top-10](homework1/artifacts/large_all_users_top10_lab-bonus-20261107T061207Z.txt.gz) / [全部后缀](homework1/artifacts/large_by_suffix_lab-bonus-20261107T061207Z.tar.gz)。服务器最终交付目录：`~/cisc8003/.local/deliveries/bonus-20261107T061207Z/`，包含 `Homework1_Code_Report.zip`、`Homework1_Results.zip` 和 SHA256SUMS。包的源代码及报告入口见 [CODE_PACKAGE](docs/CODE_PACKAGE.md)。

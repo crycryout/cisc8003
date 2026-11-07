@@ -1,0 +1,28 @@
+{
+  "job": {
+    "submitTime": 1794038988074,
+    "startTime": 1794038990830,
+    "finishTime": 1794039593800,
+    "id": "job_1793963521105_0037",
+    "name": "hw1-06_top10",
+    "queue": "default",
+    "user": "experiment-user",
+    "state": "SUCCEEDED",
+    "mapsTotal": 64,
+    "mapsCompleted": 64,
+    "reducesTotal": 64,
+    "reducesCompleted": 64,
+    "uberized": false,
+    "diagnostics": "",
+    "avgMapTime": 162200,
+    "avgReduceTime": 26989,
+    "avgShuffleTime": 117345,
+    "avgMergeTime": 14862,
+    "failedReduceAttempts": 0,
+    "killedReduceAttempts": 0,
+    "successfulReduceAttempts": 64,
+    "failedMapAttempts": 0,
+    "killedMapAttempts": 0,
+    "successfulMapAttempts": 64
+  }
+}

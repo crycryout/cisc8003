@@ -1,0 +1,51 @@
+{
+  "utc": "2026-11-07T07:50:55.478344+00:00",
+  "source_audit": {
+    "identifier_digit_histogram": {
+      "21": 107614
+    },
+    "nonempty_outgoing_neighborhood_users": 72271,
+    "zero_outdegree_users": 35343,
+    "maximum_distinct_positive_unordered_pairs": 2611512585,
+    "reason": "A positive common-followee score requires both outgoing neighborhoods to be nonempty.",
+    "sqlite_quick_check": "ok",
+    "scope": "Additional independent source-index audit; ranking verification remains separate."
+  },
+  "actual_completed_stage04_compressed_bytes": 38095358435,
+  "maximum_score": 5056,
+  "stage05_maximum_uncompressed_score_record_bytes": 51,
+  "stage05_user_marker_bytes": 3013192,
+  "stage05_logical_positive_and_marker_bound_bytes": 133190155027,
+  "stage05_compression_contingency": "1.05 times logical bytes plus1MiB; deliberately allows expansion in this scenario",
+  "stage06_materialized_shuffle_planning_bytes_per_directed_record": 16,
+  "stage06_global_materialized_shuffle_scenario_bytes": 83568402720,
+  "allocation_assumption": "H80060%, each5090 20%; multiply by1.20 node skew; shuffle/merge factor2 plus one largest reducer retry. Actual placement may differ and45s disk observations remain necessary.",
+  "checks": {
+    "h800_home": {
+      "free_bytes": 328485695488,
+      "reserve_bytes": 188800000000,
+      "scenario_bytes": 100692805776,
+      "headroom_after_scenario_bytes": 38992889712
+    },
+    "h800_shuffle": {
+      "free_bytes": 370059796480,
+      "reserve_bytes": 95000000000,
+      "scenario_bytes": 121905407467,
+      "headroom_after_scenario_bytes": 153154389013
+    },
+    "rtx5090_a_home": {
+      "free_bytes": 616561160192,
+      "reserve_bytes": 201000000000,
+      "scenario_bytes": 75243659923,
+      "headroom_after_scenario_bytes": 340317500269
+    },
+    "rtx5090_b_home": {
+      "free_bytes": 419457351680,
+      "reserve_bytes": 201000000000,
+      "scenario_bytes": 75243659923,
+      "headroom_after_scenario_bytes": 143213691757
+    }
+  },
+  "passed": true,
+  "scope": "Conditional storage scenarios after tighter exact positive-pair bound; not an unconditional shuffle/compression guarantee and not a runtime prediction."
+}

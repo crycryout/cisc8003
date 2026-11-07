@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-07T08:35:03.341542+00:00",
+  "namenode": {
+    "NumLiveDataNodes": 3,
+    "NumDeadDataNodes": 0,
+    "NumStaleDataNodes": 0,
+    "FilesTotal": 882
+  },
+  "yarn": {
+    "activeNodes": 3,
+    "unhealthyNodes": 0,
+    "lostNodes": 0,
+    "totalMB": 61440,
+    "totalVirtualCores": 40,
+    "appsSubmitted": 38,
+    "appsCompleted": 38,
+    "appsFailed": 0,
+    "appsKilled": 0,
+    "appsRunning": 0
+  },
+  "history_info": {
+    "historyInfo": {
+      "startedOn": 1793963566582,
+      "hadoopVersion": "3.3.6",
+      "hadoopBuildVersion": "3.3.6 from 1be78238728da9266a4f88195058f08fd012bf9c by ubuntu source checksum 5652179ad55f76cb287d9c633bb53bbd",
+      "hadoopVersionBuiltOn": "2023-06-18T23:15Z"
+    }
+  }
+}

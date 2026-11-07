@@ -1,12 +1,12 @@
 # Homework 1 - Hadoop and Common-Followee Top-10
 
-**Four physical laboratory machines | Actual HDFS/YARN experiments, 6 November 2026**
+**Four physical laboratory machines | Actual HDFS/YARN experiments, 6-7 November 2026**
 
 Name: ____________________    SID: ____________________
 
-**Completed experiment.** Four independent single-node WordCount checks, a Thor master with three physical workers, the three-repetition Shakespeare comparison, four actual Yelp mapper/reducer configurations, and all six medium-graph jobs were executed successfully. The full medium result covers 81,306 users; 1,000 independent sampled rankings and all reference rankings agree. Every performance value below comes from completed jobs in this run, not the earlier LocalJobRunner results.
+**Completed mandatory experiments and large-graph bonus.** Four independent single-node WordCount checks, a Thor master with three physical workers, the three-repetition Shakespeare comparison, four actual Yelp mapper/reducer configurations, and all six medium-graph jobs were executed successfully. The full medium result covers 81,306 users; 1,000 independent sampled rankings and all reference rankings agree. The course Ref[8] large graph also completed all six jobs for107,614 users, followed by full coverage/format checks, independent exact sampled rankings and all1,000 suffix exports. Mandatory runs took place on6 November; the separate bonus run took place on7 November. Every performance value comes from its completed JobHistory. Earlier LocalJobRunner timings are retained as historical evidence.
 
-**Environment choice.** The student selected laboratory hardware in place of the assignment's cloud VMs/course cluster. These measurements demonstrate the laboratory deployment and do not claim that the instructor formally approved that substitution. GPUs do not execute these Hadoop jobs. The optional large-graph bonus is reported separately; it is not included in the completed mandatory result.
+**Environment choice.** The student selected laboratory hardware in place of the assignment's cloud VMs/course cluster. These measurements demonstrate the laboratory deployment and do not claim that the instructor formally approved that substitution. GPUs do not execute these Hadoop jobs. The large-graph bonus has a separately documented resource allocation and evidence set.
 
 **Authorship and acknowledgment.** Implementation, deployment, verification and this report used ChatGPT/Codex assistance. The student must check the course policy, acknowledge actual discussions and sources, fill in personal information, and personally verify any declaration before signing. No identity, signature or originality assertion has been supplied by the assistant.
 
@@ -21,7 +21,7 @@ The topology consists of four independent physical hosts, not four NUMA domains.
 | worker2 | Core Ultra 7 265K / x86_64 | 62.2 | Ubuntu 26.04 LTS | DN + NM |
 | worker3 | Core Ultra 7 265K / x86_64 | 62.2 | Ubuntu 26.04 LTS | DN + NM |
 
-Each worker advertises 6,144 MiB and 4 YARN vcores. Map/reduce containers request 1,536 MiB with 768 MiB heap; the ApplicationMaster requests 1,536 MiB with 1,024 MiB heap. NodeManagers and their child containers inherit four-CPU affinity: worker1 80-83; workers2/3 16-19. The cluster therefore has 18,432 MiB and 12 advertised vcores. These are experiment allocations, not the total host resources. Map/reduce speculation is disabled. Map output uses DefaultCodec compression. HDFS replication is three with 128 MiB blocks. Worker quotas, input and task heap were fixed before the comparisons.
+For the mandatory experiments and medium graph, each worker advertises 6,144 MiB and 4 YARN vcores. Map/reduce containers request 1,536 MiB with 768 MiB heap; the ApplicationMaster requests 1,536 MiB with 1,024 MiB heap. NodeManagers and their child containers inherit four-CPU affinity: worker1 80-83; workers2/3 16-19. The cluster therefore has 18,432 MiB and 12 advertised vcores. These are experiment allocations, not the total host resources. Map/reduce speculation is disabled. Map output uses DefaultCodec compression. HDFS replication is three with 128 MiB blocks. Worker quotas, input and task heap were fixed before the comparisons.
 
 Hadoop packages passed official Apache SHA-512 checks and both JDK packages passed vendor SHA-256 checks. Native libhadoop and zlib loaded on all four hosts. Optional OpenSSL, ISA-L and PMDK were absent; no assessed operation required them. The system's default Java, GPU software, network configuration and other users' workloads were not changed.
 
@@ -159,7 +159,7 @@ Let E be the number of unique edges, d_f the follower count of f, and `C = sum_f
 
 With `k_f = ceil(d_f/B)`, the block-replication stage moves `sum_f d_f*k_f` follower-ID occurrences. Smaller B distributes heavy-followee work into more, smaller groups, but increases replication overhead. Pair reducers use O(B) IDs per group; block construction also uses O(B) buffered IDs plus O(d_f) temporary disk storage for the active followee. Parsing an original adjacency line additionally requires memory proportional to that line's length. Top-K reducers use O(K) candidate memory. Shuffle/sort storage remains external to these Python state bounds.
 
-Map-output compression is enabled. This compresses shuffle/spill output, not all HDFS stage files. Input/output checks, available-disk monitoring and Hadoop counters remain necessary. `STOP_AFTER_BLOCKS=1` allows an explicit capacity checkpoint before pair enumeration; `RESUME_AFTER_BLOCKS=1` continues from it. Blocking improves memory bounds and load distribution but does not guarantee that arbitrary graphs fit small VMs or finish within a fixed time.
+For the mandatory medium run, map-output compression compresses shuffle/spill output. The bonus additionally compresses the stage04/05 HDFS files as documented in section9. Input/output checks, available-disk monitoring and Hadoop counters remain necessary. `STOP_AFTER_BLOCKS=1` allows an explicit capacity checkpoint before pair enumeration; `RESUME_AFTER_BLOCKS=1` continues from it. Blocking improves memory bounds and load distribution but does not guarantee that arbitrary graphs fit small VMs or finish within a fixed time.
 
 ---PAGE---
 
@@ -180,17 +180,120 @@ The new merged output has **81,306** users, ten distinct non-self candidates per
 
 The new full-output SHA-256 is `cb6d2f7776b031314f648996bf24392774388eea261befca077172c5aaf4899f`. Its bytes can differ from the older output solely because reducer/part ordering differs; semantic comparison is the appropriate full-result check.
 
-Suffix filtering occurs after computing every user's result. Because no student-ID suffix was supplied, all 1,000 subsets 000.txt through 999.txt are exported and archived with the new all-user result. Select the three-digit suffix matching the student's SID; no full SID is needed for computation. The optional large-graph bonus has not been completed and no bonus result is claimed.
+Suffix filtering occurs after computing every user's result. Because no student-ID suffix was supplied, all 1,000 subsets 000.txt through 999.txt are exported and archived with the new all-user result. Select the three-digit suffix matching the student's SID; no full SID is needed for computation. The large-graph bonus is documented separately in section9.
 
-The implementation additionally passes 18 semantic/timing/configuration/download tests, including 100 fixed-seed random graphs, duplicate edges, isolated/followee-only users, ties, zero-score padding, leading zeros, large integer IDs and high-degree blocking. These tests supplement the real cluster evidence and are not benchmark measurements.
+The implementation additionally passes 28 semantic/timing/configuration/download tests, including 100 fixed-seed random graphs, duplicate edges, isolated/followee-only users, ties, zero-score padding, leading zeros, large integer IDs and high-degree blocking. These tests supplement the real cluster evidence and are not benchmark measurements.
 
 ---PAGE---
 
-## 9. Evidence and repeatability
+## 9. Q2(b): actual course large graph and capacity decision
+
+The original assignment Ref[8] Dropbox URL was downloaded directly, without a mirror or substitute: https://www.dropbox.com/s/cbf4r2at8dmd9ms/gplus_combined.txt.gz?dl=1 . A later recorded Range request followed two HTTP 302 redirects to Dropbox's content host and returned HTTP 206 with the matching object size. Transient signed paths remain private. Full decompression and `gzip -t` passed. The actual input is a two-column decimal edge list, explicitly parsed as follower-followee according to the Gplus source and the upstream a-follows-b convention [9,10]; auto-format detection is not used to infer direction. No undirected expansion is enabled.
+
+| Measured input property | Actual value |
+|---|---|
+| gzip bytes | 398,930,514 |
+| Decompressed bytes | 1,341,774,104 |
+| Nonblank edge records | 30,494,866 |
+| Unique directed edges | 13,673,453 |
+| Duplicate edge records | 16,821,413 |
+| Distinct endpoint users | 107,614 |
+| Largest indegree / outdegree | 17,055 / 5,056 |
+| ID width in this input | 21 decimal digits |
+
+These counts come from an independent disk-backed deduplicated index of the original course file and agree with Hadoop counters. The observed graph differs from the approximate user count in the assignment; no 4.8-million-user claim is made. SNAP's Gplus page corroborates the node/unique-edge counts but was not substituted as the input.
+
+```text
+gzip SHA-256:
+492b7a63ec7816cac6aa0466be8521a0528cb1df2ca7f0b554ad746adc6bbbee
+plain SHA-256:
+c3b6e5fa980c688ef783cd6afabc0c17a635e5e7ad8f3edf8396907d3f1ab451
+```
+
+The run ID is `bonus-20261107T061207Z`. Stage03 measured 10,984,048,711 candidate-pair contributions and 50,752,824 replicated follower IDs at block size 512, independently matching the source index. At 48 bytes per uncompressed pair record, the pair records alone would require 527,234,338,128 logical bytes or 1,581,703,014,384 bytes with three replicas, and user markers add 3,013,192 logical bytes before replication. The pair subtotal already exceeds the initial HDFS remaining 1,459,986,186,240 bytes before shuffle or later outputs. Continuing the original storage configuration was therefore unsuitable.
+
+---PAGE---
+
+## 9.1. Bonus resource budget and exact recovery
+
+Stages04/05 use DefaultCodec-compressed HDFS output with replication one; original input, preparation stages and final output retain replication three. These two intermediate stages are reproducible from retained successful upstream outputs, but a single-replica loss would require recomputation. Stage03 block size 512 is unchanged. Stages04-06 use 64 reducers, giving enough input parts for the following jobs despite unsplittable deflate streams. No candidates or users are sampled out of the computation.
+
+Only the task's idle NodeManagers were restarted under separate bonus configurations: each worker advertises 12,288 MiB and 8 vcores; map/reduce requests remain 1,536 MiB, heap 768 MiB, and the AM remains 1,536 MiB/heap 1,024 MiB. H800 uses CPU 80-87 and the two 5090 hosts CPU 12-19. The H800 shuffle/local directory is a task-specific user directory on the existing root filesystem, separate from its HDFS home disk. The master and DataNodes were not reformatted or reinitialized; no system Java/CUDA/driver or other user's service changed. Q1 and medium measurements above retain their original 4-core/6-GiB configuration.
+
+At 07:23 UTC during stage05, a fresh H800 check showed 96 logical CPUs, host load 7.72 and 231.45 GiB available memory. The task-owned H800 worker was expanded online to 24 vcores/36,864 MiB using Hadoop 3.3.6 rmadmin updateNodeResource [11], with NodeManager affinity 72-95; the two 5090 workers stayed at 8 vcores/12,288 MiB. Both RM and NM reported the new capacity, and the NM PID remained unchanged. Existing containers retained their earlier affinity; new containers inherited the expanded CPU set. No daemon or task was restarted by this online update. The cluster then advertised 40 vcores/61,440 MiB. All time values include this disclosed resource transition and are execution evidence rather than a controlled scaling comparison. The separate H800 shuffle filesystem had 397.41 GB free; budgeting 60% of the scenario shuffle/merge with 20% skew gave 253.07 GB, plus 3.30 GB retry reserve, still below free space minus 95 GB health reserve. The full before/after snapshot and configuration hashes are retained in online-resource-update.json.
+
+Capacity-only exact pair samples gave 4.33-9.28 compressed bytes per record for the middle/high strata (the tiny low-degree stratum gave 6.57). The initial planning scenarios deliberately used 16 bytes per pair, 12 bytes per distinct scored pair and 16 bytes per shuffle record, not a claim of compression upper bounds. The maximum possible distinct unordered pairs is 5,790,332,691. The model budgets both retained HDFS intermediates, two shuffle/merge copies, 20% node skew and an extra largest reducer retry; speculation is disabled. This gives 81.74 GB of HDFS intermediates per worker, at most 148.23 GB modeled stage06 shuffle/merge peak per worker and 3.30 GB extra retry reserve. Worker2/3 initial free home space was 657.22/456.95 GB, with about 201 GB health reserve; H800 had separate 338.90 GB home/407.66 GB shuffle free. The scenario passed; its assumptions and runtime observations remain explicit in capacity-decision.json.
+
+A later source-index audit verified that all 107,614 IDs have 21 digits and that 35,343 users have empty outgoing neighborhoods. Only 72,271 users can participate in positive-score pairs, giving the tighter exact upper bound 2,611,512,585 distinct positive unordered pairs. Retaining markers includes all 35,343 zero-outdegree users in the final result. Before stage06, capacity-final-stage-check.json rechecked space under the heterogeneous allocation: at 16 planning bytes per directed shuffle record, the global stage06 materialized-shuffle scenario is 83.568 GB; two merge copies,60% H800 share and 20% skew give 120.338 GB on its separate shuffle filesystem, plus 1.567 GB retry reserve. Remaining worker disks passed their separate HDFS/shuffle/reserve scenarios. These remain explicitly conditional space scenarios.
+
+Filesystem free space, YARN allocation and task process RSS/VmHWM were sampled every 45 seconds. Observed minimum free space: worker1 home 300.49 GiB and separate shuffle 332.71 GiB; worker2 home 568.07 GiB; worker3 home 387.87 GiB. Maximum observed allocated containers: 40; observed task process high-water RSS: Python 16.980 MiB, task JVM 1106.605 MiB. These are sampled observations, not a proof that all transient peaks were captured. Original detailed counters retain cumulative spill/write bytes separately from instantaneous capacity.
+
+The local H800 NodeManager initially did not remain alive after its launching command session ended. It had no running bonus containers; the two remote workers continued without failed attempts. It was relaunched in a detached task-owned session and then all three workers received containers. This operational variation is disclosed; bonus durations are not presented as a controlled scaling comparison.
+
+The runner now supports `RESUME_FROM_STAGE=1..6`, checks every upstream `_SUCCESS`, refuses existing downstream paths and stage logs, and locks its log directory. Failed attempts must be archived before resubmission; no successful intermediate is deleted. The implemented arithmetic, deduplication, all-user markers, zero padding, composite-key combiner settings and numeric secondary sort are unchanged. A separate real six-job compressed Hadoop regression, including IDs far beyond 64 bits and zero-score users, independently verified all 31 users before the large continuation.
+
+---PAGE---
+
+## 9.2. Successful large-graph jobs and result
+
+All six jobs below actually succeeded in this four-host HDFS/YARN namespace. Preparation used six reducers except the one-reducer universe stage; the later 64-reducer configuration is recorded explicitly. Stage times come from successful JobHistory, not a projected runtime or the medium jobs. The six original console logs are retained together, with monitoring and regression logs outside that directory.
+
+| Stage | Actual job ID | Maps | Reducers | Job seconds |
+|---|---|---|---|---|
+| 01_dedup | job_1793963521105_0026 | 10 | 6 | 53.216 |
+| 02_universe | job_1793963521105_0027 | 6 | 1 | 8.161 |
+| 03_blocks | job_1793963521105_0028 | 6 | 6 | 26.131 |
+| 04_pairs | job_1793963521105_0035 | 6 | 64 | 509.392 |
+| 05_scores | job_1793963521105_0036 | 64 | 64 | 4764.398 |
+| 06_top10 | job_1793963521105_0037 | 64 | 64 | 602.970 |
+
+Completed jobs report 0 failed map attempts and 2 failed reduce attempts; all collected attempt records are retained. Total of the six job elapsed times is 5964.268 s; it excludes data acquisition, capacity/regression work and independent validation, and is not the sum of concurrent task durations. JobHistory/tasks/counters, per-stage timing CSV and HDFS output layout are preserved in `evidence/lab-bonus-20261107T061207Z/`.
+
+Two stage05 reducer attempts failed during shuffle with Java heap space in InMemoryMapOutput: r000037_0 on worker1 and r000046_0 on worker3. Their automatic retries succeeded; the completed job duration includes the retries. Diagnostics, container stderr/syslog and all final attempt records are retained under failed-attempts and history.
+
+After observing these failures, the submission runner was guarded with `mapreduce.reduce.shuffle.memory.limit.percent=0.0`, which the packaged Hadoop 3.3.6 default configuration documents as direct-to-disk fetching [12]. The six measured large jobs retained their frozen 3d54c5f configuration (memory-limit 0.25, input-buffer 0.70, heap 768 MiB); their measurements are not relabeled as using the new guard. A separate real resumed-stage06 regression, job_1793963521105_0038, succeeded with three maps/reducers. Its effective configuration confirms 0.0, all 31 users independently match the exact oracle, and its output bytes equal the prior small-graph result. This is a regression check, not a large-graph benchmark. The guard trades extra disk I/O for bounded shuffle buffering; actual stage05 materialized shuffle was 69.416 GB, so even a three-copy planning allowance with 60% H800 share and 20% skew is 149.938 GB, within its separate-work-disk budget.
+
+Stage04 output: 38,095,358,435 bytes; stage05 output: 7,722,861,744 bytes; final ordinary-text result: 26,042,588 bytes. These actual filesystem/counter values replace the planning estimates when describing the completed run. Stage05 retains 627,098,523 distinct positive unordered user pairs. The final result contains 107,614 rows and ten candidate IDs per row. Every endpoint user is present, including followee-only users with no positive candidates. No SID filtering occurred before full computation.
+
+```text
+Full large-result SHA-256:
+8fa379b42403b5ffe9f4d0541d9d1ab955d4418d0c2e800bb7c1d494a2b1587d
+```
+
+The full result and all 1,000 suffix files are archived under `homework1/artifacts/`, named with `lab-bonus-20261107T061207Z`. The same files and checksum manifests are in the server delivery directory documented in the submission instructions. The raw source and intermediate HDFS data remain on the laboratory hosts and are excluded from the code submission package.
+
+---PAGE---
+
+## 9.3. Independent large-graph verification and suffixes
+
+`graph_audit.py` independently parses and canonicalizes the original directed input, removes repeated edges using a SQLite primary key, and retains every endpoint or empty adjacency head. Dense integer indices are SQLite keys; actual 21-digit and arbitrary larger IDs remain decimal strings/Python integers, never floating point or 64-bit SQLite IDs. The disk source index used 512 MiB SQLite cache with observed peakRSS 711.711 MiB, taking 148.711 seconds to build.
+
+The result is read as a stream. A disk-backed table keyed by source-user index rejects duplicate/extra rows, and an anti-join verifies the original and result user sets exactly; equal row counts alone are insufficient. All 107,614 rows pass candidate-count, numeric format, distinctness, existence and non-self checks. Missing users=0; extra users=0; duplicate users=0.
+
+For ranking, seed 20261107 selects 1,000 fixed random users, supplemented by highest in/out degree, numeric boundary IDs, zero-outdegree users and followers of popular targets. There are 1064 distinct exact sample users in total. The oracle performs an independent SQL join on shared followees of raw deduplicated outgoing edges, counts integer intersections, orders by decreasing score/numeric candidate ID and separately supplies zero-score candidates. It imports no ranking implementation from community.py. Ranking mismatches=0. The validation JSON retains the exact sample IDs, groups, seed, verifier SHA-256, input identity and output hash. PeakRSS was 509.457 MiB, elapsed 81.738 s.
+
+This establishes **full-user coverage/format/candidate validity plus independent exact sampled rankings**. It is not an independent recomputation of all 107,614 rankings. The algorithm's full-result exactness additionally follows the pair-enumeration/summation/sort proof above and the successful jobs; no all-user independent ranking claim is made.
+
+Suffix export streams to `000.txt` through `999.txt`, with at most 32 files open. It independently rereads every shard, verifies `int(user_id)%1000`, hashes bytes, checks per-shard counts and the exact source user set via a disk-backed uniqueness table. All 1,000 files pass, totaling 107,614 rows, zero missing/extra/duplicate users. Export peakRSS=27.078 MiB. The per-shard manifest and archive checksums accompany the files.
+
+The new verifier also passes small random/boundary tests. Regression against the existing medium result independently checked 1,074 users with zero ranking differences and reproduced all 1,000 existing suffixes byte for byte. These checks supplement the bonus evidence, without rerunning the completed mandatory cluster experiments or altering their timing tables.
+
+---PAGE---
+
+## 9.4. Actual bonus service screenshots
+
+![Actual bonus ResourceManager: three RUNNING physical workers and the disclosed bonus allocation. Access identifiers redacted.](../evidence/lab-bonus-20261107T061207Z/screenshots/bonus-yarn-nodes-final.png)
+
+![Actual bonus final Top-10 job after successful completion. Job IDs and values are unchanged by privacy redaction.](../evidence/lab-bonus-20261107T061207Z/screenshots/bonus-top10-history.png)
+
+---PAGE---
+
+## 10. Evidence and repeatability
 
 | Evidence | Repository path relative to homework1 |
 |---|---|
-| Actual timings, raw job/tasks/counters/attempts | evidence/lab-20261106T110350Z/ |
+| Mandatory timings, raw job/tasks/counters/attempts | evidence/lab-20261106T110350Z/ |
+| Separate large-graph timings/validation/capacity/suffix manifest | evidence/lab-bonus-20261107T061207Z/ |
 | Environment, runtime checksums, input manifests | evidence/lab-20261106T110350Z/ |
 | Real service screenshots with access identifiers redacted | evidence/lab-20261106T110350Z/screenshots/ |
 | Independent validation and full-reference comparison | evidence/lab-20261106T110350Z/community/ |
@@ -222,7 +325,7 @@ The successful cluster smoke ran on every worker. Public task-attempt data recor
 
 ---PAGE---
 
-## 10. Actual screenshots
+## 11. Actual screenshots
 
 ![master: actual independent single-node WordCount SUCCEEDED. Original runtime/version and output logs accompany the screenshot.](../evidence/lab-20261106T110350Z/screenshots/master-single-history.png)
 
@@ -265,7 +368,13 @@ The uploaded Homework 1 PDF is the source of the question, marking scheme, outpu
 
 [9] Stanford SNAP. Ego-network dataset readme (edge-direction convention). https://snap.stanford.edu/data/readme-Ego.txt
 
-The course Dropbox file was downloaded and hash-checked again; SNAP is used to corroborate its observed size and direction, not as a silent replacement. Amazon Corretto download and checksum documentation: https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html
+[10] Stanford SNAP. Social circles: Google+. https://snap.stanford.edu/data/ego-Gplus.html . Corroborates the observed course-file 107,614 nodes/13,673,453 unique edges; no substitute download was used.
+
+[11] Apache Hadoop 3.3.6. YARN Commands, rmadmin updateNodeResource. https://hadoop.apache.org/docs/r3.3.6/hadoop-yarn/hadoop-yarn-site/YarnCommands.html
+
+[12] Apache Hadoop 3.3.6. Packaged mapred-default.xml, mapreduce.reduce.shuffle.memory.limit.percent. https://hadoop.apache.org/docs/r3.3.6/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml . Also checked directly in the installed versioned JAR.
+
+The course Dropbox files were downloaded and hash-checked again; SNAP is used to corroborate its observed size and direction, not as a silent replacement. Amazon Corretto download and checksum documentation: https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html
 
 ---PAGE---
 

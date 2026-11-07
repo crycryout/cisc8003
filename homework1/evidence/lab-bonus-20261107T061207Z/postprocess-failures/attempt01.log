@@ -1,0 +1,10 @@
+2026-11-07T08:20:27.523442+00:00 ['scp', '-qr', 'thor:/home/experiment-user/cisc8003/homework1/results/lab-bonus-20261107T061207Z/community-logs/.']
+error: unexpected filename: .
+Traceback (most recent call last):
+  File "/home/experiment-user/cisc8003/.local/postprocess-bonus.py", line 22, in <module>
+    run(['scp','-qr','thor:'+s['bonus_logs']+'/.',str(out/'community-logs')+'/'])
+  File "/home/experiment-user/cisc8003/.local/postprocess-bonus.py", line 5, in run
+    subprocess.run(cmd,cwd=ROOT,check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['scp', '-qr', 'thor:/home/experiment-user/cisc8003/homework1/results/lab-bonus-20261107T061207Z/community-logs/.', '/home/experiment-user/cisc8003/homework1/results/lab-bonus-20261107T061207Z/community-logs/']' returned non-zero exit status 1.

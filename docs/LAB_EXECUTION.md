@@ -40,4 +40,23 @@ yarn node -list
 
 不要重新运行 format。现有结果保持原路径；新实验必须使用新 HDFS 输出根和本地证据目录。正式配置/控制通过 `homework1/cluster/lab_node.sh` 与实验专用配置目录完成，不能停止别人的服务。
 
-原课程部署环境要求与用户选择的实验室方案不同，报告如实披露；没有声称取得教师正式认可。大图 bonus 未完成，不将中图结果算作 bonus。姓名、完整 SID、声明和签名由学生本人核实填写。
+原课程部署环境要求与用户选择的实验室方案不同，报告如实披露；没有声称取得教师正式认可。大图 bonus 已在2026-11-07单独完成，见下节；中图测量保持原值。姓名、完整 SID、声明和签名由学生本人核实填写。
+
+## 2026-11-07 独立大图 bonus
+
+Run `bonus-20261107T061207Z`。原题Gplus gzip398,930,514bytes，解压1,341,774,104bytes，直接来源/重定向/方向和完整SHA在本轮input-manifest/source-redirects。实测30,494,866输入行、13,673,453唯一有向边、107,614用户；不使用题面近似用户数。
+
+候选配对10,984,048,711；原始文本三副本不足，容量检查后04/05用DefaultCodec单副本、后半64reducers、block512不变。原输入/01–03/最终06仍三副本。仅bonus配置将三个worker各调整到8vcores/12GiB，H800的shuffle使用另一已有文件系统，单task内存/heap保持1536/768MiB；07:23UTC在stage05期间，实测H800约231GiB可用内存/96CPU后，以原生rmadmin在线增至24vcores/36GiB，affinity72–95；其他两台仍8vcores/12GiB，不重启NM/容器，资源变化详见online-resource-update。原Q1/中图资源和性能表不变。H800 NM初次本地启动未驻留的问题已按工作日志修复，没有失败job attempt由此产生。
+
+| Stage | Actual job ID | Maps/reducers | Seconds |
+|---|---|---|---|
+| 01_dedup | job_1793963521105_0026 | 10/6 | 53.216 |
+| 02_universe | job_1793963521105_0027 | 6/1 | 8.161 |
+| 03_blocks | job_1793963521105_0028 | 6/6 | 26.131 |
+| 04_pairs | job_1793963521105_0035 | 6/64 | 509.392 |
+| 05_scores | job_1793963521105_0036 | 64/64 | 4764.398 |
+| 06_top10 | job_1793963521105_0037 | 64/64 | 602.970 |
+
+全用户覆盖、格式和候选合法性通过，固定seed20261107的1,000用户加定向样本共1064用户独立精确排名零差异。没有声称独立重算全部用户排名。SQLite源索引峰值711.711MiB；验证峰值509.457MiB。 全部1,000suffix流式导出并逐行/集合/字节哈希核验，总107,614行。全量结果SHA-256 `8fa379b42403b5ffe9f4d0541d9d1ab955d4418d0c2e800bb7c1d494a2b1587d`。
+
+公开证据 `homework1/evidence/lab-bonus-20261107T061207Z/`；完整结果及suffix在artifacts中，压缩与每个tar成员哈希已核对。真实未脱敏记录仍在本轮results与.local。最终PDF与兼容Draft.pdf字节相同；旧24页PDF可从b6670cc6 Git历史和本地baseline-report追溯。交付位置和本人待办见README及FINAL_SUBMISSION。

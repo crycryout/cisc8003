@@ -1,0 +1,14 @@
+{
+  "job_id": "job_1793963521105_0038",
+  "properties": {
+    "mapreduce.partition.keypartitioner.options": "-k1,1",
+    "mapreduce.reduce.shuffle.memory.limit.percent": "0.0",
+    "mapreduce.partition.keycomparator.options": "-k1,1n -k2,2n -k3,3n",
+    "mapreduce.job.reduces": "3",
+    "mapreduce.output.fileoutputformat.compress": "false",
+    "mapreduce.reduce.java.opts": "-Xmx768m",
+    "mapreduce.map.output.compress": "true",
+    "mapreduce.reduce.memory.mb": "1536"
+  },
+  "runner_sha256": "e7cef55e8310260d332ab0f0acd7d65fdd7f6767b325d0d7b59bb1c2834803aa"
+}

@@ -1,5 +1,7 @@
 # Bonus evidence: bonus-20261107T061207Z
 
-Current phase: stages04_06_running. Preparation job evidence is complete; ranking is complete only when all six successful jobs and independent validation are recorded.
+Six successful real YARN jobs cover107,614 source users. Full coverage/format/candidate checks pass; 1064 independently recomputed exact sampled rankings have zero differences. This does not claim independent recomputation of every ranking. All1,000 suffixes are verified.
 
-Public copies redact host/address/account labels only. Raw records and private state remain on the lab server. Capacity scenarios and regression fixtures are not bonus benchmark results. Resource-transition role labels are normalized to the report: worker1=H800, worker2/worker3=the two5090 hosts; numeric measurements are unchanged.
+Job36 retained two shuffle heap-OOM attempts and successful retries. The subsequent submission-runner direct-disk guard was separately verified on31 users in job38; measured six-job configuration is preserved.
+
+Public copies redact host/address/account labels. Source/raw logs and private configurations remain on the lab server. Resource role labels are worker1=H800, worker2/worker3=the two5090 hosts. Capacity scenarios and regressions are distinct from the six-job measurements.

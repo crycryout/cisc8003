@@ -1,0 +1,156 @@
+{
+  "tasks": [
+    {
+      "task_id": "task_1793963521105_0027_m_000005",
+      "taskAttempts": {
+        "taskAttempt": [
+          {
+            "startTime": 1794032457093,
+            "finishTime": 1794032460140,
+            "elapsedTime": 3047,
+            "progress": 100.0,
+            "id": "attempt_1793963521105_0027_m_000005_0",
+            "rack": "/default-rack",
+            "state": "SUCCEEDED",
+            "status": "Records R/W=2295206/1",
+            "nodeHttpAddress": "worker3:28042",
+            "diagnostics": "",
+            "type": "MAP",
+            "assignedContainerId": "container_1793963521105_0027_01_000007"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "task_1793963521105_0027_r_000000",
+      "taskAttempts": {
+        "taskAttempt": [
+          {
+            "startTime": 1794032462022,
+            "finishTime": 1794032463084,
+            "elapsedTime": 1062,
+            "progress": 100.0,
+            "id": "attempt_1793963521105_0027_r_000000_0",
+            "rack": "/default-rack",
+            "state": "SUCCEEDED",
+            "status": "Records R/W=66/1 > reduce",
+            "nodeHttpAddress": "worker2:28042",
+            "diagnostics": "",
+            "type": "REDUCE",
+            "assignedContainerId": "container_1793963521105_0027_01_000008",
+            "shuffleFinishTime": 1794032462914,
+            "mergeFinishTime": 1794032462923,
+            "elapsedShuffleTime": 892,
+            "elapsedMergeTime": 9,
+            "elapsedReduceTime": 161
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "task_1793963521105_0027_m_000004",
+      "taskAttempts": {
+        "taskAttempt": [
+          {
+            "startTime": 1794032457088,
+            "finishTime": 1794032460093,
+            "elapsedTime": 3005,
+            "progress": 100.0,
+            "id": "attempt_1793963521105_0027_m_000004_0",
+            "rack": "/default-rack",
+            "state": "SUCCEEDED",
+            "status": "Records R/W=2295597/1",
+            "nodeHttpAddress": "worker3:28042",
+            "diagnostics": "",
+            "type": "MAP",
+            "assignedContainerId": "container_1793963521105_0027_01_000006"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "task_1793963521105_0027_m_000003",
+      "taskAttempts": {
+        "taskAttempt": [
+          {
+            "startTime": 1794032457092,
+            "finishTime": 1794032460207,
+            "elapsedTime": 3115,
+            "progress": 100.0,
+            "id": "attempt_1793963521105_0027_m_000003_0",
+            "rack": "/default-rack",
+            "state": "SUCCEEDED",
+            "status": "Records R/W=2296695/1",
+            "nodeHttpAddress": "worker3:28042",
+            "diagnostics": "",
+            "type": "MAP",
+            "assignedContainerId": "container_1793963521105_0027_01_000005"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "task_1793963521105_0027_m_000002",
+      "taskAttempts": {
+        "taskAttempt": [
+          {
+            "startTime": 1794032457092,
+            "finishTime": 1794032460059,
+            "elapsedTime": 2967,
+            "progress": 100.0,
+            "id": "attempt_1793963521105_0027_m_000002_0",
+            "rack": "/default-rack",
+            "state": "SUCCEEDED",
+            "status": "Records R/W=2297481/1",
+            "nodeHttpAddress": "worker2:28042",
+            "diagnostics": "",
+            "type": "MAP",
+            "assignedContainerId": "container_1793963521105_0027_01_000004"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "task_1793963521105_0027_m_000001",
+      "taskAttempts": {
+        "taskAttempt": [
+          {
+            "startTime": 1794032457093,
+            "finishTime": 1794032459960,
+            "elapsedTime": 2867,
+            "progress": 100.0,
+            "id": "attempt_1793963521105_0027_m_000001_0",
+            "rack": "/default-rack",
+            "state": "SUCCEEDED",
+            "status": "Records R/W=2297893/1",
+            "nodeHttpAddress": "worker2:28042",
+            "diagnostics": "",
+            "type": "MAP",
+            "assignedContainerId": "container_1793963521105_0027_01_000003"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "task_1793963521105_0027_m_000000",
+      "taskAttempts": {
+        "taskAttempt": [
+          {
+            "startTime": 1794032457094,
+            "finishTime": 1794032460026,
+            "elapsedTime": 2932,
+            "progress": 100.0,
+            "id": "attempt_1793963521105_0027_m_000000_0",
+            "rack": "/default-rack",
+            "state": "SUCCEEDED",
+            "status": "Records R/W=2298195/1",
+            "nodeHttpAddress": "worker2:28042",
+            "diagnostics": "",
+            "type": "MAP",
+            "assignedContainerId": "container_1793963521105_0027_01_000002"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -89,3 +89,21 @@ Yelp 四种实际 M/R 各三次共 12 个 jobs 全部成功，输入/资源没�
 阶段04实际成功：`job_1793963521105_0035`，6maps/64reducers，509.392秒；输出10,984,156,325条，等于CandidatePairs+Users，38,095,358,435压缩字节，单副本，比容量情景保守预算小。没有失败map/reduce attempts。阶段05 `job_1793963521105_0036` 已继续运行；监控和持久后处理已配置，后者仅在六阶段计算exit0后采集、独立验证并流式分区。当前仍不可宣称bonus完成。
 
 07:23 UTC阶段05期间，首批23 maps完成后有reducers等待shuffle。H800新预检显示96CPU、load7.72、约231.45GiB可用内存和397.41GB独立shuffle盘空闲，原8核配额留下大量空闲。本账号本次NM通过官方Hadoop3.3.6 `rmadmin -updateNodeResource`在线增至24vcores/36GiB，NM线程affinity72–95；另外两worker保持8核/12GiB，单task1536MiB/heap768MiB不变。RM和NM REST均确认新资源，原NM PID不变、无重启或故意失败task，既有进度保留。按60%最坏情景shuffle/merge分配到H800并加20%倾斜得253.07GB，加3.30GB重试仍低于397.41−95GB预算。原配置hash、更新后hash、实际资源和时间线均保存在online-resource-update；bonus时长包含资源变化，不作为固定配置扩展性对比。Q1/中图表未改动。
+
+Stage05实际完成：`job_1793963521105_0036`，64 maps/64 reducers，4764.398秒，MAP_INPUT_RECORDS=10984156325吻合C+N；REDUCE_OUTPUT_RECORDS=627206137，即627098523正分无序对+107614用户标记；HDFS输出7722861744bytes，map物化shuffle69415939663bytes。两个reduce attempts（r000037_0、r000046_0）在shuffle InMemoryMapOutput分配中发生768MiB JVM heap OOM，均自动重试恢复，job最终SUCCEEDED。失败diagnostics、容器stderr/syslog和所有最终attempt记录单独保留。
+
+交付runner新增 `mapreduce.reduce.shuffle.memory.limit.percent=0.0`，安装包原生配置说明明确0为shuffle直接落盘，避免大分区突发内存分配，增加相应磁盘IO预算。主六阶段继续使用冻结3d54c5f和原默认0.25/0.70缓冲参数，不倒改实测。新的真实YARN单阶段06恢复回归 `job_1793963521105_0038` 成功，3maps/3reducers、20.144秒，31用户独立精确比对零差异，字节输出与旧回归相同；History配置白名单确认0.0。该回归不计入大图六job时间。
+
+大图阶段06 `job_1793963521105_0037` 已实际成功，普通文本26042588bytes、三副本78127764bytes。后处理首次因scp目录末尾`/.`触发unexpected filename而在复制日志时退出，未开始排名验证；失败日志保留并改为明确复制六个`.log`后恢复，已成功的计算输出不重新生成。
+
+## 2026-11-07：大图计算、验证与最终交付
+
+六阶段全部成功：job_1793963521105_0026, job_1793963521105_0027, job_1793963521105_0028, job_1793963521105_0035, job_1793963521105_0036, job_1793963521105_0037；实际时间依次53.216, 8.161, 26.131, 509.392, 4764.398, 602.970秒。原输入/前三阶段成功产物复用，04–06独立压缩配置按容量决策执行；没有用近似、抽样或SID子集代替全图。全部107,614用户输出十个候选。
+
+从原始输入独立去重的SQLite索引验证源用户集合、格式、不同/存在/非自身候选；1,000固定种子加定向样本共1064用户精确重算零差异，验证峰值509.457MiB/耗时81.738秒。 全1,000suffix检查int(uid)%1000、每份字节SHA和全体用户集合，无缺漏/多余/重复。未进行独立全量排名重算，报告保留这一范围。全量输出SHA `8fa379b42403b5ffe9f4d0541d9d1ab955d4418d0c2e800bb7c1d494a2b1587d`。
+
+两个大图归档全部解压/逐tar成员核验，UID/GID为0且uname/gname为空；原中图归档原样保留。原24页PDF有私密备份和Git追溯，新增大图报告与兼容Draft.pdf同步生成、日期参数化为本轮日期，Q1章节源文本逐字节不变。学生身份、声明、签名、实际来源及课程政策由本人核实，AI/环境替代披露保留。公开内容继续脱敏，原始图/Yelp/数据库/访问配置不进入代码提交包。最终包和校验清单在README列出的服务器交付目录。
+
+最终验收：大图全部107614用户覆盖/格式/候选合法性通过；seed20261107固定1000用户加定向样本共1064名独立精确重算，零排名差异，耗时81.738秒、峰值509.457MiB。流式导出1000suffix并核对原始用户集合/每行模1000/每份SHA，总107614行、峰值27.078MiB。全量结果SHA为8fa379b42403b5ffe9f4d0541d9d1ab955d4418d0c2e800bb7c1d494a2b1587d。完整记录链八项不变式全部匹配；两个大图归档gzip及1000 tar成员字节/SHA/中立UID元数据校验通过。
+
+32页新PDF已检查新增输入/容量/实际六job结果表/验证和真实截图页，页脚为7Nov2026；Draft.pdf与主PDF字节相同，原Q1章节源文本与旧24页报告逐字节一致。28项单元测试、12个Shell语法、git diff --check通过，公开内容访问标识/私钥/签名下载URL检查通过，Nov6旧evidence无字节变动。当前集群3 live DN/3 healthy RUNNING NM，38个YARN apps完成、0失败apps，stage05两次失败attempt保留并已恢复；JobHistory REST可访问。代码/报告包和中大图结果包由scripts/package_submission.py按最终源commit生成至README交付目录，外层SHA256SUMS与DELIVERY_MANIFEST记录服务器产物，仍须本人完成身份/声明/签名和课程平台提交。

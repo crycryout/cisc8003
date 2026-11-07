@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "stage": "01_dedup",
+      "counter": "REDUCE_OUTPUT_RECORDS",
+      "actual": 13781067,
+      "expected": 13781067,
+      "matched": true
+    },
+    {
+      "stage": "02_universe",
+      "counter": "REDUCE_OUTPUT_RECORDS",
+      "actual": 11,
+      "expected": 11,
+      "matched": true
+    },
+    {
+      "stage": "04_pairs",
+      "counter": "REDUCE_OUTPUT_RECORDS",
+      "actual": 10984156325,
+      "expected": 10984156325,
+      "matched": true
+    },
+    {
+      "stage": "05_scores",
+      "counter": "MAP_INPUT_RECORDS",
+      "actual": 10984156325,
+      "expected": 10984156325,
+      "matched": true
+    },
+    {
+      "stage": "05_scores",
+      "counter": "MAP_OUTPUT_RECORDS",
+      "actual": 10984156325,
+      "expected": 10984156325,
+      "matched": true
+    },
+    {
+      "stage": "06_top10",
+      "counter": "MAP_INPUT_RECORDS",
+      "actual": 627206137,
+      "expected": 627206137,
+      "matched": true
+    },
+    {
+      "stage": "06_top10",
+      "counter": "MAP_OUTPUT_RECORDS",
+      "actual": 1254304660,
+      "expected": 1254304660,
+      "matched": true
+    },
+    {
+      "stage": "06_top10",
+      "counter": "REDUCE_OUTPUT_RECORDS",
+      "actual": 107614,
+      "expected": 107614,
+      "matched": true
+    }
+  ],
+  "all_matched": true,
+  "distinct_positive_unordered_pairs": 627098523,
+  "scope": "Full record-count chain checks; these are not independent all-user ranking recomputation."
+}
